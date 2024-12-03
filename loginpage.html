@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <img src="C:\Users\Shree Balaji Compute\Desktop" alt="Login Icon" id="loginIcon" class="icon" onclick="toggleOptions()">
+
+    <title>Login/SignUp</title>
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS link -->
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        /* Login Icon Styles */
+        .icon-container {
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        .icon {
+            width: 150px; /* Resize the image as per your need */
+            height: 150px;
+        }
+
+        /* Popup Options */
+        .popup {
+            display: none;
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            position: absolute;
+            top: 60px;
+            z-index: 10;
+            width: 300px;
+        }
+
+        .option-btn {
+            display: block;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .option-btn:hover {
+            background-color: #45a049;
+        }
+
+        /* Form Styles */
+        .form-container {
+            display: none;
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 300px;
+            margin-top: 20px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+        }
+
+        input, select {
+            margin-bottom: 15px;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* Back Button Styles */
+        .back-btn {
+            background-color: #f44336;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .back-btn:hover {
+            background-color: #e53935;
+        }
+
+        /* Thank You Popup */
+        #thankYouPopup h2 {
+            color: #4CAF50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #thankYouPopup button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #thankYouPopup button:hover {
+            background-color: #45a049;
+        }
+
+        /* Resume Name Display */
+        #resumeName {
+            font-size: 14px;
+            font-style: italic;
+            color: #555;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Login Icon -->
+    <div class="icon-container">
+        <!-- Example login icon image -->
+        <img src="https://via.placeholder.com/150" alt="Login Icon" id="loginIcon" class="icon" onclick="toggleOptions()">
+    </div>
+
+    <!-- Options Popup -->
+    <div id="optionsPopup" class="popup">
+        <button class="option-btn" onclick="showLogin()">Login</button>
+        <button class="option-btn" onclick="showSignup()">Sign Up</button>
+    </div>
+
+    <!-- Login Form -->
+    <div id="loginForm" class="form-container">
+        <h2>Login</h2>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+        <button class="back-btn" onclick="goBack()">Back</button>
+    </div>
+
+    <!-- Sign Up Form -->
+    <div id="signupForm" class="form-container">
+        <h2>Sign Up</h2>
+        <form id="signupFormContent" onsubmit="submitForm(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="mobile">Mobile No:</label>
+            <input type="text" id="mobile" name="mobile" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="permanentAddress">Permanent Address:</label>
+            <input type="text" id="permanentAddress" name="permanentAddress" required>
+
+            <label for="qualification">Qualification:</label>
+            <input type="text" id="qualification" name="qualification" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="usernameSignup">Username:</label>
+            <input type="text" id="usernameSignup" name="usernameSignup" required>
+
+            <label for="passwordSignup">Password:</label>
+            <input type="password" id="passwordSignup" name="passwordSignup" required>
+
+            <!-- Resume Upload -->
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx" onchange="displayResumeName()" required>
+            <p id="resumeName"></p>
+
+            <button type="submit">Sign Up</button>
+        </form>
+        <button class="back-btn" onclick="goBack()">Back</button>
+    </div>
+
+    <!-- Thank You Popup -->
+    <div id="thankYouPopup" class="popup" style="display: none;">
+        <h2>Thank You for Signing Up!</h2>
+        <button onclick="closeThankYouPopup()">Close</button>
+    </div>
+
+    <script>
+        // Toggle options popup
+        function toggleOptions() {
+            const popup = document.getElementById('optionsPopup');
+            popup.style.display = popup.style.display === 'block' ? 'none' : 'block';
+        }
+
+        // Show Login form
+        function showLogin() {
+            document.getElementById('signupForm').style.display = 'none';
+            document.getElementById('loginForm').style.display = 'block';
+            document.getElementById('optionsPopup').style.display = 'none';
+        }
+
+        // Show Sign Up form
+        function showSignup() {
+            document.getElementById('loginForm').style.display = 'none';
+            document.getElementById('signupForm').style.display = 'block';
+            document.getElementById('optionsPopup').style.display = 'none';
+        }
+
+        // Go back to options
+        function goBack() {
+            document.getElementById('loginForm').style.display = 'none';
+            document.getElementById('signupForm').style.display = 'none';
+            document.getElementById('optionsPopup').style.display = 'block';
+        }
+
+        // Handle Form Submit for Sign Up
+        function submitForm(event) {
+            event.preventDefault(); // Prevent the form from submitting and refreshing the page
+
+            // Show Thank You popup after form submission
+            document.getElementById('signupForm').style.display = 'none';
+            document.getElementById('thankYouPopup').style.display = 'block';
+        }
+
+        // Display the uploaded resume file name
+        function displayResumeName() {
+            const resumeInput = document.getElementById('resume');
+            const resumeName = document.getElementById('resumeName');
+            
+            if (resumeInput.files.length > 0) {
+                resumeName.textContent = 'Uploaded: ' + resumeInput.files[0].name;
+            } else {
+                resumeName.textContent = '';
+            }
+        }
+
+        // Close Thank You popup
+        function closeThankYouPopup() {
+            document.getElementById('thankYouPopup').style.display = 'none';
+            document.getElementById('optionsPopup').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

@@ -1,28 +1,792 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CNG </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index">CNG Company</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/Page">Page</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Product">Product</a>
+            </li>
+
+
+             <li class="nav-item">
+              <a class="nav-link" href="/login">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/About">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Contect">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          {% comment %} <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M332.64 64.58C313.18 43.57 286 32 256 32c-30.16 0-57.43 11.5-76.8 32.38-19.58 21.11-29.12 49.8-26.88 80.78C156.76 206.28 203.27 256 256 256s99.16-49.71 103.67-110.82c2.27-30.7-7.33-59.33-27.03-80.6zM432 480H80a31 31 0 01-24.2-11.13c-6.5-7.77-9.12-18.38-7.18-29.11C57.06 392.94 83.4 353.61 124.8 326c36.78-24.51 83.37-38 131.2-38s94.42 13.5 131.2 38c41.4 27.6 67.74 66.93 76.18 113.75 1.94 10.73-.68 21.34-7.18 29.11A31 31 0 01432 480z"/></svg> {% endcomment %}
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+            
+
+            
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="static/4.jpg" class="d-block w-100" alt="Slide 1">
+        </div>
+        <head>
+          <style>
+            .carousel-item img {
+              width: 600px;
+              height: 550px;
+            }
+          </style>
+        </head>
+        <body>
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item">
+                <img src="static/5.jpg" class="d-block w-100" alt="Slide 2">
+              </div>
+            </div>
+          </div>
+        </body>
+
+
+
+
+        <head>
+          <style>
+            .carousel-item img {
+              width: 600px;
+              height: 550px;
+            }
+          </style>
+        </head>
+        <body>
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item">
+                <img src="static/4.jpg" class="d-block w-100" alt="Slide 3">
+              </div>
+            </div>
+          </div>
+        </body>
+
+        
+
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+
+
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f9f9f9;
+                margin: 0;
+                padding: 20px;
+            }
+            .form-container {
+                max-width: 1400px;
+                margin: auto;
+                padding: 20px;
+                background-color: #fff;
+                border-radius: 8px;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            }
+            h2 {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            label {
+                display: block;
+                margin-bottom: 8px;
+            }
+            input[type="text"],
+            input[type="number"] {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 15px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+            }
+            button {
+                width: 100%;
+                padding: 10px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: #45a049;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="form-container">
+            <h2>Enquiry form</h2>
+            <form action="/submit" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    
+                <label for="mobile">Mobile Number:</label>
+                <input type="number" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+    
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" placeholder="Enter your city" required>
+    
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </body>
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+  <style>
+    /* Ensure the image and content are aligned properly */
+    #intro {
+      padding: 60px 0;
+    }
+
+    #intro .container {
+      max-width: 1200px;
+    }
+
+    #intro .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* Ensure that the left and right columns have appropriate order on large and smaller screens */
+    #intro .col-lg-6 {
+      flex: 1;
+    }
+
+    #intro .col-md-6 {
+      flex: 1;
+    }
+
+    #intro .order-md-2 {
+      order: 2; /* Image on left side for larger screens */
+    }
+
+    #intro .order-md-1 {
+      order: 1; /* Content on right side for larger screens */
+    }
+
+    /* Style the image */
+    #intro img {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 10px 10px 30px #d1d1d1;
+    }
+
+    /* Heading and text styles */
+    .heading-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #0e101a;
+    }
+
+    .heading-decoration {
+      height: 2px;
+      background-color: #495057;
+      margin-top: 10px;
+    }
+
+    /* Additional padding and spacing for better alignment */
+    @media (max-width: 767px) {
+      #intro .row {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #intro img {
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h2>Sign Up</h2>
-    <form method="POST" enctype="multipart/form-data">
-        {% csrf_token %}
-        {{ form.as_p }}
-        
-        <!-- File Upload Input -->
-        <label for="profile_picture">Profile Picture:</label>
-        <input type="file" name="profile_picture" id="profile_picture" accept="image/*">
-        
-        <button type="submit">Sign Up</button>
-    </form>
 
-    <br>
-    <a href="{% url 'login' %}">Already have an account? Login here</a>
-</body>
+  <section class="large-padding section-anime-js" id="intro">
+    <div class="container">
+      <div class="row">
+        <!-- Image on the left side -->
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 order-md-2 mt-4 mt-md-0">
+          <img loading="lazy" class="element-anime-opacity-js" src="static/3.jpg" alt="Catalyser Directors Photo" style="border-radius:10px; box-shadow:10px 10px 30px #d1d1d1;">
+        </div>
+        <!-- Content on the right side -->
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 order-md-1">
+          <header class="catalyser-module catalyser-heading mb-4">
+            <div class="title-text-wrap">
+              <h1 class="heading-title element-anime-fadeInUp-js h2">CNG </h1>
+            </div>
+            <div class="heading-decoration element-anime-fadeInUp-js"></div>
+          </header>
+          <p dir="ltr" style="line-height: 1.656; text-align: justify; background-color: #ffffff; margin-top: 0pt; margin-bottom: 0pt;">
+            <span style="font-size: 14pt; font-family: Arial; color: #0e101a; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">
+              Recognized as one of the best IIT JEE coaching centers in Indore, CatalyseR has consistently produced top-performing students who have excelled in competitive exams. Over the past 13 years, they have produced <strong>All India topper 100 percentile</strong>, <strong>10 JEE Indore City Toppers, 5 IIT Zone Toppers</strong>, the highest number of <strong>AIR under 1000 (Freshers) in 2023</strong>, and more than 1<strong>400 NTSE Scholars, 1800 plus IIT Selections</strong> which is an impressive feat unmatched by any other institute
+            </span>
+          </p>
+          <p dir="ltr" style="line-height: 1.656; text-align: justify; background-color: #ffffff; margin-top: 0pt; margin-bottom: 0pt;">
+            <span style="font-size: 14pt; font-family: Arial; color: #495057; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">&nbsp;</span>
+          </p>
+          <p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt; text-align: justify;">
+            <span id="docs-internal-guid-1883fbac-7fff-51a6-5fce-d3f3494bd87c" style="font-size: 14pt;"></span>
+          </p>
+          <p dir="ltr" style="line-height: 1.656; text-align: justify; background-color: #ffffff; margin-top: 0pt; margin-bottom: 0pt;">
+            <span style="font-size: 14pt; font-family: Arial; color: #0e101a; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">
+              CNG ki detels 
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <style>
+    /* Ensure the image and content are aligned properly */
+    #intro {
+      padding: 60px 0;
+    }
+
+    #intro .container {
+      max-width: 1200px;
+    }
+
+    #intro .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* Ensure that the left and right columns have appropriate order on large and smaller screens */
+    #intro .col-lg-6 {
+      flex: 1;
+    }
+
+    #intro .col-md-6 {
+      flex: 1;
+    }
+
+    #intro .order-md-1 {
+      order: 1; /* Image on the left side for larger screens */
+    }
+
+    #intro .order-md-2 {
+      order: 2; /* Content on the right side for larger screens */
+    }
+
+    /* Style the image */
+    #intro img {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 10px 10px 30px #d1d1d1;
+    }
+
+    /* Heading and text styles */
+    .heading-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #0e101a;
+    }
+
+    .heading-decoration {
+      height: 2px;
+      background-color: #495057;
+      margin-top: 10px;
+    }
+
+    /* Additional padding and spacing for better alignment */
+    @media (max-width: 767px) {
+      #intro .row {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #intro img {
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="large-padding section-anime-js" id="intro">
+    <div class="container">
+      <div class="row">
+        <!-- Image on the left side -->
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 order-md-1 mt-4 mt-md-0">
+          <img loading="lazy" class="element-anime-opacity-js" src="static/3.jpg" alt="Catalyser Directors Photo" style="border-radius:10px; box-shadow:10px 10px 30px #d1d1d1;">
+        </div>
+        <!-- Content on the right side -->
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 order-md-2">
+          <header class="catalyser-module catalyser-heading mb-4">
+            <div class="title-text-wrap">
+              <h1 class="heading-title element-anime-fadeInUp-js h2">CNG</h1>
+            </div>
+            <div class="heading-decoration element-anime-fadeInUp-js"></div>
+          </header>
+          <p dir="ltr" style="line-height: 1.656; text-align: justify; background-color: #ffffff; margin-top: 0pt; margin-bottom: 0pt;">
+            <span style="font-size: 14pt; font-family: Arial; color: #0e101a; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">
+              Recognized as one of the best IIT JEE coaching centers in Indore, CatalyseR has consistently produced top-performing students who have excelled in competitive exams. Over the past 13 years, they have produced <strong>All India topper 100 percentile</strong>, <strong>10 JEE Indore City Toppers, 5 IIT Zone Toppers</strong>, the highest number of <strong>AIR under 1000 (Freshers) in 2023</strong>, and more than 1<strong>400 NTSE Scholars, 1800 plus IIT Selections</strong> which is an impressive feat unmatched by any other institute.
+            </span>
+          </p>
+          <p dir="ltr" style="line-height: 1.656; text-align: justify; background-color: #ffffff; margin-top: 0pt; margin-bottom: 0pt;">
+            <span style="font-size: 14pt; font-family: Arial; color: #495057; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">&nbsp;</span>
+          </p>
+          <p dir="ltr" style="line-height: 1.38; margin-top: 0pt; margin-bottom: 0pt; text-align: justify;">
+            <span id="docs-internal-guid-1883fbac-7fff-51a6-5fce-d3f3494bd87c" style="font-size: 14pt;"></span>
+          </p>
+          <p dir="ltr" style="line-height: 1.656; text-align: justify; background-color: #ffffff; margin-top: 0pt; margin-bottom: 0pt;">
+            <span style="font-size: 14pt; font-family: Arial; color: #0e101a; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">
+              CNG ki details.
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+  <style>
+    /* Ensure the image and content are aligned properly */
+    #intro {
+      padding: 60px 0;
+    }
+
+    #intro .container {
+      max-width: 1200px;
+    }
+
+    #intro .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* Ensure that the left and right columns have appropriate order on large and smaller screens */
+    #intro .col-lg-6 {
+      flex: 1;
+    }
+
+    #intro .col-md-6 {
+      flex: 1;
+    }
+
+    #intro .order-md-2 {
+      order: 2; /* Image on left side for larger screens */
+    }
+
+    #intro .order-md-1 {
+      order: 1; /* Content on right side for larger screens */
+    }
+
+    /* Style the image */
+    #intro img {
+      width: 100%;
+      max-width: 500px;
+      height: 500px;
+      border-radius: 10px;
+      box-shadow: 10px 10px 30px #d1d1d1;
+    }
+
+    /* Heading and text styles */
+    .heading-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #0e101a;
+    }
+
+    .heading-decoration {
+      height: 2px;
+      background-color: #495057;
+      margin-top: 10px;
+    }
+
+    /* Additional padding and spacing for better alignment */
+    @media (max-width: 767px) {
+      #intro .row {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #intro img {
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="large-padding section-anime-js" id="intro">
+    <div class="container">
+      <div class="row">
+        <!-- Image on the left side -->
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 order-md-2 mt-4 mt-md-0">
+          <img loading="lazy" class="element-anime-opacity-js" src="static/2.jpg" alt="Catalyser Directors Photo" style="border-radius:10px; box-shadow:10px 10px 30px #d1d1d1;">
+        </div>
+        <!-- Form on the right side -->
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 order-md-1">
+          <div class="container">
+            <h2>Calculate Your Savings</h2>
+            <form id="fuel-form">
+              <label for="avg-mileage">Current Avg of your car (1 lit/ km):</label>
+              <input type="number" id="avg-mileage" placeholder="Enter average mileage" required>
+  
+              <label for="daily-running">Daily Running of Your Car (km):</label>
+              <input type="number" id="daily-running" placeholder="Enter daily running in km" required>
+  
+              <button type="button" id="calculate-btn">Calculate</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Modal -->
+    <div class="modal fade" id="fuelModal" tabindex="-1" aria-labelledby="fuelModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="fuelModalLabel">Fuel Cost Calculator Result</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Cost Per Kilometer (Petrol):</strong> ₹<span id="petrol-cost">0</span></p>
+            <p><strong>Cost Per Kilometer (CNG):</strong> ₹<span id="cng-cost">0</span></p>
+            <p><strong>Your Saving Per Month:</strong> ₹<span id="savings">0</span></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <script>
+    const petrolPrice = 109; // Petrol price per liter (₹)
+    const cngPrice = 90;    // CNG price per kg (₹)
+  
+    document.getElementById('calculate-btn').addEventListener('click', () => {
+      const avgMileage = parseFloat(document.getElementById('avg-mileage').value);
+      const dailyRunning = parseFloat(document.getElementById('daily-running').value);
+  
+      if (isNaN(avgMileage) || isNaN(dailyRunning) || avgMileage <= 0 || dailyRunning <= 0) {
+        alert("Please enter valid values for average mileage and daily running.");
+        return;
+      }
+  
+      const petrolCostPerKm = petrolPrice / avgMileage;
+      const cngCostPerKm = cngPrice / avgMileage;
+      const dailySaving = (petrolCostPerKm - cngCostPerKm) * dailyRunning;
+      const monthlySaving = dailySaving * 30;
+  
+      document.getElementById('petrol-cost').innerText = petrolCostPerKm.toFixed(2);
+      document.getElementById('cng-cost').innerText = cngCostPerKm.toFixed(2);
+      document.getElementById('savings').innerText = monthlySaving.toFixed(2);
+  
+      const modal = new bootstrap.Modal(document.getElementById('fuelModal'));
+      modal.show();
+    });
+  </script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+  <style>
+    /* Styling for the card images */
+    .card-img-top {
+        width: 100%;
+        height: 200px;
+        object-fit: cover; /* Ensures the image fills the container while maintaining aspect ratio */
+    }
+
+    /* Styling for the card footer */
+    .card-footer {
+        text-align: center;
+        background-color: #f8f9fa;
+        font-size: 0.875rem;
+    }
+
+    /* Additional styling for the card title */
+    .card-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+
+    /* Custom card group container styling */
+    .card-group {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .card {
+        flex: 1;
+        min-width: 300px;
+        max-width: 350px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 767px) {
+        .card-group {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card {
+            max-width: 100%;
+        }
+
+        .card-img-top {
+            height: 150px; /* Adjust image size for mobile */
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="container mt-5">
+<div class="card-group">
+    <!-- Card 1 -->
+    <div class="card">
+        <img src="static/123.jpg" class="card-img-top" alt="Image 1">
+        <div class="card-body">
+            <h5 class="card-title">Card title 1</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+        <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+        <img src="static/123.jpg" class="card-img-top" alt="Image 2">
+        <div class="card-body">
+            <h5 class="card-title">Card title 2</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        </div>
+        <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+        <img src="static/123.jpg" class="card-img-top" alt="Image 3">
+        <div class="card-body">
+            <h5 class="card-title">Card title 3</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        </div>
+        <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

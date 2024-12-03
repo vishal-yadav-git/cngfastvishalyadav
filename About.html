@@ -1,0 +1,1277 @@
+<style>
+  @import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);.mt-10,.my-10{margin-top:10px}.pointer,button{cursor:pointer}.col-12,.w-100{width:100%}@font-face{font-family:Poppins,Arial,Helvetica,sans-serif;src:url('./../fonts/poppins/Poppins-Thin.woff') format('woff2');font-weight:100;font-display:swap}@font-face{font-family:Poppins,Arial,Helvetica,sans-serif;src:url('./../fonts/poppins/Poppins-ExtraLight.woff') format('woff2');font-weight:200;font-display:swap}@font-face{font-family:Poppins,Arial,Helvetica,sans-serif;src:url('./../fonts/poppins/Poppins-Light.woff') format('woff2');font-weight:300;font-display:swap}@font-face{font-family:Poppins,Arial,Helvetica,sans-serif;src:url('./../fonts/poppins/Poppins-Regular.woff') format('woff2');font-weight:400;font-display:swap}@font-face{font-family:Poppins,Arial,Helvetica,sans-serif;src:url('./../fonts/poppins/Poppins-Medium.woff') format('woff2');font-weight:500;font-display:swap}@font-face{font-family:Poppins,Arial,Helvetica,sans-serif;src:url('./../fonts/poppins/Poppins-SemiBold.woff') format('woff2');font-weight:600;font-display:swap}@font-face{font-family:Poppins,Arial,Helvetica,sans-serif;src:url('./../fonts/poppins/Poppins-Bold.woff') format('woff2');font-weight:700;font-display:swap}@font-face{font-family:Poppins,Arial,Helvetica,sans-serif;src:url('./../fonts/poppins/Poppins-ExtraBold.woff') format('woff2');font-weight:800;font-display:swap}@font-face{font-family:Poppins,Arial,Helvetica,sans-serif;src:url('./../fonts/poppins/Poppins-Black.woff') format('woff2');font-weight:900;font-display:swap}body{max-width:100vw;font-family:Poppins,sans-serif!important}html{overflow-x:hidden;width:100vw}:root{--max-width:1250px;--ra-yellow:#ffcc33;--grey-black:#343a40}*{box-sizing:border-box;padding:0;margin:0}::-webkit-scrollbar{display:none}button{border:0}.bg-white{background-color:#fff}.text-white{color:#fff}.br20{border-radius:20px}.me-10{margin-right:10px!important}.p-10{padding:10px}.p-20{padding:20px}.p-30{padding:30px}.p-40{padding:40px}.ps-10{padding-left:10px!important}.ps-15{padding-left:15px!important}.ps-20{padding-left:20px!important}.pe-5{padding-right:5px!important}.pe-20{padding-right:20px!important}.ms-5{margin-left:5px}.mx-30{margin-left:30px;margin-right:30px}.ms-auto,.mx-auto{margin-left:auto}.my-10{margin-bottom:10px}.mt-20{margin-top:20px}.mt-40{margin-top:40px}.mb-10{margin-bottom:10px!important}.mb-20{margin-bottom:20px!important}.mb-30{margin-bottom:30px!important}.py-5{padding-top:5px;padding-bottom:5px}.py-10{padding-top:10px;padding-bottom:10px}.py-15{padding-top:15px;padding-bottom:15px}.py-20{padding-top:20px;padding-bottom:20px}.py-30{padding-top:30px;padding-bottom:30px}.py-40{padding-top:40px;padding-bottom:40px}.py-50{padding-top:50px;padding-bottom:50px}.px-5{padding-left:5px;padding-right:5px}.px-10{padding-left:10px;padding-right:10px}.px-15{padding-left:15px;padding-right:15px}.px-20{padding-left:20px;padding-right:20px}.px-30{padding-left:30px;padding-right:30px}.px-40{padding-left:40px;padding-right:40px}.px-50{padding-left:50px;padding-right:50px}.pb-5{padding-bottom:5px!important}.pb-10{padding-bottom:10px!important}.pb-20{padding-bottom:20px!important}.pb-30{padding-bottom:30px!important}.pb-40{padding-bottom:40px!important}.pb-50{padding-bottom:50px!important}.pt-0{padding-top:0!important}.pt-5{padding-top:5px!important}.pt-10{padding-top:10px!important}.pt-20{padding-top:20px!important}.pt-30{padding-top:30px!important}.pt-40{padding-top:40px!important}.pt-50{padding-top:50px!important}.flex{display:flex}.flex-col,.flex-column{flex-direction:column}.block{display:block}.none{display:none}.flex-wrap{flex-wrap:wrap}.text-end{text-align:end}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.h-100{height:100%}.items-center{align-items:center}.justify-center{justify-content:center}.justify-end{justify-content:end}.justify-between{justify-content:space-between}.flow-hide{overflow:hidden}.crop-width{max-width:var(--max-width);margin:auto}.mx-auto{margin-right:auto}.weight100,.weight200{font-weight:100}.weight300{font-weight:300}.weight400{font-weight:400}.weight500{font-weight:500}.weight600{font-weight:600}.weight700{font-weight:700}.weight800{font-weight:800}.weight900{font-weight:900}.col-12{flex-shrink:0}.col-9{width:75%;flex-shrink:0}.col-10{width:83.33333333%;flex-shrink:0}.col-5,.col-6{flex-shrink:0}.col-5{width:41.66666%}.col-6{width:50%}.col-7,.col-8{flex-shrink:0}.col-7{width:58.7777777%}.col-8{width:66.6666666%}.col-3,.col-4{flex-shrink:0}.col-3{width:25%}.col-4{width:33.3333333%}.col-2{width:16.6666666%;flex-shrink:0}.flowY-Scroll{overflow-y:auto}.text-yellow{color:var(--ra-yellow)}.w-fit{width:fit-content}.text-center{text-align:center}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{-webkit-appearance:none;appearance:none;margin:0}input::-webkit-inner-spin-button,input::-webkit-outer-spin-button{-webkit-appearance:none;appearance:none;margin:0}.slider-panel{position:fixed;top:0;transform:translateX(-100%);width:100%;max-width:600px;height:100vh;color:#fff;transition:.3s;z-index:1000;overflow:hidden;-webkit-box-shadow:-5px 0 7px 0 #b3b3b3;-moz-box-shadow:-5px 0 7px 0 #b3b3b3;box-shadow:-5px 0 7px 0 #b3b3b3}.slider-panel.close,.slider-panel.open{transform:translateX(0)}@media only screen and (min-width:572px){.p-sm-10{padding:10px}.col-sm-4{width:33.3333333%;flex-shrink:0}.col-sm-6{width:50%;flex-shrink:0}}@media only screen and (min-width:767px){.ms-md-30{margin-left:30px!important}.ps-md-30{padding-left:30px!important}.justify-md-between{justify-content:space-between}.px-md-10{padding-left:10px;padding-right:10px}.px-md-20{padding-left:20px;padding-right:20px}.px-md-30{padding-left:30px;padding-right:30px}.px-md-40{padding-left:40px;padding-right:40px}.px-md-50{padding-left:50px;padding-right:50px}.py-md-10{padding-top:10px;padding-bottom:10px}.py-md-20{padding-top:20px;padding-bottom:20px}.py-md-30{padding-top:30px;padding-bottom:30px}.py-md-40{padding-top:40px;padding-bottom:40px}.py-md-50{padding-top:50px;padding-bottom:50px}.col-md-12{width:100%;flex-shrink:0}.col-md-9{width:75%;flex-shrink:0}.col-md-7{width:58.3333333%;flex-shrink:0}.col-md-8{width:66.6666666%;flex-shrink:0}.col-md-5{width:41.6666666%;flex-shrink:0}.col-md-6{width:50%;flex-shrink:0}.col-md-3{width:25%;flex-shrink:0}.col-md-4{width:33.3333333%;flex-shrink:0}.col-md-2{width:16.6666666%;flex-shrink:0}}@media only screen and (min-width:991px){.mx-30{margin-left:40px;margin-right:40px}.lg-inline{display:inline}.col-lg-10{width:83.33333333%;flex-shrink:0}.col-20{width:20%;flex-shrink:0}.pe-lg-10{padding-right:10px}.pe-lg-20{padding-right:20px}.ps-lg-10{padding-left:10px!important}.ps-lg-30{padding-left:30px!important}.ps-lg-50{padding-left:50px!important}.pb-lg-0{padding-bottom:0!important}.pb-lg-30{padding-bottom:30px!important}.pb-lg-50{padding-bottom:50px!important}.p-lg-40{padding:40px}.p-lg-50{padding:50px}.ms-lg-20{margin-left:20px}.mb-lg-30{margin-bottom:30px}.pt-lg-0{padding-top:0!important}.pt-lg-20{padding-top:20px!important}.pt-lg-50{padding-top:50px!important}.px-lg-10{padding-left:10px;padding-right:10px}.px-lg-20{padding-left:20px;padding-right:20px}.px-lg-30{padding-left:30px;padding-right:30px}.px-lg-40{padding-left:40px;padding-right:40px}.px-lg-50{padding-left:50px;padding-right:50px}.py-lg-0{padding-top:0;padding-bottom:0}.py-lg-10{padding-top:10px;padding-bottom:10px}.py-lg-20{padding-top:20px;padding-bottom:20px}.py-lg-30{padding-top:30px;padding-bottom:30px}.py-lg-40{padding-top:40px;padding-bottom:40px}.py-lg-50{padding-top:50px;padding-bottom:50px}.col-lg-12{width:100%;flex-shrink:0}.col-lg-9{width:75%;flex-shrink:0}.col-lg-7{width:58.3333333%;flex-shrink:0}.col-lg-5{width:41.666666%;flex-shrink:0}.col-lg-6{width:50%;flex-shrink:0}.col-lg-8{width:66.6666666%;flex-shrink:0}.col-lg-3{width:25%;flex-shrink:0}.col-lg-4{width:33.3333333%;flex-shrink:0}.col-lg-2{width:16.6666666%;flex-shrink:0}.lg-block{display:block}.lg-flex{display:flex}.lg-none{display:none}}@media only screen and (min-width:1200px){.pt-xl-40{padding-top:40px}.col-xl-4{width:33.3333333%;flex-shrink:0}.col-xl-8{width:66.6666666%;flex-shrink:0}}
+  
+  .loader1 {
+    border: 8px solid #f3f3f3; /* Light grey */
+    border-top: 8px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  
+  
+  
+  @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+  
+  #about_landing {
+    background-image: url(./../images/about_us/abouts.webp);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    backdrop-filter: blur(7);
+    color: white;
+  }
+  
+  #about_title {
+    font-size: 40px;
+  }
+  
+  #about_description {
+    font-size: 14px;
+  }
+  
+  #relax_subtitle {
+    font-size: 13px;
+  }
+  
+  #about_relax h1 {
+    font-size: 30px;
+    line-height: 110%;
+  }
+  
+  #relax_description {
+    font-size: 14px;
+    color: #666666;
+  }
+  
+  #relax_points span {
+    color: #666666;
+  }
+  
+  #relax_points p {
+    padding: 10px 0px;
+    font-size: 14px;
+  }
+  
+  #about_gallery {
+    background-color: black;
+    min-height: calc(100vh - 65px);
+  }
+  
+  #about_gallery img {
+    transition: 0.4s;
+    background-color: black;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #about_gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.893) 0px 22px 70px 4px;
+  }
+  
+  #about_gallerybg {
+    background-image: url(./../../assets/images/test/pattern.png);
+    background-size: contain;
+    z-index: 2;
+    opacity: 0.1;
+    top: 0px;
+    left: 0px;
+  }
+  
+  #gallery_description {
+    position: sticky;
+    background-color: black;
+    height: fit-content;
+    top: 65px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 2;
+  }
+  
+  #gallery_description > :first-child {
+    font-size: 50px;
+    line-height: 110%;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  }
+  
+  #gallery_description span {
+    color: black;
+  }
+  
+  #gallery_description > :nth-child(2) {
+    font-size: 16px;
+    transition: 0.5s;
+    line-height: 1.5;
+  }
+  
+  .scroll-cards {
+    position: relative;
+    display: block;
+  }
+  
+  .scroll_cards_item {
+    color: #000;
+    position: sticky;
+    top: 200px;
+    height: 300px;
+    padding: 0px 0px;
+    border-radius: 20px;
+    max-width: 1200px;
+    overflow: hidden;
+    --offset: 200px;
+  }
+  
+  .scroll_cards_item:nth-of-type(0) {
+    transform: translate(0px, calc((0 - 1) * var(--offset)));
+  }
+  
+  .scroll_cards_item:nth-of-type(1) {
+    transform: translate(0px, calc((1 - 1) * var(--offset)));
+  }
+  
+  .scroll_cards_item:nth-of-type(2) {
+    transform: translate(0px, calc((2 - 1) * var(--offset)));
+    transform: rotate(4deg);
+  }
+  
+  .scroll_cards_item:nth-of-type(3) {
+    transform: translate(0px, calc((3 - 1) * var(--offset)));
+    transform: rotate(-3deg);
+  }
+  
+  .scroll_cards_item:nth-of-type(4) {
+    transform: translate(0px, calc((4 - 1) * var(--offset)));
+    transform: rotate(3deg);
+  }
+  
+  .scroll_cards_item:nth-of-type(5) {
+    transform: translate(0px, calc((5 - 1) * var(--offset)));
+    transform: rotate(-2deg);
+  }
+  
+  #offer_title {
+    font-size: 50px;
+    font-family: "Bebas Neue", sans-serif;
+  }
+  
+  .stack_cards {
+    height: 200px;
+  }
+  
+  .stack_img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .offer_titles {
+    font-size: 16px;
+  }
+  
+  .offer_description {
+    font-size: 13px;
+  }
+  
+  #about_partner > p:first-child {
+    font-size: 18px;
+  }
+  
+  #about_partner > p:nth-child(2) {
+    font-size: 30px;
+  }
+  
+  .brand_img {
+    filter: grayscale(100%);
+    max-width: 100px;
+  }
+  
+  #board_title {
+    font-size: 30px;
+  }
+  
+  #board_description {
+    font-size: 14px;
+    color: #666666;
+  }
+  
+  .memberName {
+    font-size: 15px;
+  }
+  
+  .memberName ~ p {
+    font-size: 12px;
+  }
+  
+  .memberName ~ p:nth-child(6) {
+    font-size: 13px;
+    color: rgb(158, 158, 158);
+  }
+  
+  .memberName ~ p:nth-child(6):hover {
+    color: black;
+  }
+  
+  #team_description > p:first-child {
+    font-size: 30px;
+    line-height: 1;
+  }
+  
+  #team_description > p:nth-child(2) {
+    font-size: 15px;
+  }
+  
+  #team_description h2 {
+    font-size: 25px;
+    line-height: 130%;
+  }
+  
+  #team_description a {
+    background-color: rgb(255, 213, 23);
+    border: transparent;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 15px 40px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  
+  #team_images > img {
+    border-radius: 50%;
+    margin-bottom: 30px;
+  }
+  
+  #team_scroll_container {
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+  }
+  
+  .team_cards {
+    max-height: 450px;
+  }
+  
+  .team_img {
+    filter: grayscale(100%);
+    transition: 0.3s;
+  }
+  
+  .team_img:hover {
+    filter: grayscale(0%);
+  }
+  
+  #downloadApp {
+    background-image: url(./../images/landing/app-3.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .application-play-btn {
+    width: 185px;
+    background-color: #2a2a2a;
+    border-radius: 7px;
+    overflow: hidden;
+    transition: 0.5s;
+  
+    &:hover {
+      background-color: green;
+    }
+  
+    img {
+      width: 40px;
+      position: relative;
+    }
+  
+    .btn-content {
+      display: inline-block;
+      padding-left: 10px;
+      span {
+        font-size: 10px;
+        color: #ffffff;
+      }
+    }
+  }
+  
+  #downloadApp_title2 {
+    font-size: 30px;
+    line-height: 110%;
+  }
+  
+  #advisor_details > p:nth-child(2) {
+    font-size: 22px;
+  }
+  
+  #advisor_details > p:nth-child(n + 3) {
+    margin: 10px 0px;
+    line-height: 1.5;
+    font-weight: 300;
+    font-size: 14px;
+  }
+  
+  .vivek_img {
+    max-height: 400px;
+  }
+  
+  .scrollDivs > p:nth-child(2) {
+    font-size: 15px;
+    padding-top: 10px;
+  }
+  
+  .scrollDivs > p:nth-child(3) {
+    font-size: 13px;
+  }
+  
+  #celebrations_mobile_content {
+    background-color: #231226b2;
+    color: white;
+    top: 0px;
+    right: 0px;
+  }
+  
+  #celebrations_mobile_title {
+    font-size: 40px;
+    line-height: 120%;
+  }
+  
+  #celebrations_mobile_description {
+    font-size: 18px;
+  }
+  
+  #relax_points {
+    padding-left: 10px;
+  }
+  
+  .chief_advisor_text {
+    background-color: rgb(64, 64, 64);
+    width: fit-content;
+    border-radius: 5px;
+  }
+  
+  .galleryImages {
+    display: none;
+  }
+  
+  #memberDescription2 {
+    font-size: 15px;
+    z-index: 3;
+    line-height: 1.5;
+    bottom: 0px;
+  }
+  
+  #selectedFrameImg {
+    transform: scaleX(0%);
+    z-index: 10;
+  }
+  
+  #selectedFrameContent {
+    transform: scaleX(0%);
+  }
+  
+  #selectedFrame_title {
+    font-size: 35px;
+  }
+  
+  #selectedFrame_description {
+    font-size: 14px;
+  }
+  
+  @keyframes toLeft {
+    0% {
+      transform: translate(50%);
+    }
+  
+    100% {
+      transform: translate(0%);
+    }
+  }
+  
+  .selectedFrameImageOpen {
+    animation: toLeft 0.3s forwards;
+    transform-origin: right;
+  }
+  
+  @keyframes toRight {
+    0% {
+      transform: translateX(-80%);
+    }
+  
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  
+  .selectedFrameContentOpen {
+    transform-origin: left;
+    animation: toRight 0.5s forwards;
+  }
+  
+  .closemark {
+    @media (max-width: 991px) {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+    }
+  }
+  
+  .video_container {
+    width: 100%;
+    height: 270px;
+    padding: 20px 0;
+  }
+  
+  .video_container iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+  }
+  
+  /* --------------------------------------------lifeatRA section------------------------------------------------------- */
+  
+  .lifeAtRA_section {
+    width: 100%;
+    background: url(./../images/about_us/lifeatra/life.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .lifeAtRA_top_section {
+    width: 100%;
+    height: 100vh;
+    font-size: 110px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    text-shadow: 3px 3px rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .lifeAtRA_carousel {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .lifeAtRA_carousel_left {
+    flex-basis: 50%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+  }
+  
+  .lifeAtRA_carousel_left_item {
+    width: 100%;
+    height: 100vh;
+    padding: 0 70px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .title {
+    font-size: 84px;
+    font-weight: 600;
+    line-height: 1;
+    color: white;
+  }
+  
+  .text {
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+  }
+  
+  .lifeAtRA_carousel_right {
+    position: sticky;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    flex-basis: 50%;
+  }
+  
+  .lifeAtRA_carousel_right_item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.25s;
+    transform: scale(0.3);
+  }
+  
+  .lifeAtRA_carousel_right_item.active {
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+  .lifeAtRA_carousel_right_item img {
+    width: 380px;
+  }
+  
+  .lifeAtRA_carousel_right_item button {
+    background: white;
+    padding: 15px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    margin-top: 50px;
+  }
+  
+  .lifeAtRA_carousel_right_item::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(6px) saturate(200%);
+    -webkit-backdrop-filter: blur(6px) saturate(200%);
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    z-index: -1;
+  }
+  
+  /* --------------------------------------------news section------------------------------------------------------- */
+  
+  #News {
+    padding: 50px 15px;
+    color: #fff;
+  }
+  
+  .news_section {
+    max-width: 1200px;
+    padding: 50px 0;
+    position: relative;
+    background-color: #000;
+    border-radius: 20px;
+  }
+  
+  .news_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    opacity: 0.2;
+    border-radius: 20px;
+  }
+  
+  .news_bg img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+  }
+  
+  .news_head {
+    text-align: center;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .news_head h3 {
+    font-size: 30px;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+  }
+  
+  .news_head p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10px;
+  }
+  
+  .news_head a {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 14px;
+    color: #fff;
+  }
+  
+  /* --------------------------------------------media queries------------------------------------------------------- */
+  
+  @media only screen and (min-width: 768px) {
+    #downloadApp_title2 {
+      font-size: 30px;
+    }
+  
+    #relax_points {
+      padding-left: 100px;
+    }
+  
+    #relax_points + div {
+      padding-left: 100px;
+    }
+  
+    .video_container {
+      width: 100%;
+      height: 310px;
+    }
+  }
+  
+  @media only screen and (min-width: 991px) {
+    #selectedFrame_description {
+      font-size: 18px;
+    }
+  
+    #selectedFrame_title {
+      font-size: 50px;
+    }
+  
+    #memberDescription2 {
+      font-size: 19px;
+    }
+  
+    #celebrations_mobile_description {
+      font-size: 22px;
+    }
+  
+    .vivek_img {
+      padding-right: 70px;
+    }
+  
+    .team_cards {
+      max-height: 330px;
+    }
+  
+    #board_title {
+      font-size: 40px;
+    }
+  
+    .offer_description {
+      font-size: 26px;
+      line-height: 1.5;
+    }
+  
+    .offer_titles {
+      font-size: 20px;
+    }
+  
+    .stack_img {
+      width: 130px;
+      height: 130px;
+    }
+  
+    .stack_cards {
+      height: 250px;
+    }
+  
+    #offer_title {
+      font-size: 80px;
+    }
+  
+    .scroll_cards_item {
+      height: 400px;
+    }
+  
+    #gallery_description {
+      top: 35%;
+      height: 60vh;
+    }
+  
+    #gallery_description > :nth-child(2) {
+      font-size: 20px;
+    }
+  
+    #gallery_description > :first-child {
+      font-size: 80px;
+    }
+  
+    #about_landing::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(to top right, white 48%, transparent 50%);
+      height: 130px;
+    }
+  }
+  
+  @media only screen and (min-width: 1400px) {
+    
+    #team_description > p:first-child {
+      font-size: 40px;
+    }
+  
+    #board_description {
+      font-size: 15px;
+    }
+  
+    #about_partner > p:nth-child(2) {
+      font-size: 40px;
+    }
+    #relax_description {
+      font-size: 15px;
+    }
+  
+    #about_relax h1 {
+      font-size: 40px;
+    }
+  
+    #about_landing {
+      padding-top: 50px;
+      padding-bottom: 150px;
+    }
+  
+    #about_title {
+      font-size: 80px;
+    }
+  
+    #about_description {
+      font-size: 16px;
+    }
+  }
+  
+  @media only screen and (min-width: 1921px) {
+    .team_cards {
+      max-height: 500px;
+    }
+  
+    .vivek_img {
+      max-height: 600px;
+    }
+  
+    .video_container {
+      width: 100%;
+      height: 50%;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    #lifeAtRA {
+      display: none;
+    }
+  
+  }
+  
+  @media only screen and (min-width: 600px) and (max-width: 768px) {
+    #celebrations_mobile{
+      display: none;
+    }
+  
+    .lifeAtRA_top_section{
+      font-size: 56px;
+    }
+  
+    .lifeAtRA_carousel_left_item {
+      padding: 0 20px;
+    }
+    .title{
+      font-size: 28px;
+    }
+  
+    .text {
+      font-size: 14px;
+    }
+  
+    .lifeAtRA_carousel_right_item img{
+      width: 280px;
+    }
+  
+  }
+  
+  @media screen and (min-width:769px) and (max-width:992px) {
+    #celebrations_mobile{
+      display: none;
+    }
+  
+    .lifeAtRA_top_section{
+      font-size: 56px;
+    }
+  
+    .lifeAtRA_carousel_left_item {
+      padding: 0 20px;
+    }
+    .title{
+      font-size: 46px;
+    }
+  
+    .text {
+      font-size: 16px;
+    }
+  
+    .lifeAtRA_carousel_right_item img{
+      width: 300px;
+    }
+  }
+  
+  @media screen and (min-width:993px) and (max-width:1200px){
+  
+    .lifeAtRA_top_section{
+      font-size: 80px;
+    }
+  
+    .lifeAtRA_carousel_left_item {
+      padding: 0 30px;
+    }
+    .title{
+      font-size: 58px;
+    }
+  
+    .text {
+      font-size: 18px;
+    }
+  }
+  
+  </style>
+  <body style="height:100vh;overflow-y: scroll;">
+  
+    <div data-include="./components/navigationBar.html"></div>
+  
+    <main id="router" class="w-100">
+  
+      <div id="boardInfo" class="none justify-center items-center"
+        style="height:100vh;width:100vw;position:fixed; top:0px; background-color: rgba(128, 128, 128, 0.463);z-index:20;overflow-y:scroll">
+  
+  
+        <div class="col-12 col-lg-8 flex flex-wrap bg-white relative"
+          style="border-radius: 20px; overflow-y:scroll;max-height:100vh;">
+          <img onclick="closeBoardDetails()" style="width:30px;height:30px;z-index:5;right:5px;"
+            class="absolute end-0 mt-10 pointer" src="./assets/images/common/close-line.svg">
+          <div class="col-12 col-md-6 relative">
+            <img id="memberImage" class="w-100" src="">
+            <div style="z-index:2;top:0;background-image: linear-gradient(to top,black,transparent 30%);"
+              class="absolute w-100 h-100">
+  
+            </div>
+            <p id="memberDescription2" class="weight400 text-white absolute px-20 pb-20"></p>
+          </div>
+          <div class="col-12 col-md-6 px-20 flex flex-column justify-between">
+            <div>
+              <p id="memberName" class="pt-30 weight500" style="font-size:20px">${selectedMember.name}</p>
+              <p id="memberBase" class="weight400 fs-13" style="font-size:13px">${selectedMember.base}</p>
+              <p id="memberDesignation" class="weight400 fs-13" style="font-size:13px">${selectedMember.designation}</p>
+              <p id="memberDescription" class="pt-30 weight400" style="font-size:15px">${selectedMember.description}</p>
+  
+            </div>
+            <div id="intoVideo" class="video_container">
+  
+            </div>
+            <div class="flex py-3 pb-5 pt-5 social_container">
+              <img id="memberlinkedIn" style="width:20px;margin-right:5px;z-index:20"
+                class="pointer ${selectedMember.linkedIn?'':'none'}" src="./assets/images/about_us/board/linked.svg">
+              <img id="memberInstagram" style="width:20px;margin-left:5px;z-index:20"
+                class="pointer ${selectedMember.insta?'':'none'}" src="./assets/images/about_us/board/insta.svg">
+            </div>
+          </div>
+        </div>
+  
+  
+      </div>
+  
+      <div class="px-10 px-lg-20">
+        <div id="about_landing" class="br20 p-20">
+          <div class="crop-width flex flex-wrap">
+            <div class="col-12 col-lg-6 relative pb-lg-5" style="z-index:10;transition:.5s">
+              <p id="about_title" class="weight700 pt-30" style="line-height: 1.2;">Glimpse of <br> Our Story</p>
+              <p id="about_description" class="weight400 py-20 col-12" style="line-height: 1.5;">In 2015, ReadyAssist was
+                ideated as an accidental emergency assistance
+                company by our founder, Vimal Singh SV, after losing a close friend to an
+                accident. ReadyAssist is a family of 500+ members headquartered in a
+                state-of-the-art facility in Bangalore, efficiently monitoring our pan-India
+                service network through cutting-edge Autotech solutions. Today, we
+                proudly rank among India's top-rated automotive service solution
+                companies specializing in 24/7 emergency assistance and EV repairs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div id="about_relax" class="px-10">
+        <div class="crop-width flex flex-wrap pb-20" style="transition:.6s">
+          <div class="col-12 col-lg-6 pe-lg-20 pt-30 pt-lg-0">
+            <p id="relax_subtitle" class="text-yellow weight600">SIT AND RELAX</p>
+            <h1 class="weight700 py-10">Fulfilling your vehicle needs when it matters the most</h1>
+            <img alt="bike service" src="./assets/images/about_us/about2.jpg" class="w-100 br20 mt-20">
+            <p id="relax_description" class="weight300 py-20 col-12">ReadyAssist is India's leading technology-backed
+              roadside assistance and
+              vehicle lifecycle management company, providing 24/7 real-time
+              breakdown and on-spot repair service across 19,000+ pin codes covering
+              700+ districts in India. Powered by a deep-tech platform and driven by a
+              Pan-India network of more than 10000+ skilled and groomed mechanics,
+              we ensure Reliability and quality without compromising on speed.</p>
+          </div>
+  
+          <div class=" col-12 col-lg-6 flex flex-wrap">
+            <div id="relax_points" class="col-12">
+              <p class="weight900">✓<span class="weight300 ps-15">Rated 4.7 stars out of 5,
+                  in Google</span></p>
+              <p class="weight900">✓<span class="weight300 ps-15">Largest network of EV
+                  trained service providers</span></p>
+              <p class="weight900">✓<span class="weight300 ps-15">500+ Happy Employees</span>
+              </p>
+              <p class="weight900">✓<span class="weight300 ps-15">Advanced in-house
+                  Technology</span></p>
+              <p class="weight900">✓<span class="weight300 ps-15">An ISO 27001:2013
+                  certified company</span></p>
+            </div>
+            <div class="col-12">
+              <img class="none lg-inline col-12" alt="mechanic" src="./assets/images/about_us/vector-updated.png">
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div id="about_gallery" class="relative pt-lg-50 pb-40 px-10">
+        <div id="about_gallerybg" class="absolute w-100 h-100" style="z-index:0">
+        </div>
+        <div class="col-12 crop-width flex flex-wrap">
+          <div class="col-12 flex flex-wrap">
+            <div id="gallery_description" class="col-12 col-lg-4 px-30 px-lg-0">
+              <p class="lh-100 weight600 text-white" style="transition: .5s;">OUR <span>GALLERY</span></p>
+              <p class="pt-2 weight300 text-white pt-5">Moments to
+                cherish and celebrate. Pictures talks millions of words.</p>
+            </div>
+            <div id="gallery_images" class="col-12 col-lg-8 flex pt-lg-50" style="z-index:1">
+  
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div id="our_offer" class="py-40 px-20">
+        <div class="crop-width flex flex-wrap justify-center justify-md-between">
+          <div class="scroll-cards col-12 flex flex-wrap justify-center">
+            <div class="scroll_cards_item col-12 col-lg-10 mt-50 text-center">
+              <p id="offer_title" class="pb-3 lh-100">What We Offer</p>
+              <p class="fs-13 fs-lg-18 weight300" style="line-height: 1.5;">At our core, we deliver round-the-clock
+                Repairs
+                and assistance
+                service for bikes and cars, spanning the length and breadth of the
+                country, ensuring a hassle-free ride for our esteemed clientele.</p>
+            </div>
+            <div class="scroll_cards_item flex col-12 col-lg-10 bg-white">
+  
+              <div class="col-5 col-lg-4 pe-5 stack_cards">
+                <div class="h-100 br20 flex justify-center items-center py-2" style="background-color:#ffc311">
+                  <div class="p-2 text-center flow-hide">
+                    <img alt="On-Demand Services" class="stack_img br20" src="./assets/images/about_us/ondemand.png">
+                    <p class="offer_titles weight500">On-Demand Services</p>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="col-7 col-lg-8 stack_cards">
+                <div class="h-100 br20 flex items-center" style="background-color:#ffc311">
+                  <p class="offer_description weight400 mx-30 mx-lg-40">"From puncture repair to
+                    accessories fitting, From Minor repairs to Periodic service, We provide 24/7 doorstep service to your
+                    vehicles anytime anywhere in India."</p>
+                </div>
+              </div>
+            </div>
+            <div class="scroll_cards_item flex col-12 col-lg-10 bg-white">
+              <div class="col-5 col-lg-4 pe-5 stack_cards">
+                <div class="h-100 br20 flex justify-center items-center py-2" style="background-color:#FFC657">
+                  <div class="p-2 text-center flow-hide">
+                    <img alt="Workshops" class="stack_img br20" src="./assets/images/about_us/workshops.png">
+                    <p class="offer_titles pt-3 weight500 fs-16 fs-lg-20">Retrofitment Service</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-7 col-lg-8 stack_cards">
+                <div class="h-100 br20 flex items-center" style="background-color:#FFC657">
+                  <p class="offer_description weight400 mx-30 mx-lg-40">“Retro Fitment: Convert your petrol or diesel
+                    vehicle at CNGFirst, India's largest chain of CNG conversion centers.”</p>
+                </div>
+              </div>
+            </div>
+            <div class="scroll_cards_item flex col-12 col-lg-10 bg-white">
+              <div class="col-5 col-lg-4 pe-5 stack_cards">
+                <div class="h-100 br20 flex justify-center items-center py-2" style="background-color:#ffc311">
+                  <div class="p-2 text-center flow-hide">
+                    <img alt="subscriptions" class="stack_img br20" src="./assets/images/about_us/subscriptions.png">
+                    <p class="offer_titles pt-3 weight500 fs-16 fs-lg-20">Subscriptions</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-7 col-lg-8 stack_cards">
+                <div class="h-100 br20 flex items-center" style="background-color:#ffc311">
+                  <p class="offer_description weight400 mx-30 mx-lg-40">"Subscribe to our yearly
+                    RSA Packages,
+                    Extended Warranty, or PRIME Packages and
+                    forget your worries about vehicle
+                    maintenance & breakdowns.”</p>
+                </div>
+              </div>
+            </div>
+            <div class="scroll_cards_item flex col-12 col-lg-10 bg-white">
+              <div class="col-5 col-lg-4 pe-5 stack_cards">
+                <div class="h-100 br20 flex justify-center items-center py-2" style="background-color:#FFC657">
+                  <div class="p-2 text-center flow-hide">
+                    <img alt="towing" class="stack_img br20" src="./assets/images/about_us/towing-recovery.png">
+                    <p class="offer_titles pt-3 weight500 fs-16 fs-lg-20">Towing/Recovery</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-7 col-lg-8 stack_cards">
+                <div class="h-100 br20 flex items-center" style="background-color:#FFC657">
+                  <p class="offer_description weight400 mx-30 mx-lg-40">"Don't worry about towing your vehicle, Avail 24/7
+                    towing services across India with 100% safety and transparency."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div id="about_partner" class="px-10" style="transition:.6s">
+        <p class="weight600 fs-18 text-yellow text-center pb-10">We are the preferred</p>
+        <p class="weight700 fs-30 fs-xl-40 py-1 pb-40 lh-100 text-center">Service Partner To</p>
+  
+        <div class="col-12 crop-width mx-auto flex flex-wrap justify-center">
+  
+          <div class="col-4 col-lg-2 text-center">
+            <img alt="blu smart" class="brand_img" src="./assets/images/clients/blu-smart-mobility.webp">
+          </div>
+          <div class="col-4 col-lg-2 text-center">
+            <img alt="exponent energy" class="brand_img" src="./assets/images/clients/exponent.webp">
+          </div>
+          <div class="col-4 col-lg-2 text-center">
+            <img alt="altmobility" class="brand_img" src="./assets/images/clients/alt-mobility.webp">
+          </div>
+          <div class="col-4 col-lg-2 text-center">
+            <img alt="hero electric" class="brand_img" src="./assets/images/clients/hero-electric.webp">
+          </div>
+          <div class="col-4 col-lg-2 text-center">
+            <img alt="sun mobility" class="brand_img" src="./assets/images/clients/sun-mobility.webp">
+          </div>
+          <div class="col-4 col-lg-2 text-center">
+            <img alt="okaya" class="brand_img" src="./assets/images/clients/okaya.webp">
+          </div>
+  
+          <div class="col-4  col-lg-2 text-center">
+            <img alt="flipkart" class="brand_img" src="./assets/images/clients/flipkart.webp">
+          </div>
+          <div class="col-4 col-lg-2 text-center">
+            <img alt="River" class="brand_img" src="./assets/images/clients/RIVER--1.webp">
+          </div>
+          <div class="col-4 col-lg-2 text-center">
+            <img alt="ola" class="brand_img" src="./assets/images/clients/ola.webp">
+          </div>
+          <div class="col-4 col-lg-2 text-center">
+            <img alt="zoom car" class="brand_img" src="./assets/images/clients/zoomcar.webp">
+          </div>
+          <div class="col-4 col-lg-2 text-center">
+            <img alt="spinny" class="brand_img" src="./assets/images/clients/spinny.webp">
+          </div>
+          <div class="col-4  col-lg-2 text-center">
+            <img alt="pure" class="brand_img" src="./assets/images/clients/pure.webp">
+          </div>
+          <div class="col-4 col-lg-2 text-center">
+            <img alt="zypp" class="brand_img" src="./assets/images/clients/zypp-electric.webp">
+          </div>
+          <div class="col-4 col-lg-2 text-center">
+            <img alt="revamp" class="brand_img" src="./assets/images/clients/revamp.webp">
+          </div>
+          <div class="col-4 col-lg-2 text-center">
+            <img alt="omega" class="brand_img" src="./assets/images/clients/omega-seikl-mobility.webp">
+          </div>
+          <div class="col-4 col-lg-2 text-center">
+            <img alt="Euler" class="brand_img" src="./assets/images/clients/EULERl.webp">
+          </div>
+          <div class="col-4 col-lg-2 text-center">
+            <img alt="simple energy" class="brand_img" src="./assets/images/clients/simple_energy.webp">
+          </div>
+          <div class="col-4 col-lg-2 text-center">
+            <img alt="revlot" class="brand_img" src="./assets/images/clients/revolt.webp">
+          </div>
+          <div class="col-4  col-lg-2 text-center">
+            <img alt="okinawa" class="brand_img" src="./assets/images/clients/okinawa.webp">
+          </div>
+          <div class="col-4 col-lg-2 text-center">
+            <img alt="ultraviolette" class="brand_img" src="./assets/images/clients/ultraviolette.webp">
+          </div>
+          <div class="col-4 col-lg-2 text-center">
+            <img alt="turo bikes" class="brand_img" src="./assets/images/clients/touro-bikes.webp">
+          </div>
+          <div class="col-4 col-lg-2 text-center">
+            <img alt="agp" class="brand_img" src="./assets/images/clients/agp.webp">
+          </div>
+          <div class="col-4 col-lg-2 text-center">
+            <img alt="amplus" class="brand_img" src="./assets/images/clients/amplus.webp">
+          </div>
+          <div class="col-4 col-lg-2 text-center">
+            <img alt="crossbeats" class="brand_img" src="./assets/images/clients/crossbeats.webp">
+          </div>
+          <!-- <div class="col-4 col-lg-2 text-center">
+            <img alt="lovato" class="brand_img" src="./assets/images/clients/lovato_logo.webp" style="height: 80px;">
+          </div> -->
+          <!-- <div class="col-4 col-lg-2 text-center">
+            <img alt="mijo" class="brand_img" src="./assets/images/clients/mijo_logo.webp" style="margin: 20px 0;">
+          </div> -->
+          <div class="col-4 col-lg-2 text-center">
+            <img alt="think gas" class="brand_img" src="./assets/images/clients/think-GAS.webp">
+          </div>
+        </div>
+      </div>
+  
+      <div id="board_members" class="py-50 px-10">
+        <div class="crop-width py-lg-50">
+          <div class=" text-center mt-5 ">
+            <p id="board_title" class="weight700 pb-20"> Board Members</p>
+  
+            <p id="board_description" class="weight300 col-12 pb-20">As a diverse company in emergency assistance
+              services, our leaders have embraced
+              strong governance, epitomized the company's Purpose, Values, and Principles, and
+              brought to bear practical wisdom and seasoned judgment from significant leadership
+              skills and experience. The current Board reflects an appropriate mix of skills,
+              knowledge, and qualifications that are relevant to the business and governance of
+              the Company and that help further the long-term interests of our shareholders. Each
+              Director also has individual experiences that allow them to provide practical insight
+              and unique perspectives in the boardroom. Collectively, our directors have led global
+              businesses and finance organizations, founded startups, successfully navigated
+              shifting media and retail landscapes, guided strategic transformations, and held
+              significant governance roles. They have worked in industries as varied as legal,
+              healthcare, retail, deep tech, insurance, risk analytics, underwriting, entertainment,
+              and information technology.</p>
+  
+          </div>
+  
+          <div id="board_details" class="flex flex-wrap justify-center board-elf pt-xl-4 pt-0 pt-3">
+  
+          </div>
+        </div>
+      </div>
+  
+      <div id="about_team" class="pb-50 px-10">
+        <div class="crop-width px-3 px-md-0 specialist flex flex-wrap">
+          <div id="team_description" class="col-12 col-xl-4">
+            <p class="weight700 pb-20 pe-5 col-10">Not just
+              colleagues,<br>We are Family</p>
+            <p class="col-10 pe-20 weight300 transition_text pb-20">We are a team like no other, where we embrace the
+              extraordinary. We become more than just a team.</p>
+            <div class="col-12">
+              <h2 class="col-12 weight600 pb-20">
+                Let's together
+                <br> Make ReadyAssist <br> bigger
+              </h2>
+              <a class="col-12 joinTeamBtn weight500" style="color: black;" href="./careers.html">Join our team</a>
+            </div>
+          </div>
+          <div id="team_images" class="col-12 col-xl-8 relative flex items-center pt-40 pt-lg-0">
+            <img onclick="scrollContainer(1)" class="absolute pointer"
+              style="width:30px;height:30px;left:0px;z-index: 3;background-color:rgba(0, 0, 0, 0.435)"
+              src="./assets/images/subscriptions/left.svg">
+            <div id="team_scroll_container" class="col-12  flex text-center">
+  
+            </div>
+            <img onclick="scrollContainer(0)" class="absolute end-0 rounded-circle pointer"
+              style="width:30px;height:30px;z-index:3;right:0px;background-color:rgba(0, 0, 0, 0.435)"
+              src="./assets/images/subscriptions/right.svg">
+          </div>
+  
+        </div>
+      </div>
+  
+      <div data-include="./components/downloadApp.html"></div>
+  
+      <div id="chief_advisor" class="py-50 mt-lg-50 mb-lg-30 px-10">
+        <div class="col-12 items-center  crop-width flex flex-wrap px-3 px-md-0">
+          <div id="advisor_img" class="col-12 col-lg-5 pb-20  flow-hide">
+            <p class="weight400 py-10 px-10 mb-20 text-white mx-auto lg-none chief_advisor_text">Meet our Chief strategic
+              advisor</p>
+            <div class="flow-hide h-100 text-center">
+              <div class="vivek_img">
+                <img class="w-100" alt="vivek oberoi" src="./assets/images/about_us/vivek.jpg">
+              </div>
+            </div>
+          </div>
+          <div id="advisor_details" class="col-12 col-lg-7 ps-lg-50" style="transition:.6s;">
+            <p class="weight400 chief_advisor_text text-white px-20 py-10  none lg-block mb-10">Meet our Chief strategic
+              advisor</p>
+            <p class="weight600">Mr. Vivek Oberoi</p>
+            <p>We are privileged to have Mr.
+              Vivek Oberoi, a celebrated Bollywood actor,
+              successful entrepreneur, and philanthropist, as our Chief Strategic Advisor
+              at ReadyAssist. With his diverse entrepreneurial journey and remarkable
+              achievements, Mr. Oberoi brings our company a unique blend of creativity,
+              business acumen, and compassion.</p>
+            <p>A visionary approach,
+              strategic thinking, and a passion for innovation
+              characterize Mr. Oberoi's entrepreneurial journey. His investments and
+              initiatives have demonstrated his business understanding and commitment
+              to positively changing the world.</p>
+            <p>As our Chief Strategic
+              Advisor, Mr. Oberoi leverages his entrepreneurial
+              expertise to drive our strategic initiatives and fuel our growth. His ability
+              to think outside the box, identify emerging trends, and forge strategic
+              partnerships guides us toward becoming an industry leader in roadside
+              assistance and vehicle services.</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- celebrations -->
+      <div class="none lg-block px-10">
+        <div id="celebrations">
+        </div>
+      </div>
+  
+      <div class="lg-none">
+        <div id="celebrations_mobile" class="crop-width">
+  
+        </div>
+      </div>
+  
+      <div id="News">
+        <div class="news_section mx-auto">
+          <div class="news_bg"><img src="./assets/images/about_us/newsletter_img.jpg" alt="newsLetter image"></div>
+          <div class="news_head">
+            <h3 class="">News</h3>
+            <p class="">Stay updated with our latest achievements, milestones, and
+              announcements.</p>
+            <a href="./readyassist-news.html">Know more ></a>
+          </div>
+          <div>
+  
+          </div>
+        </div>
+      </div>
+  
+  
+    </main>
+  
+    <div data-include="./components/footer.html"></div>
+  
+    <script src="./assets/js/menu.js"></script>
+    <script src="./assets/js/componentLoader.js"></script>
+    <script type="module" src="./assets/js/common.js"></script>
+    <script type="module" src="./assets/js/about.js"></script>
+    <script src="./assets/js/animations.js"></script>
+  </body>

@@ -1,0 +1,741 @@
+<style>
+  .contactDiv {
+  background-color: #c8d9ef !important;
+  position: relative;
+  z-index: 1;
+}
+
+.contactDiv::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to top right, white 48%, transparent 50%);
+  height: 90px;
+  z-index: -1;
+}
+
+p {
+  margin: 0px;
+}
+
+.active {
+  background-color: #c8d9ef !important;
+}
+
+.shadow {
+  box-shadow: 0px 24px 192px -48px rgba(149, 149, 151, 0.64);
+}
+
+.input {
+  background-color: #f7f7f7;
+  border: none;
+  border-radius: 10px;
+  height: 50px;
+}
+
+.input:focus {
+  outline: none;
+}
+
+#contact_title {
+  font-size: 50px;
+}
+
+.text1 {
+  color: rgb(1, 76, 114);
+  font-size: 20px;
+}
+
+.text2 a {
+  color: rgb(1, 39, 58);
+  text-decoration: none;
+  font-weight: 300;
+}
+
+#radio_segment {
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #e5e5e5;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* ---------------------------------------------------location------------------------------------------------------------- */
+
+#location {
+  padding: 50px 0;
+  background-color: #e2eaf5;
+}
+
+.location_section {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  padding: 0 20px;
+}
+
+.location_left {
+  width: 49%;
+  z-index: 3;
+}
+
+.location_left iframe {
+  border-radius: 15px;
+}
+
+.location_right {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.location_right h3 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.location_right h5 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.location_right h6 {
+  font-size: 18px;
+  margin-top: 25px;
+  font-weight: 500;
+}
+
+.location_right p {
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 5px;
+}
+
+.benefit_shape1 {
+  position: absolute;
+  top: 200px;
+  left: -100px;
+  animation: four-dir 10s linear infinite;
+  z-index: -1;
+}
+
+@keyframes four-dir {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  40% {
+    transform: translate(-50px, -50px);
+  }
+
+  70% {
+    transform: translate(50px, -50px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.benefit_shape2 {
+  position: absolute;
+  bottom: -50px;
+  right: 0px;
+  z-index: 0;
+}
+
+#faq {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.faq_section {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq_left {
+  width: 35%;
+}
+
+.faq_right {
+  width: 48%;
+  display: flex;
+  align-items: end;
+}
+
+.faq_left h4 {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.faq_left p {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.faq_left h6 {
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 15px;
+}
+
+.faqs_container {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.faq {
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.faq_ques {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq_title {
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  width: 90%;
+}
+
+.faq_text {
+  display: none;
+  font-size: 14px;
+  color: gray;
+  font-weight: 400;
+}
+
+.faq_title,
+.faq_text {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.faq.open .faq_text {
+  display: block;
+}
+
+.faq-toggle {
+  border: none;
+  background-color: transparent;
+  color: #000000;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  padding: 0;
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+}
+
+.faq-toggle:focus {
+  outline: none;
+}
+
+.faq-toggle .down_icon {
+  display: none;
+}
+
+.faq.open .faq-toggle .down_icon {
+  display: block;
+}
+
+.faq.open .faq-toggle .right_icon {
+  display: none;
+}
+
+.cx_query_section {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+}
+
+.cx_query {
+  padding: 10px 20px 10px 40px;
+  border-radius: 50px;
+  border: #d7d7d7 1px solid;
+  width: 100%;
+  outline: #1264FF;
+}
+
+.cx_query::placeholder {
+  color: #d7d7d7;
+}
+
+.cx_query_btn {
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: #1264FF;
+  color: white;
+}
+
+.input_container {
+  width: 70%;
+  position: relative;
+}
+
+.input_container img {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 15px;
+  width: 16px;
+}
+
+@media only screen and (min-width:1200px) {
+  #contact_title {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .location_section {
+    flex-direction: column;
+    gap: 50px;
+    padding: 0 20px;
+  }
+
+  .location_right {
+    width: 100%;
+  }
+
+  .location_left {
+    width: 100%;
+  }
+
+  .location_left iframe {
+    width: 100%;
+  }
+
+  .benefit_shape1 {
+    top: -100px;
+    left: 0px;
+  }
+
+  .faq_section {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .faq_right {
+    width: 100%;
+  }
+
+  .faq_left {
+    width: 100%;
+  }
+
+  .location_right h6 {
+    margin-top: 10px;
+  }
+
+}
+
+@media screen and (min-width:701px) and (max-width:1100px) {
+
+  .location_left iframe {
+    width: 100%;
+  }
+
+}
+
+
+
+
+
+
+
+/* footer */
+
+
+#footer {
+    z-index: 0;
+    background-size: cover;
+    background-image: url(./../images/footer/footer-ground2.webp);
+    margin-top:50px;
+  }
+
+  #footer a{
+    color:White;
+    text-decoration: none;
+    cursor:pointer;
+  }
+  
+  #footer::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom left, white 48%, transparent 50%);
+    height: 100px;
+    z-index: -1;
+  }
+  
+  #footerTop_Card {
+    color: aliceblue;
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./../images/footer/footerbg2.svg);
+    background-position: top 70% right 100%;
+    position: relative;
+    top: -20px;
+  }
+  
+  #footerTop_Card p {
+    line-height: 1.5;
+    color: aliceblue;
+    font-size: 14px;
+  }
+  
+  #footerTop_Card h2 {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+  
+  #footerTop_Card button {
+    background-color: #ffcc33;
+    font-size: 16px;
+    border-radius: 30px;
+  }
+  
+  
+  
+  #social_links {
+    gap: 8px;
+  }
+  
+  
+  #quickLinks>div {
+    width: fit-content;
+  }
+  
+  .social_icons {
+    background-color: #3d423c;
+    border-radius: 50%;
+    transition: .3s;
+    padding: 3px;
+    width:30px;
+    height:30px;
+  }
+  
+  .social_icon1:hover {
+    background-color: #1778f2;
+    transform: scale(1.15)
+  }
+  
+  .social_icon2:hover {
+    background-color: #0072b1;
+    transform: scale(1.15)
+  }
+  
+  .social_icon3:hover {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+    transform: scale(1.15)
+  }
+  
+  .social_icon4:hover {
+    background-color: #26cc64;
+    transform: scale(1.15)
+  }
+  
+  .social_icon5:hover {
+    background-color: #ed0000;
+    transform: scale(1.15)
+  }
+  
+  #footerBottom h2 {
+    font-size: 14px;
+  }
+  
+  .footerText1 {
+    font-size: 14px;
+  }
+
+  #reachUs img{
+    width:20px;
+    height:20px;
+  }
+
+
+
+  
+  
+  @media only screen and (min-width:991px) {
+  
+    #quickLinks {
+      justify-content: end;
+    }
+  
+    #reachUs {
+      justify-content: center;
+    }
+  
+  }
+  
+  
+  
+
+
+
+
+
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);.mt-10,.my-10{margin-top:10px}.pointer,button{cursor:pointer}.col-12,.w-100{width:100%}@font-face{font-family:Poppins,Arial,Helvetica,sans-serif;src:url('./../fonts/poppins/Poppins-Thin.woff') format('woff2');font-weight:100;font-display:swap}@font-face{font-family:Poppins,Arial,Helvetica,sans-serif;src:url('./../fonts/poppins/Poppins-ExtraLight.woff') format('woff2');font-weight:200;font-display:swap}@font-face{font-family:Poppins,Arial,Helvetica,sans-serif;src:url('./../fonts/poppins/Poppins-Light.woff') format('woff2');font-weight:300;font-display:swap}@font-face{font-family:Poppins,Arial,Helvetica,sans-serif;src:url('./../fonts/poppins/Poppins-Regular.woff') format('woff2');font-weight:400;font-display:swap}@font-face{font-family:Poppins,Arial,Helvetica,sans-serif;src:url('./../fonts/poppins/Poppins-Medium.woff') format('woff2');font-weight:500;font-display:swap}@font-face{font-family:Poppins,Arial,Helvetica,sans-serif;src:url('./../fonts/poppins/Poppins-SemiBold.woff') format('woff2');font-weight:600;font-display:swap}@font-face{font-family:Poppins,Arial,Helvetica,sans-serif;src:url('./../fonts/poppins/Poppins-Bold.woff') format('woff2');font-weight:700;font-display:swap}@font-face{font-family:Poppins,Arial,Helvetica,sans-serif;src:url('./../fonts/poppins/Poppins-ExtraBold.woff') format('woff2');font-weight:800;font-display:swap}@font-face{font-family:Poppins,Arial,Helvetica,sans-serif;src:url('./../fonts/poppins/Poppins-Black.woff') format('woff2');font-weight:900;font-display:swap}body{max-width:100vw;font-family:Poppins,sans-serif!important}html{overflow-x:hidden;width:100vw}:root{--max-width:1250px;--ra-yellow:#ffcc33;--grey-black:#343a40}*{box-sizing:border-box;padding:0;margin:0}::-webkit-scrollbar{display:none}button{border:0}.bg-white{background-color:#fff}.text-white{color:#fff}.br20{border-radius:20px}.me-10{margin-right:10px!important}.p-10{padding:10px}.p-20{padding:20px}.p-30{padding:30px}.p-40{padding:40px}.ps-10{padding-left:10px!important}.ps-15{padding-left:15px!important}.ps-20{padding-left:20px!important}.pe-5{padding-right:5px!important}.pe-20{padding-right:20px!important}.ms-5{margin-left:5px}.mx-30{margin-left:30px;margin-right:30px}.ms-auto,.mx-auto{margin-left:auto}.my-10{margin-bottom:10px}.mt-20{margin-top:20px}.mt-40{margin-top:40px}.mb-10{margin-bottom:10px!important}.mb-20{margin-bottom:20px!important}.mb-30{margin-bottom:30px!important}.py-5{padding-top:5px;padding-bottom:5px}.py-10{padding-top:10px;padding-bottom:10px}.py-15{padding-top:15px;padding-bottom:15px}.py-20{padding-top:20px;padding-bottom:20px}.py-30{padding-top:30px;padding-bottom:30px}.py-40{padding-top:40px;padding-bottom:40px}.py-50{padding-top:50px;padding-bottom:50px}.px-5{padding-left:5px;padding-right:5px}.px-10{padding-left:10px;padding-right:10px}.px-15{padding-left:15px;padding-right:15px}.px-20{padding-left:20px;padding-right:20px}.px-30{padding-left:30px;padding-right:30px}.px-40{padding-left:40px;padding-right:40px}.px-50{padding-left:50px;padding-right:50px}.pb-5{padding-bottom:5px!important}.pb-10{padding-bottom:10px!important}.pb-20{padding-bottom:20px!important}.pb-30{padding-bottom:30px!important}.pb-40{padding-bottom:40px!important}.pb-50{padding-bottom:50px!important}.pt-0{padding-top:0!important}.pt-5{padding-top:5px!important}.pt-10{padding-top:10px!important}.pt-20{padding-top:20px!important}.pt-30{padding-top:30px!important}.pt-40{padding-top:40px!important}.pt-50{padding-top:50px!important}.flex{display:flex}.flex-col,.flex-column{flex-direction:column}.block{display:block}.none{display:none}.flex-wrap{flex-wrap:wrap}.text-end{text-align:end}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.h-100{height:100%}.items-center{align-items:center}.justify-center{justify-content:center}.justify-end{justify-content:end}.justify-between{justify-content:space-between}.flow-hide{overflow:hidden}.crop-width{max-width:var(--max-width);margin:auto}.mx-auto{margin-right:auto}.weight100,.weight200{font-weight:100}.weight300{font-weight:300}.weight400{font-weight:400}.weight500{font-weight:500}.weight600{font-weight:600}.weight700{font-weight:700}.weight800{font-weight:800}.weight900{font-weight:900}.col-12{flex-shrink:0}.col-9{width:75%;flex-shrink:0}.col-10{width:83.33333333%;flex-shrink:0}.col-5,.col-6{flex-shrink:0}.col-5{width:41.66666%}.col-6{width:50%}.col-7,.col-8{flex-shrink:0}.col-7{width:58.7777777%}.col-8{width:66.6666666%}.col-3,.col-4{flex-shrink:0}.col-3{width:25%}.col-4{width:33.3333333%}.col-2{width:16.6666666%;flex-shrink:0}.flowY-Scroll{overflow-y:auto}.text-yellow{color:var(--ra-yellow)}.w-fit{width:fit-content}.text-center{text-align:center}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{-webkit-appearance:none;appearance:none;margin:0}input::-webkit-inner-spin-button,input::-webkit-outer-spin-button{-webkit-appearance:none;appearance:none;margin:0}.slider-panel{position:fixed;top:0;transform:translateX(-100%);width:100%;max-width:600px;height:100vh;color:#fff;transition:.3s;z-index:1000;overflow:hidden;-webkit-box-shadow:-5px 0 7px 0 #b3b3b3;-moz-box-shadow:-5px 0 7px 0 #b3b3b3;box-shadow:-5px 0 7px 0 #b3b3b3}.slider-panel.close,.slider-panel.open{transform:translateX(0)}@media only screen and (min-width:572px){.p-sm-10{padding:10px}.col-sm-4{width:33.3333333%;flex-shrink:0}.col-sm-6{width:50%;flex-shrink:0}}@media only screen and (min-width:767px){.ms-md-30{margin-left:30px!important}.ps-md-30{padding-left:30px!important}.justify-md-between{justify-content:space-between}.px-md-10{padding-left:10px;padding-right:10px}.px-md-20{padding-left:20px;padding-right:20px}.px-md-30{padding-left:30px;padding-right:30px}.px-md-40{padding-left:40px;padding-right:40px}.px-md-50{padding-left:50px;padding-right:50px}.py-md-10{padding-top:10px;padding-bottom:10px}.py-md-20{padding-top:20px;padding-bottom:20px}.py-md-30{padding-top:30px;padding-bottom:30px}.py-md-40{padding-top:40px;padding-bottom:40px}.py-md-50{padding-top:50px;padding-bottom:50px}.col-md-12{width:100%;flex-shrink:0}.col-md-9{width:75%;flex-shrink:0}.col-md-7{width:58.3333333%;flex-shrink:0}.col-md-8{width:66.6666666%;flex-shrink:0}.col-md-5{width:41.6666666%;flex-shrink:0}.col-md-6{width:50%;flex-shrink:0}.col-md-3{width:25%;flex-shrink:0}.col-md-4{width:33.3333333%;flex-shrink:0}.col-md-2{width:16.6666666%;flex-shrink:0}}@media only screen and (min-width:991px){.mx-30{margin-left:40px;margin-right:40px}.lg-inline{display:inline}.col-lg-10{width:83.33333333%;flex-shrink:0}.col-20{width:20%;flex-shrink:0}.pe-lg-10{padding-right:10px}.pe-lg-20{padding-right:20px}.ps-lg-10{padding-left:10px!important}.ps-lg-30{padding-left:30px!important}.ps-lg-50{padding-left:50px!important}.pb-lg-0{padding-bottom:0!important}.pb-lg-30{padding-bottom:30px!important}.pb-lg-50{padding-bottom:50px!important}.p-lg-40{padding:40px}.p-lg-50{padding:50px}.ms-lg-20{margin-left:20px}.mb-lg-30{margin-bottom:30px}.pt-lg-0{padding-top:0!important}.pt-lg-20{padding-top:20px!important}.pt-lg-50{padding-top:50px!important}.px-lg-10{padding-left:10px;padding-right:10px}.px-lg-20{padding-left:20px;padding-right:20px}.px-lg-30{padding-left:30px;padding-right:30px}.px-lg-40{padding-left:40px;padding-right:40px}.px-lg-50{padding-left:50px;padding-right:50px}.py-lg-0{padding-top:0;padding-bottom:0}.py-lg-10{padding-top:10px;padding-bottom:10px}.py-lg-20{padding-top:20px;padding-bottom:20px}.py-lg-30{padding-top:30px;padding-bottom:30px}.py-lg-40{padding-top:40px;padding-bottom:40px}.py-lg-50{padding-top:50px;padding-bottom:50px}.col-lg-12{width:100%;flex-shrink:0}.col-lg-9{width:75%;flex-shrink:0}.col-lg-7{width:58.3333333%;flex-shrink:0}.col-lg-5{width:41.666666%;flex-shrink:0}.col-lg-6{width:50%;flex-shrink:0}.col-lg-8{width:66.6666666%;flex-shrink:0}.col-lg-3{width:25%;flex-shrink:0}.col-lg-4{width:33.3333333%;flex-shrink:0}.col-lg-2{width:16.6666666%;flex-shrink:0}.lg-block{display:block}.lg-flex{display:flex}.lg-none{display:none}}@media only screen and (min-width:1200px){.pt-xl-40{padding-top:40px}.col-xl-4{width:33.3333333%;flex-shrink:0}.col-xl-8{width:66.6666666%;flex-shrink:0}}
+
+.loader1 {
+  border: 8px solid #f3f3f3; /* Light grey */
+  border-top: 8px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+
+
+
+
+
+</style>
+
+<body>
+
+  <div data-include="./components/navigationBar.html"></div>
+
+  <main class="w-100">
+
+    <div class="px-10 px-lg-20">
+      <div class="contactDiv br20 py-50">
+        <div class="flex flex-wrap crop-width px-20 justify-content-between py-20 py-lg-50">
+          <div class="col-12 col-md-6 position-relative overflow-hidden">
+            <!-- <p class="poppins600 fs-18 pb-2 pt-lg-5">Contact Us</p> -->
+            <p id="contact_title" class="weight700 pb-10" style="line-height:120%; color: #069;">Happy to <br>Help!</p>
+    
+            <div class="pb-20">
+              <!-- <p class="weight600 text1">Corporate Office</p> -->
+              <!-- <p class="weight200 pb-20 text2 pe-lg-20" style="color: rgb(1, 39, 58);"><a class="text-black"
+                      href="https://maps.google.com/?q=12.920546,77.650406" target="_blank">Sundaravijayam Automobile Services
+                      Private Limited, 839/2, 24th Main, HSR Layout, Sector1, Bengaluru - 560102</a></p> -->
+              <p class="weight400 pb-20 text2 pe-lg-20" style="color: rgb(1, 39, 58);">Contact us via email, Phone or
+                complete the form to discover how ReadyAssist can help solve your problem.</p>
+              <p class="weight600 text1">Reach Us</p>
+              <p class="text2 pb-10">
+                <a class="weight300" onclick="return gtag_report_conversion('tel:+91 8197-852-852');"
+                  href="tel:{{contact}}">8197-852-852</a>
+              </p>
+              <p class="weight600 text1">Email</p>
+              <p class="pb-3 text2"><a href="mailto:hello@readyassist.in">hello&#64;readyassist.in</a></p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-5 bg-white br20 px-20 px-lg-30 py-20">
+            <div id="radio_segment" class="col-12 flex text-center poppins400">
+              <div id="radio_sales" class="col-4 active py-10" onclick="radioChange('sales')">
+                <p class="py-2">Sales</p>
+              </div>
+              <div onclick="radioChange('service')" id="radio_support" class="col-4 py-10">
+                <p class="py-2">Service</p>
+              </div>
+              <div onclick="radioChange('escalations')" id="radio_escalation" class="col-4 py-10">
+                <p class="py-2">Escalations</p>
+              </div>
+            </div>
+            <p class="poppins300 fs-13 fs-md-15 pt-10" id="contact_type" style="color : #9db2bf">Connect to our sales team
+              for <span class="poppins500 fs-12 fs-md-15">enquiry</span></p>
+            <input autocomplete="off" id="name_input" formControlName="name" placeholder="Name"
+              class="w-100 my-10 poppins500 input px-30">
+            <input autocomplete="off" id="phone_input" formControlName="mobile" placeholder="Phone"
+              class="w-100 my-10 poppins500 input px-30">
+            <input autocomplete="off" id="email_input" formControlName="email" placeholder="Email Address"
+              class="w-100 my-2 poppins500 input px-30">
+            <textarea id="description_input" formControlName="message" class="input px-30 py-20 weight500 w-100 my-10"
+              style="height : 150px;" placeholder="Message" cols="50"></textarea>
+            <div class="col-12 text-end pt-md-2 pb-md-4">
+              <button id="contact_submit" onclick="contactSubmit()" class="text-white fs-14 px-20 py-10 weight500 mx-auto"
+                style="background-color:#1264FF;border-radius:30px">SUBMIT</button>
+            </div>
+          </div>
+    
+        </div>
+    
+      </div>
+    
+    </div>
+  
+    <div class="px-10 px-lg-20">
+      <div class="col-12 br20 crop-width py-50">
+        <div class="text-center col-12 col-md-8 mx-auto coverage">
+          <p class="weight400">
+            Ever since our inception we have been enabling people to
+            <span class="text-yellow">#AlwaysMoveForward</span>.
+            If you would love to see us serving in your region, please drop an email
+            on
+            <a href="mailto:coverage@readyassist.in">coverage&#64;readyassist.in</a>
+          </p>
+        </div>
+        <div class="col-12 col-md-8 text-center mx-auto">
+          <img alt="readyassist service coverage" src="./assets/images/contact/indiamap.svg"
+            alt="ReadyAssist Coverage Map" style="max-width: 100%; max-height: 100%" />
+        </div>
+      </div>
+    </div>
+    
+    <div id="location">
+      <div class="location_section">
+        <div class="location_left">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.803676452872!2d77.6502345!3d12.9203362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1443668c7c55%3A0x1518f47fdddf1b4f!2sReadyAssist%20(HQ)%20-%2024%20Hrs%20Bike%20%26%20Car%20Breakdown%20Service%20-%20India!5e0!3m2!1sen!2sin!4v1728903766946!5m2!1sen!2sin"
+            width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="location_right">
+          <h3>Our Location</h3>
+          <h5>Connecting Near and Far</h5>
+          <h6>Headquarter</h6>
+          <p>Sundaravijayam Automobile Services Private Limited,<br> 839/2, 24th Main, HSR Layout,<br> Sector1,
+            Bengaluru - 560102</p>
+          <div class="benefit_shape1">
+            <img src="./assets/images/Dashcam/benefit_shape1.png" alt="shape">
+          </div>
+        </div>
+        <div class="benefit_shape2">
+          <img src="./assets/images/Dashcam/benefit_shape2.png" alt="shape">
+      </div>
+      </div>
+    </div>
+
+    <div class="px-10 px-lg-20">
+      <div id="faq">
+        <div class="faq_section">
+          <div class="faq_left">
+            <h4>FAQ</h4>
+            <p>Do you have any questions? <br> We are here to help.</p>
+            <h6>If there are Question you want to ask. We will answer all your question.</h6>
+            <div class="cx_query_section">
+              <div class="input_container">
+                <img src="./assets/images/contact/phone_ico.svg" alt="chat icon">
+                <input type="text" placeholder="Help Us with Mobile Number" class="cx_query">
+              </div>
+              <button class="cx_query_btn">Submit</button>
+            </div>
+          </div>
+          <div class="faq_right">
+            <div class="faqs_container">
+              <div class="faq">
+                <div class="faq_ques">
+                  <h6 class="faq_title">
+                    What are my contact options for roadside assistance?
+                  </h6>
+                  <button class="faq-toggle">
+                    <div class="right_icon" style="width: 14px;" alt="right icon">+</div>
+                    <div class="down_icon" style="width: 20px;" alt="down icon">-</div>
+                  </button>
+                </div>
+                <p class="faq_text">You can reach Ready Assist for roadside assistance 24/7 in three ways:
+                  Call our helpline: 8197-852-852 Email us: hello@readyassist.in (mention "Roadside Assistance" in the
+                  subject
+                  line) Use the Ready Assist mobile app (if applicable) for in-app assistance requests.
+                </p>
+              </div>
+              <div class="faq">
+                <div class="faq_ques">
+                  <h6 class="faq_title">
+                    Can I contact specific departments like Sales or Service?
+                  </h6>
+                  <button class="faq-toggle">
+                    <div class="right_icon" style="width: 14px;" alt="right icon">+</div>
+                    <div class="down_icon" style="width: 20px;" alt="down icon">-</div>
+                  </button>
+                </div>
+                <p class="faq_text">
+                  Yes! While the general contact information reaches our support team, you can also reach specific
+                  departments directly: Sales inquiries: coverage@readyassist.in Service inquiries (complaints or
+                  escalations): Use the online form on the "Contact Us" page or mention
+                  "Service Inquiry" in the subject line of your email to hello@readyassist.in
+                </p>
+              </div>
+              <div class="faq">
+                <div class="faq_ques">
+                  <h6 class="faq_title">
+                    What is your corporate office address?
+                  </h6>
+                  <button class="faq-toggle">
+                    <div class="right_icon" style="width: 14px;" alt="right icon">+</div>
+                    <div class="down_icon" style="width: 20px;" alt="down icon">-</div>
+                  </button>
+                </div>
+                <p class="faq_text">
+                  Our corporate office is located at: Sundaravijayam Automobile Services Private Limited 839/2, 24th Main,
+                  HSR
+                  Layout, Sector 1, Bengaluru - 560102 (Please note: This address is for informational purposes only and
+                  visits are not encouraged.)
+                </p>
+              </div>
+              <div class="faq">
+                <div class="faq_ques">
+                  <h6 class="faq_title">
+                    I have a question not listed here. How can I reach you?
+                  </h6>
+                  <button class="faq-toggle">
+                    <div class="right_icon" style="width: 14px;" alt="right icon">+</div>
+                    <div class="down_icon" style="width: 20px;" alt="down icon">-</div>
+                  </button>
+                </div>
+                <p class="faq_text">
+                  No problem! Feel free to email us at hello@readyassist.in and we'll be happy to help with any questions
+                  you may have.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <div data-include="./components/downloadApp.html"></div>
+  <div data-include="./components/footer.html"></div>
+
+  <script src="./assets/js/menu.js"></script>
+  <script src="./assets/js/componentLoader.js"></script>
+  <script type="module" src="./assets/js/common.js"></script>
+  <script type="module" src="./assets/js/contact.js"></script>
+
+</body>
+
+</html>
