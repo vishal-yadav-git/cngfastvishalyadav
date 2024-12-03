@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)https://readyassist.in/cng-retrofitment-cngfirst.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://readyassist.in/cng-retrofitment-cngfirst.html">
+    <link rel="icon" type="image/x-icon" href="https://readyassist.in/fav.png">
+    <link rel="stylesheet" href="./banner-CNG11_files/menu.css">
+    <link rel="stylesheet" href="./banner-CNG11_files/cng.css">
+    <link rel="stylesheet" href="./banner-CNG11_files/footer.css">
+    <link rel="stylesheet" href="./banner-CNG11_files/global.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <title>CNG Retro Fitment Services Near Me | CNG Conversion Kit Installation Centres</title>
+    <meta name="description" content="Looking for CNG Retro Fitment service centres near you? Our professional trained technicians provide you a reliable installations for converting vehicles to run on Compressed Natural Gas (CNG). Contact us today for top-notch service and quality conversions.">
+    <meta name="keywords" content="CNG conversion services, CNG installation, CNG kit installation, Compressed Natural Gas conversion, Vehicle CNG conversion, Professional CNG installations, Reliable CNG fitment services, CNG services near me">
+<style type="text/css">.loader {
+        width: 48px;
+        height: 48px;
+        position: relative;
+        animation : rotate 4s linear infinite;
+      }
+      .loader:before,
+      .loader:after {
+        content:"";
+        display: block;
+        border: 24px solid;
+        border-color: transparent transparent #fff  #fff;
+        position: absolute;
+        left: 0;
+        top: 0;
+        animation: mvx 1s infinite ease-in;
+      }
+      .loader:before {
+        left: -1px;
+        top: 1px;
+        border-color:#ffcc33  #ffcc33 transparent transparent;
+        animation-name:mvrx;
+      }
+    
+      @keyframes rotate {
+        100% {transform: rotate(360deg)}
+      }
+      @keyframes mvx {
+        0% , 15% {transform: translate(0 , 0) rotate(0deg)}
+        50% {transform: translate(-50% , 50%) rotate(180deg)}
+        100% {transform: translate(0% , 0%) rotate(180deg)}
+      }
+      @keyframes mvrx {
+        0% , 15%  {transform: translate(0 , 0) rotate(0deg)}
+        50% {transform: translate(50% , -50%) rotate(180deg)}
+        100% {transform: translate(0% , 0%) rotate(180deg)}
+      }
+    
+    </style></head>
+
+<body>
+
+    <div data-include="./components/navigationBar.html"><div id="mobileNav" class="lg-none cng_theme" style="background-color: rgb(17, 39, 20); color: white;">
+    <div id="closeIcon" onclick="closeMenu(&#39;&#39;)" src="./assets/images/common/close-line.svg"><img src="./banner-CNG11_files/close-line_white.svg" alt="menu close icon"></div>
+    <a href="https://readyassist.in/" class="navText col" style="color: white;">Home</a>
+    <p onclick="openMobileServices(&#39;&#39;)" class="navText" style="color: white;">Services</p>
+    <div id="mobileServiceContainer" class="fixed bg-white pt-40" style="overflow: scroll;">
+        <img alt="menu close icon" onclick="closeMobileServices(&#39;&#39;)" class="absolute" style="top:0px; left:0px;width:30px; margin-left:10px;margin-top:10px" src="./banner-CNG11_files/back.svg">
+
+        <div class="servicesList_search" style="padding: 20px 0;">
+            <div class="MobileserviceSearchBox_parent">
+                <img src="./banner-CNG11_files/search_icon.svg" alt="" style="width: 18px;">
+                <input type="text" id="mobileServiceSearch" placeholder="Search service..." onkeyup="filterMobileServices()" class="serviceSearchBox" autocomplete="off">
+            </div>
+        </div>
+        <div id="mobileServices">
+            <div id="rsa" class="servicecategory"> 
+                <div class="servicecategory_name">
+                    Roadside Assistance
+                </div>
+                <div class="serviceList_category">
+                    <div class="serviceList_style">
+                        <a href="https://readyassist.in/towing-service-readyassist.html">
+                            <div class="serviceList_icon">
+                                <img alt="towing service icon" src="./banner-CNG11_files/towing.webp">
+                            </div>
+                            <div class="serviceList_content">
+                                <p class="serviceList_name">Towing</p>
+                                <p class="serviceList_description">Anything from flatbed to safe lifting</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="serviceList_style">
+                        <a href="https://readyassist.in/flat-tyre-puncture-repair.html">
+                            <div class="serviceList_icon">
+                                <img alt="flat-tyre service icon" src="./banner-CNG11_files/flat-tyre.webp">
+                            </div>
+                            <div class="serviceList_content">
+                                <p class="serviceList_name">Flat-Tyre</p>
+                                <p class="serviceList_description">Tube or Tubeless puncture repair</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="serviceList_style">
+                        <a href="https://readyassist.in/battery-jumpstart.html">
+                            <div class="serviceList_icon">
+                                <img alt="battery jumpstart icon" src="./banner-CNG11_files/battery-jumpstart.webp">
+                            </div>
+                            <div class="serviceList_content">
+                                <p class="serviceList_name">Battery-Jumpstart</p>
+                                <p class="serviceList_description">Get jumpstart from professionals</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="serviceList_style">
+                        <a href="https://readyassist.in/onspot-breakdown-starting-problem.html">
+                            <div class="serviceList_icon">
+                                <img alt="minor repair icon" src="./banner-CNG11_files/starting-problem.webp">
+                            </div>
+                            <div class="serviceList_content">
+                                <p class="serviceList_name">Starting Problem</p>
+                                <p class="serviceList_description">Make your vehicle moving</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="serviceList_style">
+                        <a href="https://readyassist.in/key-unlock-bike-car.html">
+                            <div class="serviceList_icon">
+                                <img alt="key-unlock service icon" src="./banner-CNG11_files/key-unlock.webp">
+                            </div>
+                            <div class="serviceList_content">
+                                <p class="serviceList_name">Key-Unlock-Assistance</p>
+                                <p class="serviceList_description">One-stop unlock assistance</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="serviceList_style">
+                        <a href="https://readyassist.in/petrol-diesel-fuel-delivery.html">
+                            <div class="serviceList_icon">
+                                <img alt="fuel delivery icon" src="./banner-CNG11_files/fuel-delivery.webp">
+                            </div>
+                            <div class="serviceList_content">
+                                <p class="serviceList_name">Fuel-Delivery</p>
+                                <p class="serviceList_description">Petrol/Diesel delivered faster</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="fitment" class="servicecategory">
+                <div class="servicecategory_name">
+                    Fitment Services
+                </div>
+                <div class="serviceList_category">
+                    <div class="serviceList_style">
+                        <a href="https://readyassist.in/fitment-service.html">
+                            <div class="serviceList_icon">
+                                <img alt="fitment service icon" src="./banner-CNG11_files/tyre-fitting.webp">
+                            </div>
+                            <div class="serviceList_content">
+                                <p class="serviceList_name">Fitment Service</p>
+                                <p class="serviceList_description">Make your vehicle upgrade</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="serviceList_style">
+                        <a href="https://readyassist.in/dashcam-installation.html">
+                            <div class="serviceList_icon">
+                                <img alt="dashcam installation icon" src="./banner-CNG11_files/dash-cam.webp">
+                            </div>
+                            <div class="serviceList_content">
+                                <p class="serviceList_name">Dashcam Installation</p>
+                                <p class="serviceList_description">Capture every driving moment</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="serviceList_style">
+                        <a href="https://readyassist.in/multimedia-installation.html">
+                            <div class="serviceList_icon">
+                                <img alt="multimedia system icon" src="./banner-CNG11_files/multimedia.webp">
+                            </div>
+                            <div class="serviceList_content">
+                                <p class="serviceList_name">Multimedia System Installation</p>
+                                <p class="serviceList_description">Enhance your driving experience</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="others" class="servicecategory">
+                <div class="servicecategory_name">
+                    General Repair Services
+                </div>
+                <div class="serviceList_category">
+                    <div class="serviceList_style">
+                        <a href="https://readyassist.in/car-inspection.html">
+                            <div class="serviceList_icon">
+                                <img alt="car inspection icon" src="./banner-CNG11_files/car-inspection.webp">
+                            </div>
+                            <div class="serviceList_content">
+                                <p class="serviceList_name">Car Inspection</p>
+                                <p class="serviceList_description">Get your car Inspected</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="serviceList_style">
+                        <a href="https://readyassist.in/doorstep-bike-general-service.html">
+                            <div class="serviceList_icon">
+                                <img alt="general service icon" src="./banner-CNG11_files/minor-repair.webp">
+                            </div>
+                            <div class="serviceList_content">
+                                <p class="serviceList_name">Bike Express Services</p>
+                                <p class="serviceList_description">Full bike service at your doorstep</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="serviceList_button-mb">
+            <button onclick="closeMobileServices(&#39;&#39;)" class="serviceList_close_btn-mb">close</button>
+        </div>
+    </div>
+    <a href="https://readyassist.in/roadside-assistance-subscription-plans.html" class="navText" style="color: white;">Subscriptions</a>
+    <a href="https://readyassist.in/cng-retrofitment-cngfirst.html" class="cngText">CNG<span>First</span></a>
+    <a href="https://readyassist.in/mec-plus.html" class="navText flex items-center" style="color: white;">Mec<span class="mecText">+</span></a>
+    <a href="https://readyassist.in/aboutus-readyassist.html" class="navText" style="color: white;">About</a>
+    <a href="https://readyassist.in/contact-readyassist.html" class="navText" style="color: white;">Contact</a>
+</div>
+
+<div id="menubar" class="flex relative cng_theme shrink">
+    <div class="relative flex items-center w-100 flow-hide px-10 px-lg-20" style="scale: 1;">
+        <div class="flow-hide w-100" style="width: 220px;">
+            <div id="logo_seg" class="pointer w-fit logoAnim" style="transition: margin 0.5s;">
+                <a href="https://readyassist.in/" class="flex flex-wrap justify-center">
+                    <img src="./banner-CNG11_files/CNGFirst-logo.png" alt="ReadyAssist Logo" width="40px" height="40px" class="logoIcon" style="width: 140px; height: 40px;">
+                    <p class="logoText" style="color: white;"></p>
+                </a>
+                <p id="animation_text" class="weight300 text-center" style="height: 0px; display: none;">24 hours support anytime anywhere in India</p>
+            </div>
+        </div>
+
+        <nav class="absolute none lg-flex pe-20" style="transform: translateY(0%);">
+            <div class="callButton flow-hide flex items-center pointer">
+                <img alt="call button" src="./banner-CNG11_files/call_us.svg">
+                <a class="mobileNumber" href="tel:8197852852">8197 852 852</a>
+            </div>
+            <a href="https://readyassist.in/" class="navText" style="color: white;">Home</a>
+            <p class="navText" onclick="openServicesMenu()" style="color: white;">Services<span id="service_dropdown_icon"><img src="./banner-CNG11_files/arrow-circle-down_white.svg" alt="Dropdown icon"></span></p>
+            <a href="https://readyassist.in/roadside-assistance-subscription-plans.html" class="navText" style="color: white;">Subscriptions</a>
+            <a href="https://readyassist.in/cng-retrofitment-cngfirst.html" class="cngText">CNG<span>First</span></a>
+            <a href="https://readyassist.in/mec-plus.html" class="navText flex items-center" style="color: white;">Mec<span class="mecText">+</span></a>
+            <a href="https://readyassist.in/aboutus-readyassist.html" class="navText" style="color: white;">About</a>
+            <a href="https://readyassist.in/contact-readyassist.html" class="navText" style="color: white;">Contact</a>
+        </nav>
+
+        <div onclick="openMenu()" class="absolute ham lg-none pe-20" id="mobile_ham"><img src="./banner-CNG11_files/ham_white.svg" alt="menu icon"></div>
+    </div>
+
+    <div id="servicesList_section" class="servicesList_section none">
+        <div class="servicesList_container">
+            <div>
+                <div class="servicesList_search">
+                    <div class="serviceSearchBox_parent">
+                        <img src="./banner-CNG11_files/search_icon.svg" alt="search icon" style="width: 18px;">
+                        <input type="text" id="serviceSearch" placeholder="Search service..." onkeyup="filterServices()" class="serviceSearchBox" autocomplete="off">
+                    </div>
+                </div>
+                <div id="servicesList">
+                    <div id="rsa" class="servicecategory"> 
+                        <div class="servicecategory_name">
+                            Roadside Assistance
+                        </div>
+                        <div class="serviceList_category">
+                            <div class="serviceList_style">
+                                <a href="https://readyassist.in/towing-service-readyassist.html">
+                                    <div class="serviceList_icon">
+                                        <img alt="towing service icon" src="./banner-CNG11_files/towing.webp">
+                                    </div>
+                                    <div class="serviceList_content">
+                                        <p class="serviceList_name">Towing</p>
+                                        <p class="serviceList_description">Anything from flatbed to safe lifting</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="serviceList_style">
+                                <a href="https://readyassist.in/flat-tyre-puncture-repair.html">
+                                    <div class="serviceList_icon">
+                                        <img alt="flat-tyre service icon" src="./banner-CNG11_files/flat-tyre.webp">
+                                    </div>
+                                    <div class="serviceList_content">
+                                        <p class="serviceList_name">Flat-Tyre</p>
+                                        <p class="serviceList_description">Tube or Tubeless puncture repair</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="serviceList_style">
+                                <a href="https://readyassist.in/battery-jumpstart.html">
+                                    <div class="serviceList_icon">
+                                        <img alt="battery jumpstart icon" src="./banner-CNG11_files/battery-jumpstart.webp">
+                                    </div>
+                                    <div class="serviceList_content">
+                                        <p class="serviceList_name">Battery-Jumpstart</p>
+                                        <p class="serviceList_description">Get jumpstart from professionals</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="serviceList_style">
+                                <a href="https://readyassist.in/onspot-breakdown-starting-problem.html">
+                                    <div class="serviceList_icon">
+                                        <img alt="minor repair icon" src="./banner-CNG11_files/starting-problem.webp">
+                                    </div>
+                                    <div class="serviceList_content">
+                                        <p class="serviceList_name">Starting Problem</p>
+                                        <p class="serviceList_description">Make your vehicle moving</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="serviceList_style">
+                                <a href="https://readyassist.in/key-unlock-bike-car.html">
+                                    <div class="serviceList_icon">
+                                        <img alt="key-unlock service icon" src="./banner-CNG11_files/key-unlock.webp">
+                                    </div>
+                                    <div class="serviceList_content">
+                                        <p class="serviceList_name">Key-Unlock-Assistance</p>
+                                        <p class="serviceList_description">One-stop unlock assistance</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="serviceList_style">
+                                <a href="https://readyassist.in/petrol-diesel-fuel-delivery.html">
+                                    <div class="serviceList_icon">
+                                        <img alt="fuel delivery icon" src="./banner-CNG11_files/fuel-delivery.webp">
+                                    </div>
+                                    <div class="serviceList_content">
+                                        <p class="serviceList_name">Fuel-Delivery</p>
+                                        <p class="serviceList_description">Petrol/Diesel delivered faster</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="fitment" class="servicecategory">
+                        <div class="servicecategory_name">
+                            Fitment Services
+                        </div>
+                        <div class="serviceList_category">
+                            <div class="serviceList_style">
+                                <a href="https://readyassist.in/fitment-service.html">
+                                    <div class="serviceList_icon">
+                                        <img alt="fitment service icon" src="./banner-CNG11_files/tyre-fitting.webp">
+                                    </div>
+                                    <div class="serviceList_content">
+                                        <p class="serviceList_name">Fitment Service</p>
+                                        <p class="serviceList_description">Make your vehicle upgrade</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="serviceList_style">
+                                <a href="https://readyassist.in/dashcam-installation.html">
+                                    <div class="serviceList_icon">
+                                        <img alt="dashcam installation icon" src="./banner-CNG11_files/dash-cam.webp">
+                                    </div>
+                                    <div class="serviceList_content">
+                                        <p class="serviceList_name">Dashcam Installation</p>
+                                        <p class="serviceList_description">Capture every driving moment</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="serviceList_style">
+                                <a href="https://readyassist.in/multimedia-installation.html">
+                                    <div class="serviceList_icon">
+                                        <img alt="multimedia system icon" src="./banner-CNG11_files/multimedia.webp">
+                                    </div>
+                                    <div class="serviceList_content">
+                                        <p class="serviceList_name">Multimedia System Installation</p>
+                                        <p class="serviceList_description">Enhance your driving experience</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="others" class="servicecategory">
+                        <div class="servicecategory_name">
+                            General Repair Services
+                        </div>
+                        <div class="serviceList_category">
+                            <div class="serviceList_style">
+                                <a href="https://readyassist.in/car-inspection.html">
+                                    <div class="serviceList_icon">
+                                        <img alt="car inspection icon" src="./banner-CNG11_files/car-inspection.webp">
+                                    </div>
+                                    <div class="serviceList_content">
+                                        <p class="serviceList_name">Car Inspection</p>
+                                        <p class="serviceList_description">Get your car Inspected</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="serviceList_style">
+                                <a href="https://readyassist.in/doorstep-bike-general-service.html">
+                                    <div class="serviceList_icon">
+                                        <img alt="general service icon" src="./banner-CNG11_files/minor-repair.webp">
+                                    </div>
+                                    <div class="serviceList_content">
+                                        <p class="serviceList_name">Bike Express Services</p>
+                                        <p class="serviceList_description">Full bike service at your doorstep</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="serviceList_button">
+                <button onclick="openServicesMenu()" class="serviceList_close_btn">Close</button>
+            </div> -->
+        </div>
+    </div>
+</div>
+
+<div id="chatButton" class="p-30" style="z-index:3">
+    <a href="https://api.whatsapp.com/send?phone=918197852852&amp;text=Hello%20ReadyAssist!" target="_blank">
+        <img alt="whatsapp icon" id="chatIcon" src="./banner-CNG11_files/whatsapp.svg">
+    </a>
+</div>
+
+<div id="globalSlider" class="slider-panel"></div></div>
+
+    <main class="w-100">
+
+        <div id="cnghome">
+            <div class="homescreen_container mx-auto">
+                <div class="homescreen_text">
+                    <p>CNG RetroFitment</p>
+                    <h2>Powering <br><span style="color: #0AAD15;">Future.</span></h2>
+                    <h6>Switch to CNG and enjoy cleaner energy, reduced emissions, lower fuel costs, and longer engine
+                        life while contributing to a sustainable environment for future generations.</h6>
+                    <div style="margin-top: 20px;"><button class="home_bookbtn" id="checkeligibility_btn" onclick="toggleSlider(&#39;cngBooking&#39;)">Book Conversion</button></div>
+                </div>
+                <div class="booking_section">
+                    <img src="./banner-CNG11_files/banner-CNG.png" alt="homescreen image">
+                    <!-- <div class="ring-third"></div> -->
+                    <!-- <div class="ring-fourth"></div> -->
+                </div>
+            </div>
+        </div>
+
+        <div id="benefits">
+            <div class="benefits_section mx-auto">
+                <div class="benefits_head">
+                    <div class="benefits_head_left">
+                        <p class="fbtt">Unlock benefits with
+                            <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_3945_56)">
+                                    <path d="M4.9248 10.3748L6.49525 9.68052L5.62485 9.07031L4.9248 10.3748Z" fill="#83CD20"></path>
+                                    <path d="M4.9248 10.3743L4.99976 8L13.9078 0L5.66407 9.1113L4.9248 10.3743Z" fill="#83CD20"></path>
+                                    <path d="M5 8L13.908 0L0 6.22704L5 8Z" fill="#83CD20"></path>
+                                    <path d="M5.66406 9.1113L9.95686 12L13.9078 0L5.66406 9.1113Z" fill="#034833">
+                                    </path>
+                                </g>
+                                <defs>
+                                    <clippath id="clip0_3945_56">
+                                        <rect width="13.908" height="12" fill="white"></rect>
+                                    </clippath>
+                                </defs>
+                            </svg>
+                        </p>
+                        <h3>CNGFirst conversion!</h3>
+                    </div>
+                </div>
+                <div class="benefits_card_section">
+                    <div class="benefits_card">
+                        <img src="./banner-CNG11_files/worry-free-warranty.svg" alt="1 year warranty">
+                        <h4>Worry Free Warranty</h4>
+                        <p>1-year warranty from the date of installation, ensuring peace of mind and dependable service
+                            for your vehicle's performance.</p>
+                        <div style="margin-top: 10px;"><a href="tel:7022012201" class="know_more_btn">Know more</a>
+                        </div>
+                    </div>
+                    <div class="benefits_card">
+                        <img src="./banner-CNG11_files/pan-india.svg" alt="free rsa">
+                        <h4>Pan India 24/7 RSA</h4>
+                        <p>1 Year Pan India 24/7 Roadside Assistance, offering support and help anywhere across India
+                            for emergency situations or breakdowns.</p>
+                        <div style="margin-top: 10px;"><a href="tel:7022012201" class="know_more_btn">Know more</a>
+                        </div>
+                    </div>
+                    <!-- <div class="benefits_card">
+                        <img src="./assets/images/cng/worth-free-fuel.svg" alt="10000 benefits">
+                        <h4>Rs 5000 worth Free Fuel</h4>
+                        <p>Free fuel coupons for the first 100 Customers</p>
+                    </div> -->
+                    <div class="benefits_card">
+                        <img src="./banner-CNG11_files/upto-90-financing.svg" alt="finance">
+                        <h4>Upto 90% Financing</h4>
+                        <p>Easy financing options with up to 90% support, making it easier for you to convert your
+                            vehicle to CNG today.</p>
+                        <div style="margin-top: 10px;"><a href="tel:7022012201" class="know_more_btn">Know more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="whatiscng">
+            <div class="whatcng_section mx-auto">
+                <div class="whatcng_left">
+                    <div class="whatcng_left_imgup">
+                        <div class="image_wrapper1"><img src="./banner-CNG11_files/car.jpg" alt="car image"></div>
+                        <div class="image_wrapper2"><img src="./banner-CNG11_files/auto.jpg" alt="auto image"></div>
+                    </div>
+                    <div class="whatcng_left_imgdown">
+                        <div class="dummy_img">100+<br>
+                            <p>Vehicles Converted to CNG and Counting</p>
+                        </div>
+                        <div class="image_wrapper3"><img src="./banner-CNG11_files/commercial.jpg" alt="commercial image">
+                        </div>
+                    </div>
+                    <img src="./banner-CNG11_files/dotted-img.svg" alt="dot icon" class="whatcng_shape1">
+                </div>
+                <div class="whatcng_right">
+                    <p>About <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_3945_56)">
+                                <path d="M4.9248 10.3748L6.49525 9.68052L5.62485 9.07031L4.9248 10.3748Z" fill="#83CD20"></path>
+                                <path d="M4.9248 10.3743L4.99976 8L13.9078 0L5.66407 9.1113L4.9248 10.3743Z" fill="#83CD20"></path>
+                                <path d="M5 8L13.908 0L0 6.22704L5 8Z" fill="#83CD20"></path>
+                                <path d="M5.66406 9.1113L9.95686 12L13.9078 0L5.66406 9.1113Z" fill="#034833"></path>
+                            </g>
+                            <defs>
+                                <clippath id="clip0_3945_56">
+                                    <rect width="13.908" height="12" fill="white"></rect>
+                                </clippath>
+                            </defs>
+                        </svg></p>
+                    <h3>CNG RetroFitment Service</h3>
+                    <h6>CNG Retro-fitment is the process of converting your existing petrol or diesel
+                        vehicle to operate on Compressed Natural Gas (CNG) fuel. You can convert your vehicles with
+                        government-approved
+                        CNG
+                        kits at ReadyAssist retro-fitment centers.</h6>
+                    <div class="whatcng_checkbox ">
+                        <ul>
+                            <li>Three Wheeler</li>
+                            <li>Car</li>
+                        </ul>
+                        <ul>
+                            <li>Commercial Vehicle</li>
+                            <li>Taxi</li>
+                        </ul>
+                    </div>
+                    <div style="margin-top: 10px;"><button class="bookbtn" onclick="toggleSlider(&#39;cngBooking&#39;)">Book Now
+                            →</button></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="ourprocess">
+            <div class="ourprocess_section mx-auto">
+                <div class="ourprocess_head">
+                    <p>Our Process
+                        <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_3945_56)">
+                                <path d="M4.9248 10.3748L6.49525 9.68052L5.62485 9.07031L4.9248 10.3748Z" fill="#83CD20"></path>
+                                <path d="M4.9248 10.3743L4.99976 8L13.9078 0L5.66407 9.1113L4.9248 10.3743Z" fill="#83CD20"></path>
+                                <path d="M5 8L13.908 0L0 6.22704L5 8Z" fill="#83CD20"></path>
+                                <path d="M5.66406 9.1113L9.95686 12L13.9078 0L5.66406 9.1113Z" fill="#034833"></path>
+                            </g>
+                            <defs>
+                                <clippath id="clip0_3945_56">
+                                    <rect width="13.908" height="12" fill="white"></rect>
+                                </clippath>
+                            </defs>
+                        </svg>
+                    </p>
+                    <h3>Effortless CNG Conversion <br>for You</h3>
+                </div>
+                <div class="ourprocess_card_section">
+                    <div class="process_card">
+                        <div class="process_no">01</div>
+                        <div class="process_heading">Check Eligibility</div>
+                        <div class="process_detail">Provide your vehicle details to instantly check if your vehicle is
+                            eligible for CNG
+                            fitment.</div>
+                    </div>
+                    <div class="process_card">
+                        <div class="process_no">02</div>
+                        <div class="process_heading">Upload Documents</div>
+                        <div class="process_detail">Upload the necessary documents for a quick verification process.
+                        </div>
+                    </div>
+                    <div class="process_card">
+                        <div class="process_no">03</div>
+                        <div class="process_heading">Get Approval</div>
+                        <div class="process_detail">Receive approval for your CNG fitment within 7 days after document
+                            verification.</div>
+                    </div>
+                    <div class="process_card">
+                        <div class="process_no">04</div>
+                        <div class="process_heading">CNG Kit Installation</div>
+                        <div class="process_detail">Get your CNG kit installed by our CNG-Retro Fitment Centers within 1
+                            week of
+                            approval.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="whyus">
+            <div class="whyus_section mx-auto">
+                <div class="whyus_left">
+                    <div class="whyus_left_border"></div>
+                    <div class="whyus_textsection">
+                        <div class="whyus_year">10</div>
+                        <p>Years of Experience</p>
+                    </div>
+                    <div class="whyus_left_img">
+                        <img src="./banner-CNG11_files/cng_pic.jpg" alt="cng mechanic">
+                    </div>
+                </div>
+                <div class="whyus_right">
+                    <p>Why Choose Us
+                        <svg width="52" height="10" viewBox="0 0 52 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_3795_96)">
+                                <path d="M47.2095 2.14437C46.4096 2.36766 45.5874 2.50135 44.758 2.54299L38.0745 3.26714C36.5625 3.43986 35.0713 3.76256 33.6232 4.23048C32.834 4.49614 32.0748 4.84349 31.3577 5.2669C30.5815 5.78994 29.7739 6.26475 28.9394 6.68864C28.4366 6.92402 27.8868 7.04215 27.3317 7.03411C26.7204 6.99856 26.1425 6.7438 25.704 6.3166C24.8602 5.44628 24.6277 4.38993 24.0763 3.71228C23.8482 3.37951 23.505 3.14288 23.1129 3.04791C22.6926 2.95474 22.2543 2.98472 21.8506 3.13427C20.9442 3.46398 20.1839 4.10423 19.7047 4.94135C19.1267 5.79839 18.675 6.775 18.0172 7.69183C17.3771 8.67698 16.4285 9.42226 15.3199 9.81116C14.738 9.97733 14.1213 9.97733 13.5394 9.81116C12.9881 9.64765 12.4799 9.36403 12.0512 8.9807C11.2848 8.27735 10.6875 7.40973 10.3039 6.44282C9.91861 5.55257 9.63957 4.68889 9.25423 3.93151C8.81236 2.89622 8.01001 2.05634 6.99598 1.56765C5.98195 1.07897 4.82509 0.974642 3.74 1.27404C3.16364 1.41933 2.62491 1.6859 2.15977 2.05594C1.69463 2.42599 1.3138 2.89102 1.04267 3.41996C0.609026 4.23627 0.40251 5.15404 0.444721 6.07742C0.461366 6.66905 0.587529 7.25247 0.816785 7.79813C0.969589 8.18346 1.07589 8.37613 1.04267 8.40271C1.00945 8.42928 0.849998 8.26318 0.624113 7.89778C0.297997 7.3528 0.0960956 6.74258 0.0328167 6.11063C-0.094422 5.09968 0.0716196 4.07346 0.511162 3.1542C0.798973 2.52884 1.21785 1.97266 1.73939 1.52332C2.26094 1.07399 2.87299 0.742013 3.53404 0.549886C4.3414 0.314234 5.19125 0.262331 6.02128 0.397987C6.85131 0.533642 7.64045 0.85342 8.33077 1.33384C9.08192 1.89515 9.6841 2.63192 10.0847 3.47975C10.5165 4.31021 10.8221 5.18716 11.2008 6.01762C11.535 6.84506 12.053 7.58567 12.7156 8.18347C13.0179 8.47409 13.3907 8.68086 13.7973 8.78339C14.204 8.88592 14.6303 8.88064 15.0342 8.7681C15.9058 8.44143 16.6489 7.84273 17.1536 7.06068C17.7316 6.2568 18.1833 5.28018 18.8145 4.33678C19.1355 3.84764 19.5172 3.40117 19.9505 3.00804C20.4071 2.61118 20.9377 2.30862 21.5118 2.11779C22.1043 1.91517 22.7412 1.88068 23.3521 2.01814C23.9719 2.17131 24.5177 2.53834 24.8934 3.05455C25.5977 3.99795 25.8368 5.04765 26.4082 5.5725C26.6675 5.83263 27.0118 5.99065 27.3782 6.01762C27.7818 6.02071 28.1811 5.9345 28.5475 5.76517C29.3497 5.36762 30.1284 4.92396 30.8794 4.43644C31.657 3.99071 32.4814 3.632 33.3375 3.36681C34.8527 2.91365 36.4116 2.62192 37.9881 2.49649C40.8449 2.25731 43.1369 2.18423 44.7314 2.1045C45.5564 2.02614 46.3875 2.03952 47.2095 2.14437Z" fill="#034833"></path>
+                                <path d="M45.4762 6.2697C45.4231 6.13018 46.1406 5.7382 47.2235 5.08712C47.7683 4.76158 48.4127 4.36296 49.1036 3.89126C49.4491 3.65873 49.768 3.39963 50.1666 3.13388C50.3373 3.0178 50.4954 2.88421 50.6383 2.73527C50.7579 2.61795 50.8527 2.47789 50.9173 2.32336C50.9506 2.19713 50.9173 2.20377 50.9173 2.15726C50.821 2.06916 50.7009 2.01139 50.5719 1.99117L49.283 1.64571C48.4592 1.41982 47.7218 1.20058 47.1039 0.981341C45.8682 0.582721 45.1108 0.263819 45.1573 0.124302C45.2038 -0.0152149 46.001 0.0379361 47.2833 0.250534C47.9476 0.356832 48.6784 0.502993 49.5155 0.675728L50.8443 0.968051C51.184 1.02987 51.4955 1.19726 51.7345 1.4464C51.8826 1.61431 51.9774 1.82242 52.0069 2.04432C52.0341 2.24825 52.0113 2.45574 51.9405 2.6489C51.8291 2.94985 51.6521 3.2222 51.4223 3.44614C51.235 3.63879 51.0254 3.80831 50.7978 3.95105C50.4124 4.23009 50.0205 4.47591 49.6484 4.70179C48.9845 5.09883 48.2916 5.44528 47.5756 5.7382C46.3399 6.25641 45.5294 6.40257 45.4762 6.2697Z" fill="#034833"></path>
+                            </g>
+                            <defs>
+                                <clippath id="clip0_3795_96">
+                                    <rect width="52" height="9.86585" fill="white" transform="translate(0 0.0664062)">
+                                    </rect>
+                                </clippath>
+                            </defs>
+                        </svg>
+                    </p>
+                    <h3>Choose CNGFirst for seamless CNG fitment!</h3>
+                    <div class="whyus_checkbox">
+                        <ul>
+                            <li>Certified CNG Kits</li>
+                            <p>High-quality, government-approved CNG kits for safe, efficient fuel conversions.</p>
+                            <li>Expert Installation</li>
+                            <p>Performed by trained professionals to ensure a seamless and reliable installation.</p>
+                        </ul>
+                        <ul>
+                            <li>Safety Assurance</li>
+                            <p>Adherence to all safety and emission standards for worry-free driving.</p>
+                            <li>Customer-Centric Service</li>
+                            <p>Our top priority is your satisfaction with attentive and responsive service.</p>
+                        </ul>
+                    </div>
+                    <div class="whyus_button_section">
+                        <a class="call_section" href="tel:7022012201">
+                            <div class="call_icon">
+                                <img src="./banner-CNG11_files/call_us.svg" alt="call icon">
+                            </div>
+                            <div>
+                                <div class="call_text">Need help?</div>
+                                <div class="call_number">7022 012 201</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="ourpresence">
+            <div class="ourpresence_section mx-auto">
+                <div class="ourpresence_container">
+                    <div class="ourpresence_leftsection">
+                        <div class="ourpresence_head">
+                            <h3>Our Presence</h3>
+                            <h4>Moving towards an eco-friendly nation</h4>
+                            <p>We're on a nationwide mission to clean our air and empower sustainable driving! Our CNG
+                                conversion operations now span <span style="font-weight: 500;color: var(--text-primary);">4 states</span> and over
+                                <span style="font-weight: 500;color: var(--text-primary);">7 cities</span>, offering
+                                eco-friendly solutions for a
+                                wide range of vehicles: from <span style="font-weight: 500;color: var(--text-primary);">three-wheelers and everyday
+                                    cars to powerful commercial vehicles.</span>
+                            </p>
+                            <div class="ourpresence_btnsection" onclick="location.href = &#39;./cng-station.html&#39;">
+                                <button class="ourpresence_btn">Find CNG Stations &gt;</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ourpresence_rightsection">
+                        <img src="./banner-CNG11_files/map.svg" alt="indian map" loading="lazy">
+                    </div>
+
+                </div>
+                <div class="road_parent">
+
+                </div>
+            </div>
+        </div>
+
+        <div id="cngfitting_structure">
+            <div class="cngfitting_structure_section mx-auto">
+                <div class="cngfitting_structure_head">
+                    <div class="cngfitting_left">
+                        <div class="cngfitting_text">
+                            <p>CNG Setup Guide
+                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_3945_56)">
+                                        <path d="M4.9248 10.3748L6.49525 9.68052L5.62485 9.07031L4.9248 10.3748Z" fill="#83CD20"></path>
+                                        <path d="M4.9248 10.3743L4.99976 8L13.9078 0L5.66407 9.1113L4.9248 10.3743Z" fill="#83CD20"></path>
+                                        <path d="M5 8L13.908 0L0 6.22704L5 8Z" fill="#83CD20"></path>
+                                        <path d="M5.66406 9.1113L9.95686 12L13.9078 0L5.66406 9.1113Z" fill="#034833">
+                                        </path>
+                                    </g>
+                                    <defs>
+                                        <clippath id="clip0_3945_56">
+                                            <rect width="13.908" height="12" fill="white"></rect>
+                                        </clippath>
+                                    </defs>
+                                </svg>
+                            </p>
+                            <h3>CNG Kit Components Placement</h3>
+                        </div>
+                        <div class="cngfitting_checkbox">
+                            <ul>
+                                <li>Cylinder Placement</li>
+                                <li>Valve Connection</li>
+                            </ul>
+                            <ul>
+                                <li>Gauge Setup</li>
+                                <li>System Test</li>
+                            </ul>
+                        </div>
+                        <div class="cngfitting_btnsection">
+                            <button class="bookbtn" onclick="toggleSlider(&#39;cngBooking&#39;)">Book Now →</button>
+                        </div>
+                    </div>
+                    <div class="cngfitting_heroimg">
+                        <div class="carousel_section">
+                            <span class="next">→</span>
+                            <div class="slide-container">
+                                <div class="slides">
+                                    <img src="./banner-CNG11_files/CNG-threewheeler-fitting.webp" class="active" alt="cng three wheeler fitting" onclick="openModal(this)" loading="lazy" style="animation: 0.5s ease-in 0s 1 normal forwards running next2;">
+                                    <img src="./banner-CNG11_files/CNG-fourwheeler-fitting2.webp" alt="cng four wheeler fitting" onclick="openModal(this)" loading="lazy" style="animation: 0.5s ease-in 0s 1 normal forwards running next1;">
+                                    <img src="./banner-CNG11_files/CNG-commercial-fitting.webp" alt="cng commercial vehicle fitting" onclick="openModal(this)" loading="lazy" style="animation: 0.5s ease-in 0s 1 normal forwards running next1;">
+                                </div>
+                                <div class="dotsContainer">
+                                    <div class="dot active" attr="0" onclick="switchImage(this)"></div>
+                                    <div class="dot" attr="1" onclick="switchImage(this)"></div>
+                                    <div class="dot" attr="2" onclick="switchImage(this)"></div>
+                                </div>
+                            </div>
+                            <span class="prev">←</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="imageModal" class="modal">
+            <span class="close" onclick="closeModal()">✕</span>
+            <div style="display: flex;flex-direction: column;
+                    align-items: center; justify-content: center; height: 100%; padding:0 20px;">
+                <img class="modal-content" id="modalImage">
+            </div>
+        </div>
+
+        <div id="cngnews">
+            <div class="cngnews_section mx-auto">
+                <div class="cngnews_head">
+                    <div class="cngnews_head_text">
+                        <p>Recent blogs
+                            <svg width="52" height="10" viewBox="0 0 52 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_3795_96)">
+                                    <path d="M47.2095 2.14437C46.4096 2.36766 45.5874 2.50135 44.758 2.54299L38.0745 3.26714C36.5625 3.43986 35.0713 3.76256 33.6232 4.23048C32.834 4.49614 32.0748 4.84349 31.3577 5.2669C30.5815 5.78994 29.7739 6.26475 28.9394 6.68864C28.4366 6.92402 27.8868 7.04215 27.3317 7.03411C26.7204 6.99856 26.1425 6.7438 25.704 6.3166C24.8602 5.44628 24.6277 4.38993 24.0763 3.71228C23.8482 3.37951 23.505 3.14288 23.1129 3.04791C22.6926 2.95474 22.2543 2.98472 21.8506 3.13427C20.9442 3.46398 20.1839 4.10423 19.7047 4.94135C19.1267 5.79839 18.675 6.775 18.0172 7.69183C17.3771 8.67698 16.4285 9.42226 15.3199 9.81116C14.738 9.97733 14.1213 9.97733 13.5394 9.81116C12.9881 9.64765 12.4799 9.36403 12.0512 8.9807C11.2848 8.27735 10.6875 7.40973 10.3039 6.44282C9.91861 5.55257 9.63957 4.68889 9.25423 3.93151C8.81236 2.89622 8.01001 2.05634 6.99598 1.56765C5.98195 1.07897 4.82509 0.974642 3.74 1.27404C3.16364 1.41933 2.62491 1.6859 2.15977 2.05594C1.69463 2.42599 1.3138 2.89102 1.04267 3.41996C0.609026 4.23627 0.40251 5.15404 0.444721 6.07742C0.461366 6.66905 0.587529 7.25247 0.816785 7.79813C0.969589 8.18346 1.07589 8.37613 1.04267 8.40271C1.00945 8.42928 0.849998 8.26318 0.624113 7.89778C0.297997 7.3528 0.0960956 6.74258 0.0328167 6.11063C-0.094422 5.09968 0.0716196 4.07346 0.511162 3.1542C0.798973 2.52884 1.21785 1.97266 1.73939 1.52332C2.26094 1.07399 2.87299 0.742013 3.53404 0.549886C4.3414 0.314234 5.19125 0.262331 6.02128 0.397987C6.85131 0.533642 7.64045 0.85342 8.33077 1.33384C9.08192 1.89515 9.6841 2.63192 10.0847 3.47975C10.5165 4.31021 10.8221 5.18716 11.2008 6.01762C11.535 6.84506 12.053 7.58567 12.7156 8.18347C13.0179 8.47409 13.3907 8.68086 13.7973 8.78339C14.204 8.88592 14.6303 8.88064 15.0342 8.7681C15.9058 8.44143 16.6489 7.84273 17.1536 7.06068C17.7316 6.2568 18.1833 5.28018 18.8145 4.33678C19.1355 3.84764 19.5172 3.40117 19.9505 3.00804C20.4071 2.61118 20.9377 2.30862 21.5118 2.11779C22.1043 1.91517 22.7412 1.88068 23.3521 2.01814C23.9719 2.17131 24.5177 2.53834 24.8934 3.05455C25.5977 3.99795 25.8368 5.04765 26.4082 5.5725C26.6675 5.83263 27.0118 5.99065 27.3782 6.01762C27.7818 6.02071 28.1811 5.9345 28.5475 5.76517C29.3497 5.36762 30.1284 4.92396 30.8794 4.43644C31.657 3.99071 32.4814 3.632 33.3375 3.36681C34.8527 2.91365 36.4116 2.62192 37.9881 2.49649C40.8449 2.25731 43.1369 2.18423 44.7314 2.1045C45.5564 2.02614 46.3875 2.03952 47.2095 2.14437Z" fill="#034833"></path>
+                                    <path d="M45.4762 6.2697C45.4231 6.13018 46.1406 5.7382 47.2235 5.08712C47.7683 4.76158 48.4127 4.36296 49.1036 3.89126C49.4491 3.65873 49.768 3.39963 50.1666 3.13388C50.3373 3.0178 50.4954 2.88421 50.6383 2.73527C50.7579 2.61795 50.8527 2.47789 50.9173 2.32336C50.9506 2.19713 50.9173 2.20377 50.9173 2.15726C50.821 2.06916 50.7009 2.01139 50.5719 1.99117L49.283 1.64571C48.4592 1.41982 47.7218 1.20058 47.1039 0.981341C45.8682 0.582721 45.1108 0.263819 45.1573 0.124302C45.2038 -0.0152149 46.001 0.0379361 47.2833 0.250534C47.9476 0.356832 48.6784 0.502993 49.5155 0.675728L50.8443 0.968051C51.184 1.02987 51.4955 1.19726 51.7345 1.4464C51.8826 1.61431 51.9774 1.82242 52.0069 2.04432C52.0341 2.24825 52.0113 2.45574 51.9405 2.6489C51.8291 2.94985 51.6521 3.2222 51.4223 3.44614C51.235 3.63879 51.0254 3.80831 50.7978 3.95105C50.4124 4.23009 50.0205 4.47591 49.6484 4.70179C48.9845 5.09883 48.2916 5.44528 47.5756 5.7382C46.3399 6.25641 45.5294 6.40257 45.4762 6.2697Z" fill="#034833"></path>
+                                </g>
+                                <defs>
+                                    <clippath id="clip0_3795_96">
+                                        <rect width="52" height="9.86585" fill="white" transform="translate(0 0.0664062)"></rect>
+                                    </clippath>
+                                </defs>
+                            </svg>
+                        </p>
+                        <h3>Latest News and Featured Articles</h3>
+                    </div>
+                    <div class="cngnews_btnsection">
+                        <a class="bookbtn" href="https://readyassist.in/readyassist-news.html">Know More→</a>
+                    </div>
+                </div>
+                <div class="cngnews_cardsection">
+                    <div class="cngnews_cardsection_left">
+                        <div class="cngnews_card_hero">
+                            <img src="./banner-CNG11_files/cng_news1.avif" alt="news1">
+                            <div class="cngnews_card_hero_content">
+                                <div class="cngnews_date_provider">
+                                    <div class="cngnews_date"><img src="./banner-CNG11_files/date.svg" alt="date icon" style="width: 24px;">9 July 2024</div>
+                                    <div class="cngnews_provider">
+                                        <img src="./banner-CNG11_files/news.svg" alt="news icon">
+                                        INDIA TODAY
+                                    </div>
+                                </div>
+                                <div class="cngnews_head">Bajaj Freedom 125, world's first CNG bike</div>
+                                <div class="cngnews_desc">Bajaj Auto recently launched the world's first CNG
+                                    motorcycle, the Bajaj Freedom 125. The company claims that this motorcycle
+                                    has almost 50% less operating cost than a similar petrol-only model</div>
+                                <div class="readmore_section"><a class="read_morebtn" href="https://www.indiatoday.in/auto/bikes/story/bajaj-freedom-125-worlds-first-cng-bike-all-variants-explained-2564436-2024-07-09" rel="nofollow" target="_blank">ReadMore <span style="color: var(--button-primary);">→</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cngnews_cardsection_right">
+                        <div class="cngnews_card_child">
+                            <div class="cngnews_card_child_img">
+                                <img src="./banner-CNG11_files/news3.webp" alt="news3">
+                            </div>
+                            <div class="cngnews_card_child_content">
+                                <div class="cngnews_date_provider">
+                                    <div class="cngnews_date"><img src="./banner-CNG11_files/date.svg" alt="date icon" style="width: 24px;">11 July
+                                        2024</div>
+                                    <div class="cngnews_provider">
+                                        <img src="./banner-CNG11_files/news.svg" alt="news icon">
+                                        Financial Express
+                                    </div>
+                                </div>
+                                <div class="cngnews_head">TVS to launch its first CNG two-wheeler with Jupiter 125 CNG
+                                </div>
+                                <div class="cngnews_desc">After Bajaj now TVS will also launch its powerful scooter
+                                    Jupiter in the
+                                    CNG
+                                    variant, know the
+                                    features</div>
+                                <div class="readmore_section"><a class="read_morebtn" href="https://www.financialexpress.com/auto/bike-news/after-bajaj-tvs-to-launch-its-first-cng-two-wheeler-with-jupiter-125-cng/3550478/" rel="nofollow" target="_blank">ReadMore <span style="color: var(--button-primary);">→</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cngnews_card_child">
+                            <div class="cngnews_card_child_img">
+                                <img src="./banner-CNG11_files/cng_news2.webp" alt="news2">
+                            </div>
+                            <div class="cngnews_card_child_content">
+                                <div class="cngnews_date_provider">
+                                    <div class="cngnews_date"><img src="./banner-CNG11_files/date.svg" alt="date icon" style="width: 24px;">7 July
+                                        2024</div>
+                                    <div class="cngnews_provider">
+                                        <img src="./banner-CNG11_files/news.svg" alt="news icon">
+                                        ET Auto
+                                    </div>
+                                </div>
+                                <div class="cngnews_head">CNG Vehicle registrations in Mumbai rise 37% in a year</div>
+                                <div class="cngnews_desc">There has been a 37% rise in annual registrations of
+                                    Compressed Natural Gas (CNG) vehicles in Mumbai</div>
+                                <div class="readmore_section"><a class="read_morebtn" href="https://auto.economictimes.indiatimes.com/news/passenger-vehicle/cng-vehicle-registrations-in-mumbai-rise-37-in-a-year-surpass-pre-covid-levels/111555190?utm_source=top_news&amp;utm_medium=tagListing" rel="nofollow" target="_blank">ReadMore <span style="color: var(--button-primary);">→</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="ourpartners">
+            <div class="ourpartners_section mx-auto">
+                <div class="ourpartners_head">
+                    <div class="ourpartners_head_text">
+                        <p>Our Partners <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_3945_56)">
+                                    <path d="M4.9248 10.3748L6.49525 9.68052L5.62485 9.07031L4.9248 10.3748Z" fill="#83CD20"></path>
+                                    <path d="M4.9248 10.3743L4.99976 8L13.9078 0L5.66407 9.1113L4.9248 10.3743Z" fill="#83CD20"></path>
+                                    <path d="M5 8L13.908 0L0 6.22704L5 8Z" fill="#83CD20"></path>
+                                    <path d="M5.66406 9.1113L9.95686 12L13.9078 0L5.66406 9.1113Z" fill="#034833">
+                                    </path>
+                                </g>
+                                <defs>
+                                    <clippath id="clip0_3945_56">
+                                        <rect width="13.908" height="12" fill="white"></rect>
+                                    </clippath>
+                                </defs>
+                            </svg></p>
+                        <h3>Meet Our Trusted Partners</h3>
+
+                        <div class="why_partner">
+                            Explore the exceptional brands that support our vision. Our partners are industry leaders,
+                            sharing our dedication to quality and innovation. Together, we deliver outstanding products
+                            and services, ensuring high standards. We're proud to collaborate with partners who inspire
+                            excellence every day.
+                        </div>
+
+                    </div>
+                    <div class="ourpartners_design_section">
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab(&#39;cngparters&#39;)">STRATEGIC</p>
+                            <p class="tab-links" onclick="opentab(&#39;insurancepartners&#39;)">CNG KIT</p>
+                            <p class="tab-links" onclick="opentab(&#39;clients&#39;)">FINANCE</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="cngparters">
+                            <div class="partners_logos">
+                                <img src="./banner-CNG11_files/Ag-and--p.webp" alt="Ag &amp; p logo">
+                                <img src="./banner-CNG11_files/think-GAS.webp" alt="think gas logo">
+                            </div>
+                        </div>
+                        <div class="tab-contents" id="insurancepartners">
+                            <div class="partners_logos">
+                                <img src="./banner-CNG11_files/sagas.webp" alt="sagas logo">
+                                <img src="./banner-CNG11_files/lovato_logo.webp" alt="lovato logo">
+                                <img src="./banner-CNG11_files/mijo_logo.webp" alt="mijo logo">
+                            </div>
+                        </div>
+                        <div class="tab-contents" id="clients">
+                            <div class="partners_logos">
+                                <img src="./banner-CNG11_files/entranzfinance.webp" alt="entranzfinance logo">
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./banner-CNG11_files/partner_shape1.svg" alt="shape icon" class="partner_shape1">
+                </div>
+            </div>
+        </div>
+
+        <div id="customertestimonials">
+            <div class="customertestimonial_section mx-auto">
+                <div class="testi_section">
+                    <div class="cxtestimonial_left_section">
+                        <div class="cxtesti_card_container">
+                            <div class="cxtesti_section1">
+                                <div class="cxtesti_card">
+                                    <div class="cxtesti_img_text">
+                                        <div class="cxtesti_img">
+                                            <img src="./banner-CNG11_files/user1.webp" alt="user avatar">
+                                        </div>
+                                        <div class="cxtesti_text">
+                                            <p class="cxtesti_name">Michael T</p>
+                                            <p class="cxrole">Customer</p>
+                                        </div>
+                                    </div>
+                                    <div class="cxtesti_des">
+                                        <p>CNGFirst by ReadyAssist transformed my driving experience. I’m saving on fuel
+                                            and reducing emissions!</p>
+                                    </div>
+                                    <div class="cxtesti_date_section">
+                                        <p class="cxtesti_date">June 29, 2024</p>
+                                    </div>
+                                </div>
+                                <div class="cxtesti_card">
+                                    <div class="cxtesti_img_text">
+                                        <div class="cxtesti_img">
+                                            <img src="./banner-CNG11_files/user2.webp" alt="user avatar">
+                                        </div>
+                                        <div class="cxtesti_text">
+                                            <p class="cxtesti_name">John D</p>
+                                            <p class="cxrole">Customer</p>
+                                        </div>
+                                    </div>
+                                    <div class="cxtesti_des">
+                                        <p>The installation of CNGFirst was quick and hassle-free. Excellent service
+                                            overall!</p>
+                                    </div>
+                                    <div class="cxtesti_date_section">
+                                        <p class="cxtesti_date">June 25, 2024</p>
+                                    </div>
+                                </div>
+                                <div class="cxtesti_card">
+                                    <div class="cxtesti_img_text">
+                                        <div class="cxtesti_img">
+                                            <img src="./banner-CNG11_files/fuser1.webp" alt="user avatar">
+                                        </div>
+                                        <div class="cxtesti_text">
+                                            <p class="cxtesti_name">Sarah L</p>
+                                            <p class="cxrole">Customer</p>
+                                        </div>
+                                    </div>
+                                    <div class="cxtesti_des">
+                                        <p>I've noticed a big boost in mileage since switching to CNGFirst. Highly
+                                            recommend it!</p>
+                                    </div>
+                                    <div class="cxtesti_date_section">
+                                        <p class="cxtesti_date">June 24, 2024</p>
+                                    </div>
+                                </div>
+                                <div class="cxtesti_card">
+                                    <div class="cxtesti_img_text">
+                                        <div class="cxtesti_img">
+                                            <img src="./banner-CNG11_files/user3.webp" alt="user avatar">
+                                        </div>
+                                        <div class="cxtesti_text">
+                                            <p class="cxtesti_name">David S</p>
+                                            <p class="cxrole">Customer</p>
+                                        </div>
+                                    </div>
+                                    <div class="cxtesti_des">
+                                        <p>The ReadyAssist team was professional and answered all my questions about
+                                            CNGFirst.</p>
+                                    </div>
+                                    <div class="cxtesti_date_section">
+                                        <p class="cxtesti_date">June 20, 2024</p>
+                                    </div>
+                                </div>
+                                <div class="cxtesti_card">
+                                    <div class="cxtesti_img_text">
+                                        <div class="cxtesti_img">
+                                            <img src="./banner-CNG11_files/fuser3.webp" alt="user avatar">
+                                        </div>
+                                        <div class="cxtesti_text">
+                                            <p class="cxtesti_name">Pooja S</p>
+                                            <p class="cxrole">Customer</p>
+                                        </div>
+                                    </div>
+                                    <div class="cxtesti_des">
+                                        <p>CNGFirst exceeded my expectations with their retrofitment service. The
+                                            installation was done on time, and the quality of work was excellent.</p>
+                                    </div>
+                                    <div class="cxtesti_date_section">
+                                        <p class="cxtesti_date">June 05, 2024</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cxtesti_section2">
+                                <div class="cxtesti_card">
+                                    <div class="cxtesti_img_text">
+                                        <div class="cxtesti_img">
+                                            <img src="./banner-CNG11_files/fuser3.webp" alt="user avatar">
+                                        </div>
+                                        <div class="cxtesti_text">
+                                            <p class="cxtesti_name">Sophia J</p>
+                                            <p class="cxrole">Customer</p>
+                                        </div>
+                                    </div>
+                                    <div class="cxtesti_des">
+                                        <p>I love the performance of CNGFirst. It’s a cleaner and smarter option for
+                                            driving!</p>
+                                    </div>
+                                    <div class="cxtesti_date_section">
+                                        <p class="cxtesti_date">June 18, 2024</p>
+                                    </div>
+                                </div>
+                                <div class="cxtesti_card">
+                                    <div class="cxtesti_img_text">
+                                        <div class="cxtesti_img">
+                                            <img src="./banner-CNG11_files/user4.webp" alt="user avatar">
+                                        </div>
+                                        <div class="cxtesti_text">
+                                            <p class="cxtesti_name">Chris W</p>
+                                            <p class="cxrole">Customer</p>
+                                        </div>
+                                    </div>
+                                    <div class="cxtesti_des">
+                                        <p>Noticeable improvement in engine performance. CNGFirst is a smart choice!</p>
+                                    </div>
+                                    <div class="cxtesti_date_section">
+                                        <p class="cxtesti_date">June 13, 2024</p>
+                                    </div>
+                                </div>
+                                <div class="cxtesti_card">
+                                    <div class="cxtesti_img_text">
+                                        <div class="cxtesti_img">
+                                            <img src="./banner-CNG11_files/fuser2.webp" alt="user avatar">
+                                        </div>
+                                        <div class="cxtesti_text">
+                                            <p class="cxtesti_name">Akshaya P</p>
+                                            <p class="cxrole">Customer</p>
+                                        </div>
+                                    </div>
+                                    <div class="cxtesti_des">
+                                        <p>Switching to CNGFirst was one of the best decisions I’ve made. Smooth and
+                                            efficient! </p>
+                                    </div>
+                                    <div class="cxtesti_date_section">
+                                        <p class="cxtesti_date">June 15, 2024</p>
+                                    </div>
+                                </div>
+                                <div class="cxtesti_card">
+                                    <div class="cxtesti_img_text">
+                                        <div class="cxtesti_img">
+                                            <img src="./banner-CNG11_files/user5.webp" alt="user avatar">
+                                        </div>
+                                        <div class="cxtesti_text">
+                                            <p class="cxtesti_name">Ashik M</p>
+                                            <p class="cxrole">Customer</p>
+                                        </div>
+                                    </div>
+                                    <div class="cxtesti_des">
+                                        <p>The CNG retrofitment has significantly reduced my fuel costs. Highly
+                                            recommend!</p>
+                                    </div>
+                                    <div class="cxtesti_date_section">
+                                        <p class="cxtesti_date">June 06, 2024</p>
+                                    </div>
+                                </div>
+                                <div class="cxtesti_card">
+                                    <div class="cxtesti_img_text">
+                                        <div class="cxtesti_img">
+                                            <img src="./banner-CNG11_files/user4.webp" alt="user avatar">
+                                        </div>
+                                        <div class="cxtesti_text">
+                                            <p class="cxtesti_name">Ravi Mehta</p>
+                                            <p class="cxrole">Customer</p>
+                                        </div>
+                                    </div>
+                                    <div class="cxtesti_des">
+                                        <p>I recently got my car converted to CNG with CNGFirst, and I couldn't be
+                                            happier! The process was seamless, and the team was very professional.</p>
+                                    </div>
+                                    <div class="cxtesti_date_section">
+                                        <p class="cxtesti_date">June 03, 2024</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cxtestimonial_right_section">
+                        <div class="review_detail_section">
+                            <div class="review_text">Review</div>
+                            <div class="review_title">We love our customers and they love us too.</div>
+                            <div class="review_desc">We deeply appreciate our valued customers. Your trust and loyalty
+                                inspire us to deliver exceptional products and services. Thank you for being an
+                                essential part of our journey.
+                                We look forward to serving you with dedication and passion.</div>
+                            <div class="view_all_btn">
+                                <button class="btn_open_popup" onclick="togglePopup()">Write a review →</button>
+                            </div>
+                            <div id="popupOverlay" class="overlay_container">
+                                <div class="popup_box">
+                                    <div class="popup_header">
+                                        <h2>We appreciate your feedback</h2>
+                                        <button class="btn_close_popup" onclick="togglePopup()">✕</button>
+                                    </div>
+                                    <div class="form_container" id="reviewForm">
+                                        <div class="form_group">
+                                            <input class="form_input" type="text" placeholder="Name" id="name" name="name" autocomplete="name" required="" onblur="validateName()" onfocus="clearError(&#39;nameError&#39;)">
+                                            <span id="nameError" class="error_message"></span>
+                                        </div>
+                                        <div class="form_group">
+                                            <input class="form_input" type="number" placeholder="Mobile Number" id="mobileno" name="mobileno" autocomplete="mobileno" maxlength="10" required="" onblur="validateNumber()" onfocus="clearError(&#39;mobileError&#39;)">
+                                            <span id="mobileError" class="error_message"></span>
+                                        </div>
+                                        <div class="form_group" style="margin-left: 2px;">
+                                            <label for="rating" style="color: #404040;font-size: 16px;font-weight: 300;">Rate
+                                                us:</label>
+                                            <div class="star_rating">
+                                                <input type="radio" name="star" id="star5" value="5">
+                                                <label for="star5">★</label>
+                                                <input type="radio" name="star" id="star4" value="4">
+                                                <label for="star4">★</label>
+                                                <input type="radio" name="star" id="star3" value="3">
+                                                <label for="star3">★</label>
+                                                <input type="radio" name="star" id="star2" value="2">
+                                                <label for="star2">★</label>
+                                                <input type="radio" name="star" id="star1" value="1">
+                                                <label for="star1">★</label>
+                                            </div>
+                                            <span id="starError" class="error_message"></span>
+                                        </div>
+                                        <div class="form_group">
+                                            <textarea rows="4" cols="50" style="resize: none;" class="form_input" type="text-area" placeholder="Your review" id="review" name="review" required="" onblur="validateReview()" onfocus="clearError(&#39;reviewError&#39;)"></textarea>
+                                            <span id="reviewError" class="error_message"></span>
+                                        </div>
+                                        <button class="btn_submit" onclick="validateForm()">Submit</button>
+                                        <p id="formMessage" style="color: green;"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cx_testi_shape1"></div>
+            </div>
+        </div>
+
+        <div id="faqquestions">
+            <div class="faq_section mx-auto">
+                <div class="faq_right_section">
+                    <img src="./banner-CNG11_files/FQ.png" alt="faq image" loading="lazy">
+                </div>
+                <div class="faq_left_section">
+                    <div class="faq_head">
+                        <p>Have Any Question
+                            <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_3945_56)">
+                                    <path d="M4.9248 10.3748L6.49525 9.68052L5.62485 9.07031L4.9248 10.3748Z" fill="#83CD20"></path>
+                                    <path d="M4.9248 10.3743L4.99976 8L13.9078 0L5.66407 9.1113L4.9248 10.3743Z" fill="#83CD20"></path>
+                                    <path d="M5 8L13.908 0L0 6.22704L5 8Z" fill="#83CD20"></path>
+                                    <path d="M5.66406 9.1113L9.95686 12L13.9078 0L5.66406 9.1113Z" fill="#034833">
+                                    </path>
+                                </g>
+                                <defs>
+                                    <clippath id="clip0_3945_56">
+                                        <rect width="13.908" height="12" fill="white"></rect>
+                                    </clippath>
+                                </defs>
+                            </svg>
+                        </p>
+                        <h3>Frequently Asked Question</h3>
+                    </div>
+                    <div class="faqs_container">
+                        <div class="faq">
+                            <div class="faq_ques">
+                                <h6 class="faq_title">
+                                    How long does the CNG kit installation process take?
+                                </h6>
+                                <button class="faq-toggle">
+                                    <div class="right_icon" style="width: 14px;" alt="right icon">+</div>
+                                    <div class="down_icon" style="width: 20px;" alt="down icon">-</div>
+                                </button>
+                            </div>
+                            <p class="faq_text">
+                                The installation process typically takes between 4 to 6 hours, but it can vary based
+                                on the complexity of the vehicle.
+                            </p>
+                        </div>
+                        <div class="faq">
+                            <div class="faq_ques">
+                                <h6 class="faq_title">
+                                    Will installing a CNG kit void my vehicle’s warranty?
+                                </h6>
+                                <button class="faq-toggle">
+                                    <div class="right_icon" style="width: 14px;" alt="right icon">+</div>
+                                    <div class="down_icon" style="width: 20px;" alt="down icon">-</div>
+                                </button>
+                            </div>
+                            <p class="faq_text">
+                                This depends on the vehicle manufacturer’s policy. It’s important to check with your
+                                vehicle’s manufacturer or dealer.
+                            </p>
+                        </div>
+                        <div class="faq">
+                            <div class="faq_ques">
+                                <h6 class="faq_title">
+                                    Is CNG safe to use?
+                                </h6>
+                                <button class="faq-toggle">
+                                    <div class="right_icon" style="width: 14px;" alt="right icon">+</div>
+                                    <div class="down_icon" style="width: 20px;" alt="down icon">-</div>
+                                </button>
+                            </div>
+                            <p class="faq_text">
+                                Yes, CNG is considered safe when the installation is done by certified professionals
+                                and regular maintenance is performed. CNG has a high ignition temperature and is
+                                non-toxic.
+                            </p>
+                        </div>
+                        <div class="faq">
+                            <div class="faq_ques">
+                                <h6 class="faq_title">
+                                    Where can I refuel my vehicle with CNG?
+                                </h6>
+                                <button class="faq-toggle">
+                                    <div class="right_icon" style="width: 14px;" alt="right icon">+</div>
+                                    <div class="down_icon" style="width: 20px;" alt="down icon">-</div>
+                                </button>
+                            </div>
+                            <p class="faq_text">
+                                CNG refueling stations are available in many urban areas. You can find the nearest
+                                CNG station using mobile apps or online maps.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <img src="./banner-CNG11_files/faq_shape1.svg" alt="dot icon" class="faq_shape1">
+                <img src="./banner-CNG11_files/faq-shape2.svg" alt="shape" loading="lazy" class="faq_shape2">
+            </div>
+        </div>
+
+        <div data-include="./components/downloadApp.html"><div id="downloadApp" class="py-lg-50">
+    <div class="col-12 crop-width mx-auto py-50 px-20">
+        <div class="col-9 col-lg-6 py-xl-5 my-xl-5">
+            <p id="downloadApp_title1" class="weight500 py-10">DOWNLOAD APP</p>
+            <p id="downloadApp_title2" class="weight700 fs-20 fs-md-30 fs-xl-40 py-10">Do More<br> With Our
+                Application</p>
+            <p id="downloadApp_description" class=" weight300 pb-4 col-8 col-md-12 py-20">We are just a click
+                away from reaching out to you in
+                times of need. You can book and track your service requests online. Our app is a one-stop
+                destination for all your vehicle needs.</p>
+            <div class="flex flex-wrap items-center">
+                <div onclick="openurl(&#39;play.google.com/store/apps/details?id=com.prod.racustomerapp&#39;)" class="application-play-btn p-10 pointer flex items-center mb-20 me-10">
+                    <img width="40px" height="40px" src="./banner-CNG11_files/google-play.svg" alt="playstore icon" loading="lazy">
+                    <div class="btn-content">
+                        <span class="weight400">AVAILABLE ON</span>
+                        <p class="weight500 text-white">Google Play</p>
+                    </div>
+                </div>
+                <div onclick="openurl(&#39;apps.apple.com/in/app/readyassist-superapp/id6449661045&#39;)" class="application-play-btn p-10 pointer flex items-center mb-20 ms-lg-20">
+                    <img width="40px" height="40px" src="./banner-CNG11_files/company.svg" alt="app store icon" loading="lazy">
+                    <div class="btn-content">
+                        <span>AVAILABLE ON</span>
+                        <p class="weight500 text-white">App Store</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div></div>
+
+    </main>
+
+    <div data-include="./components/footer.html"><div id="footer" class="relative">
+    <div class="crop-width mx-auto flex flex-wrap  px-10 text-white">
+        <div id="footerTop_Card" class="col-12 py-50 px-20 flex justify-center br20">
+            <div class="col-12 col-lg-6 text-white text-center mx-auto">
+                <h2 class="weight500">24/7 Vehicle Care Support Across India</h2>
+                <p class="weight300 py-30">
+                    At our core, we deliver round-the-clock repairs and assistance service for bikes and cars,
+                    spanning
+                    the
+                    length and breadth of the country, ensuring a hassle-free ride for our esteemed clientele. With
+                    more
+                    than
+                    300 workshops, we are India’s largest two-wheeler multi-brand workshops chain. </p>
+                <button id="footer_bookbtn" class="weight600 py-20 px-30" style="color: black;">BOOK A
+                    SERVICE</button>
+            </div>
+        </div>
+
+        <div id="footerBottom" class="col-12 col-lg-4 py-20">
+            <p class="text-yellow fs-17 weight700 py-10">ReadyAssist</p>
+            <h2 class="text-white weight400">24/7 vehicle care and roadside assistance partner for bikes &amp;
+                cars across India</h2>
+            <p class="text-yellow fs-16 weight700 pt-30 pb-10">Corporate Office</p>
+            <p class="text-white weight400 pe-lg-5 footerText1">839/2, 24th Main Rd, Behind Thirumala Theatre, 1st
+                Sector, HSR
+                Layout, Bengaluru, Karnataka 560102 </p>
+        </div>
+        <div id="reachUs" class="flex col-12 col-lg-4 py-20">
+            <div class="pt-4">
+                <p class="text-yellow weight700 py-10">REACH US</p>
+                <div class="flex align-items-center">
+                    <img alt="call button" class="p-1" src="./banner-CNG11_files/call_us.svg">
+                    <a class="text-white weight400 footerText1 ms-5" href="tel:8197 852 852">8197 852 852</a>
+                </div>
+                <p class="text-yellow weight700 pt-30 pb-10">EMAIL</p>
+                <a class="text-white weight400 footerText1" href="mailto:hello@readyassist.in">hello@readyassist.in</a>
+            </div>
+        </div>
+        <div id="quickLinks" class="col-12 col-lg-4 flex py-20">
+
+            <div>
+                <p class="text-yellow footerText1 weight700 pb-10">QUICK LINKS</p>
+
+                <p><a class="weight400 footerText1 " href="https://readyassist.in/aboutus-readyassist.html">About Us</a></p>
+                <p><a class="weight400 footerText1" href="https://app.readyassist.in/activate-subscription">Activate
+                        Voucher</a></p>
+
+                <p><a class="weight400 footerText1" href="https://app.readyassist.in/my-subscriptions">My
+                        Subscriptions</a></p>
+                <p>
+                    <a class="weight400 footerText1" href="https://readyassist.in/careers.html">Career</a>
+                </p>
+                <p>
+                    <a class="weight400 footerText1" href="https://readyassist.in/contact-readyassist.html">Contact
+                        Us</a>
+
+                </p>
+                <p><a class="weight400 footerText1" href="https://readyassist.in/terms-and-conditions.html">Terms &amp; Conditions</a>
+                </p>
+                <p> <a class="weight400 footerText1" href="https://readyassist.in/prime-terms-and-conditions.html"> Prime
+                        Terms &amp; Conditions</a>
+                </p>
+                <p><a class="weight400 footerText1" href="https://readyassist.in/privacy.html">Privacy
+                        Policy</a>
+                </p>
+                <p><a class="weight400 footerText1" href="https://readyassist.in/readyassist-news.html">News
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <div id="social_links" class="col-12 flex justify-center py-30">
+            <a class="px-1" href="https://www.facebook.com/readyassist/" target="_blank">
+                <img src="./banner-CNG11_files/facebook.svg" class="p-1 social_icons social_icon1" width="30px" alt="facebook" loading="lazy"></a>
+            <a class="px-1" href="https://www.linkedin.com/company/readyassist/mycompany/" target="_blank">
+                <img src="./banner-CNG11_files/linkedin.svg" class="social_icons social_icon2" width="30px" alt="linkedin" loading="lazy"></a>
+            <a class="px-1" href="https://www.instagram.com/readyassist/?hl=en" target="_blank">
+                <img src="./banner-CNG11_files/instagram.svg" class="p-1 social_icons social_icon3" width="30px" alt="instagram" loading="lazy"></a>
+            <a class="px-1" href="https://api.whatsapp.com/send?phone=918197852852" target="_blank">
+                <img src="./banner-CNG11_files/whatsapp.svg" class="p-1 social_icons social_icon4" width="30px" alt="whatsapp" loading="lazy"></a>
+            <a class="px-1" href="https://www.youtube.com/channel/UC59ULnyZcU9hmO63uu6xFrA" target="_blank">
+                <img src="./banner-CNG11_files/youtube.svg" class="p-1  social_icons social_icon5" width="30px" alt="youtube" loading="lazy"></a>
+        </div>
+    </div>
+</div></div>
+
+    <script src="./banner-CNG11_files/menu.js.download"></script>
+    <script src="./banner-CNG11_files/componentLoader.js.download"></script>
+    <script type="module" src="./banner-CNG11_files/common.js.download"></script>
+    <script type="module" src="./banner-CNG11_files/cng.js.download"></script>
+
+
+<div class="betternet-wrapper"><template shadowrootmode="open">
+      <style>
+        .betternet_content_clean * {}
+      </style>
+      <style>@import url("chrome-extension://gjknjjomckknofjidppipffbpoekiipm/content/styles.css");</style>
+      <div id="betternet_content_root" class="betternet_content_clean"><div class="betternet_content"></div></div>
+    </template></div></body></html>
