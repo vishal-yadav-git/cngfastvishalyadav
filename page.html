@@ -1,0 +1,5100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  <style> #menubar {
+  width: 100%;
+  position: sticky !important;
+  top: 0;
+  height: 100vh;
+  align-items: center;
+  z-index: 10;
+  transition: .5s;
+}
+
+.inspection_theme {
+  background-color: #06278a;
+  color: white !important;
+}
+
+.default_theme {
+  background-color: white;
+  color: black !important;
+}
+
+.multimedia_theme {
+  background-color: #212121;
+  color: white !important;
+}
+
+.carrer_theme {
+  background-color: #256DE9;
+  color: white !important;
+}
+
+.cng_theme {
+  background-color: #00008B;
+  color: white !important;
+}
+
+#menubar a {
+  text-decoration: none;
+}
+
+#servicesList a {
+  text-decoration: none;
+  color: black;
+}
+
+#clip_img_pseudo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgb(255, 115, 0), orange);
+  left: 0px;
+  top: 0;
+  transform-origin: left;
+}
+
+#clip_img_pseudo2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgb(255, 115, 0), orange);
+  left: 0px;
+  top: 0;
+  transform-origin: left;
+}
+
+#clip_img_1 {
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  transition: 1s;
+  transform: scale(1);
+  z-index: 2;
+}
+
+#clip_img_2 {
+  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+  transition: 1s;
+  position: relative;
+  z-index: 1;
+}
+
+#menubar>div:first-child {
+  scale: 1.5;
+  transition: .4s;
+}
+
+nav {
+  right: 0;
+  transform: translateY(-200%);
+  transition: .4s;
+}
+
+#mobileNav {
+  position: fixed;
+  top: 0px;
+  z-index: 11;
+  width: 100vw;
+  height: 100vh;
+  left: 100%;
+  padding-top: 100px;
+  padding-left: 20px;
+  font-size: 30px !important;
+  transition: .5s;
+  background-color: white;
+}
+
+#mobileNav>* {
+  padding-bottom: 5px;
+}
+
+.ham {
+  right: 0;
+  top: 0;
+  z-index: 5;
+}
+
+.ham img {
+  width: 40px;
+}
+
+.shrink {
+  animation: shrink .5s forwards;
+}
+
+#mobileServiceContainer {
+  height: 100vh;
+  width: 100vw;
+  left: 100%;
+  top: 0px;
+  transition: .4s;
+}
+
+@keyframes shrink {
+  0% {
+    height: 100vh
+  }
+
+  80% {
+    height: 70px;
+  }
+
+  100% {
+    height: 70px;
+  }
+}
+
+.navText {
+  font-size: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  cursor: pointer;
+  transition: .2s;
+  transform-origin: center;
+  color: black;
+  text-decoration: none !important;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navText:hover {
+  scale: 1.1;
+  transition: .2s;
+  font-weight: 500;
+}
+
+.cngText {
+  font-size: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  cursor: pointer;
+  transition: .2s;
+  transform-origin: center;
+  text-decoration: none !important;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #0E86D4;
+  font-weight: 600;
+}
+
+.cngText span {
+  color: #EEBC39;
+}
+
+.cngText:hover {
+  scale: 1.1;
+  transition: .2s;
+  font-weight: 500;
+}
+
+.logoText {
+  font-size: 25px;
+  font-weight: 700;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+
+.mecText {
+  text-decoration: none;
+}
+
+.mecText {
+  color: #39b54a;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.callButton {
+  background-color: #fdca18;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: ease .5s;
+}
+
+.callButton:hover {
+  width: 120px;
+  border-radius: 30px;
+}
+
+.callButton img {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+}
+
+.callButton a {
+  white-space: nowrap;
+  color: white !important;
+  font-size: 13px !important;
+  align-items: center;
+  padding-left: 7px;
+  padding-right: 3px;
+  font-weight: 400;
+}
+
+#logo_seg {
+  transition: all .4s ease-in-out;
+  transform: translate(0, 100%);
+  overflow: hidden;
+}
+
+.logoAnim {
+  display: block;
+  animation: reveal cubic-bezier(0.77, 0, 0.175, 1) 1.3s forwards;
+}
+
+@keyframes reveal {
+  0% {
+    transform: translate(0, 100%);
+  }
+
+  80% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+div:has(> #logo_seg) {
+  transition: .4s;
+}
+
+#closeIcon img {
+  width: 30px;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+}
+
+/* ----------------------services list style-------------------------- */
+
+#service_dropdown_icon{
+  margin-left: 4px;
+  display: flex;
+  align-items: center;
+}
+
+#servicesList_section {
+  top: 70px;
+  height: calc(100vh - 70px);
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  overflow: scroll;
+  z-index: 15;
+}
+
+.servicesList_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 50px 50px;
+}
+
+.servicesList_search{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.serviceSearchBox_parent{
+  width: 40%;
+  display: flex;
+  gap: 5px;
+  align-self: center;
+  background: linear-gradient(179.93deg, #f3f3f3, #fff 81.59%);
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.MobileserviceSearchBox_parent{
+  width: 80%;
+  display: flex;
+  gap: 5px;
+  align-self: center;
+  background: linear-gradient(179.93deg, #f3f3f3, #fff 81.59%);
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.serviceSearchBox {
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 16px !important;
+  color: black;
+}
+
+.serviceSearchBox::placeholder{
+  font-size: 16px !important;
+  font-weight: 300 !important;
+  color: #9CA3AF;
+}
+
+#servicesList {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+}
+
+.servicecategory {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.serviceList_category{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.servicecategory_name{
+  font-size: 15px;
+  text-decoration: 1px underline;
+  -webkit-text-decoration: underline;
+  text-underline-offset: 2px;
+  font-weight: 500;
+  padding: 0 20px;
+  color: black;
+}
+
+.serviceList_style {
+  cursor: pointer;
+  padding: 20px;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+}
+
+.serviceList_style a {
+  color: black;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.serviceList_style:hover {
+  background-color: #e3e3e3;
+  border-radius: 10px;
+}
+
+.serviceList_icon {
+  width: 18%;
+  display: flex;
+  align-items: center;
+}
+
+.serviceList_icon img {
+  width: 75%;
+  text-align: center;
+}
+
+.serviceList_content {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+.serviceList_name {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.serviceList_description {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.serviceList_button {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  padding-right: 100px;
+}
+
+.serviceList_close_btn {
+  padding: 15px 40px;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+}
+
+.serviceList_button-mb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 120px;
+}
+
+.serviceList_close_btn-mb {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+}
+
+/* ---------------------------------------------------download app section------------------------------------------------------------------ */
+
+#downloadApp {
+  background-image: url(./../images/landing/app-3.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.application-play-btn {
+  width: 185px;
+  background-color: #2a2a2a;
+  border-radius: 7px;
+  overflow: hidden;
+  transition: .5s;
+
+  &:hover {
+    background-color: green;
+  }
+
+  img {
+    width: 40px;
+    position: relative;
+  }
+
+  .btn-content {
+    display: inline-block;
+    padding-left: 10px;
+    ;
+
+    span {
+      font-size: 10px;
+      color: #ffffff;
+    }
+  }
+}
+
+#downloadApp_title2 {
+  font-size: 30px;
+  line-height: 110%;
+}
+
+
+/* ------------------------------------------------ */
+
+#chatButton {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}
+
+
+#chatIcon {
+  background-color: #26cc64;
+  transition: .3s;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+#chatIcon:hover {
+  transform: scale(1.15);
+}
+
+#animation_text {
+  height: 20px;
+  line-height: 20px;
+  transition: .5s;
+  font-size: 9.3px;
+}
+
+#mobileServices img {
+  width: 50px;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 991px) {
+
+  #mobileServices{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px 0;
+  }
+
+  .serviceList_category{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .servicecategory_name{
+    padding: 0;
+  }
+
+  .serviceList_style {
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .serviceList_icon {
+    width: unset;
+  }
+
+  .serviceList_style a {
+    width: 100%;
+    align-items: center;
+  }
+
+}
+
+@media (min-width:991px) {
+
+  .navText,
+  .cngText {
+    font-size: 16px;
+  }
+
+  #menubar>div:first-child {
+    scale: 4;
+    transition: .4s;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --primary_color: #0E86D4;
+    --secondary_color: #EEBC39;
+    --section_bg: #F1F5EB;
+    --text-primary: #034833;
+    --text-secondary: #727272;
+    --button-primary: #83cd20;
+    --dark_section_bg: #112714;
+    --dark_light_green: #BFDC6A;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-color: var(--white);
+    overflow-x: hidden;
+}
+
+.fbtt {
+    transform: translateY(30%);
+    opacity: .5;
+    animation: bottomToTop linear forwards;
+    animation-timeline: view();
+    animation-range-start: 10%;
+    animation-range-end: 40%;
+}
+
+@keyframes bottomToTop {
+    to {
+        transform: translateY(0px);
+        opacity: 1
+    }
+}
+
+/* --------------------------------------------homepage--------------------------------------------------- */
+
+#cnghome {
+    width: 100%;
+    height: calc(100vh - 70px);
+    min-height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-direction: column;
+    background-color: var(--dark_section_bg);
+}
+
+.homescreen_container {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    display: flex;
+    gap: 50px;
+    justify-content: space-around;
+    height: 50%;
+}
+
+.homescreen_text {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    text-align: left;
+}
+
+.homescreen_text p {
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.homescreen_text h2 {
+    font-weight: 600;
+    color: var(--dark_light_green);
+    font-size: 70px;
+    line-height: 0.8;
+}
+
+.homescreen_text h6 {
+    width: 80%;
+    font-weight: 400;
+    font-size: 15px;
+    color: #ccc;
+    margin-top: 30px;
+}
+
+.home_bookbtn {
+    padding: 10px 25px;
+    background: linear-gradient(90deg, #23891f, #bbde66);
+    color: var(--black);
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.booking_section {
+    width: 50%;
+}
+
+.booking_section {
+    position: relative;
+    width: 58%;
+    /* width: 600px;
+    height: 600px; */
+    border-radius: 50%;
+}
+
+.booking_section img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* border-radius: 50%; */
+    display: block;
+    z-index: 2;
+    position: relative;
+}
+
+/* .booking_section::before,
+.booking_section::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.booking_section::before {
+    width: 410px;
+    height: 410px;
+    border: 3px solid #0E3114;
+}
+
+.booking_section::after {
+    width: 450px;
+    height: 450px;
+    border: 3px solid #0E3114;
+} */
+
+.ring-third {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: 3px solid #0E3114;
+    z-index: -1;
+}
+
+.ring-fourth {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+    height: 550px;
+    border-radius: 50%;
+    border: 3px solid #0E3114;
+    z-index: -2;
+}
+
+.homescreen_text ul {
+    list-style-type: none;
+}
+
+.homescreen_text li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+    font-size: 18px;
+    line-height: 40px;
+    padding-left: 30px;
+    position: relative;
+    z-index: 1;
+    color: var(--white);
+}
+
+.homescreen_text ul li::after {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    content: "✔";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 500;
+    height: 22px;
+    width: 22px;
+    line-height: 20px;
+    background: var(--button-primary);
+    text-align: center;
+    font-size: 12px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    color: var(--white);
+}
+
+/* ----------------------------------------------cngretro section---------------------------------------------------- */
+
+#whatiscng {
+    padding: 50px 0;
+}
+
+.whatcng_section {
+    max-width: 1200px;
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.whatcng_left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+
+.whatcng_left_imgup {
+    display: flex;
+    gap: 20px;
+}
+
+.whatcng_left_imgdown {
+    display: flex;
+    gap: 20px;
+}
+
+.image_wrapper1 {
+    max-width: 310px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.image_wrapper2 {
+    max-width: 244px;
+    height: 217px;
+    margin-top: 45px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.dummy_img {
+    padding: 40px 38px;
+    width: 174px;
+    height: 210px;
+    margin-top: 16px;
+    margin-left: 27px;
+    margin-right: 19px;
+    border-radius: 20px;
+    background-color: var(--button-primary);
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1;
+}
+
+.dummy_img p {
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+    line-height: 1.5;
+}
+
+.image_wrapper3 {
+    max-width: 312px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-top: -78px;
+}
+
+.image_wrapper1 img,
+.image_wrapper2 img,
+.image_wrapper3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 0.6s ease;
+}
+
+.image_wrapper1 img:hover,
+.image_wrapper2 img:hover,
+.image_wrapper3 img:hover {
+    transform: scale(1.2);
+}
+
+.whatcng_right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.whatcng_right p {
+    color: var(--text-primary);
+    font-size: 14px;
+    letter-spacing: 1.4px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.whatcng_right h3 {
+    color: var(--text-primary);
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 1;
+    font-style: normal;
+}
+
+.whatcng_right h6 {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--text-secondary);
+}
+
+.bookbtn {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 600;
+    border-radius: 30px;
+    padding: 13px 25px;
+    background-color: var(--button-primary);
+    transition: 0.3s ease;
+}
+
+.bookbtn:hover {
+    background-color: var(--text-primary);
+}
+
+.whatcng_checkbox {
+    display: flex;
+    gap: 40px;
+}
+
+.whatcng_checkbox ul {
+    list-style-type: none;
+}
+
+.whatcng_checkbox li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+    font-size: 14px;
+    line-height: 40px;
+    padding-left: 23px;
+    position: relative;
+    z-index: 1;
+    color: var(--black);
+}
+
+.whatcng_checkbox ul li::after {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    content: "✔";
+    font-weight: 300;
+    height: 16px;
+    width: 16px;
+    line-height: 16px;
+    background: var(--button-primary);
+    text-align: center;
+    font-size: 10px;
+    border-radius: 3px;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.whatcng_shape1 {
+    position: absolute;
+    left: -25px;
+    bottom: -18px;
+    z-index: -1;
+    animation: zooming 1.3S infinite alternate;
+}
+
+@keyframes zooming {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* -----------------------------------------benefits section------------------------------------------------ */
+
+#benefits {
+    background: var(--dark_light_green);
+}
+
+.benefits_section {
+    max-width: 1200px;
+    padding: 100px 0;
+    position: relative;
+    z-index: 2;
+    background: url('./../images/cng/ring_bg.svg') no-repeat;
+    background-position: center;
+}
+
+.benefits_head_left {
+    text-align: center;
+    color: var(--dark_section_bg);
+    position: relative;
+    z-index: 2;
+}
+
+.benefits_head_left p {
+    font-size: 14px;
+    letter-spacing: 1.4px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.benefits_head_left h3 {
+    margin-top: 10px;
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.benefits_card_section {
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+.benefits_card {
+    width: 32%;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 30px 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.benefits_card img {
+    width: 80px;
+    animation: myAnim 2s ease 0s infinite normal forwards;
+}
+
+@keyframes myAnim {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.benefits_card h4 {
+    color: var(--dark_section_bg);
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.benefits_card p {
+    color: var(--dark_section_bg);
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.know_more_btn {
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: var(--dark_section_bg);
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 30px;
+    padding: 7px 20px;
+}
+
+/* --------------------------------------ourprocess section--------------------------------------- */
+
+#ourprocess {
+    padding: 50px 0;
+}
+
+.ourprocess_section {
+    max-width: 1200px;
+}
+
+.ourprocess_head {
+    text-align: center;
+}
+
+.ourprocess_head p {
+    color: var(--text-primary);
+    font-size: 14px;
+    letter-spacing: 1.4px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.ourprocess_head h3 {
+    margin-top: 10px;
+    color: var(--text-primary);
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.ourprocess_card_section {
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+}
+
+.process_card {
+    width: 25%;
+    background-color: var(--white);
+    padding: 30px 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+    box-shadow: #0000001a 0px 4px 10px 1px;
+    border: 1px solid var(--white);
+    transition: 0.3s ease;
+}
+
+.process_card:hover {
+    border: 1px solid var(--button-primary);
+}
+
+.process_no {
+    font-family: sans-serif !important;
+    font-size: 56px;
+    letter-spacing: 2.2px;
+    color: var(--button-primary);
+    font-style: normal;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-fill-color: transparent;
+}
+
+.process_heading {
+    font-size: 20px;
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.process_detail {
+    font-size: 14px;
+    color: var(--text-secondary);
+    font-weight: 400;
+}
+
+/* ----------------------------------------whyus section------------------------------------------------- */
+
+#whyus {
+    margin: 50px 0;
+    padding: 100px 0;
+    background-color: var(--section_bg);
+}
+
+.whyus_section {
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+}
+
+.whyus_left {
+    width: 50%;
+    position: relative;
+}
+
+.whyus_left_border {
+    position: absolute;
+    border: 5px solid var(--button-primary);
+    border-radius: 20px;
+    width: 510px;
+    height: 561px;
+    margin-left: -30px;
+    margin-top: 40px;
+    z-index: 1;
+}
+
+.whyus_year {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 2px;
+}
+
+.whyus_textsection p {
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.whyus_left_img {
+    width: 85%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.whyus_left_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.whyus_right {
+    width: 50%;
+}
+
+.whyus_right p {
+    color: var(--text-primary);
+    font-size: 14px;
+    letter-spacing: 1.4px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.whyus_right h3 {
+    margin-top: 10px;
+    color: var(--text-primary);
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.whyus_checkbox {
+    display: flex;
+    gap: 10px;
+}
+
+.whyus_checkbox p {
+    color: var(--text-secondary);
+    text-transform: none;
+    font-size: 14px;
+    letter-spacing: normal;
+    font-weight: 400;
+}
+
+.whyus_checkbox ul {
+    list-style-type: none;
+}
+
+.whyus_checkbox li {
+    margin-top: 30px;
+    display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+    font-size: 18px;
+    line-height: 40px;
+    padding-left: 30px;
+    position: relative;
+    z-index: 1;
+    color: var(--text-primary);
+    text-wrap: nowrap;
+}
+
+.whyus_checkbox ul li::after {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    content: "✔";
+    font-weight: 300;
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    background: var(--text-primary);
+    text-align: center;
+    font-size: 10px;
+    border-radius: 30px;
+    transform: translateY(-50%);
+    color: var(--white) !important;
+}
+
+.whyus_button_section {
+    display: flex;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.call_section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.call_icon {
+    background-color: var(--button-primary);
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    animation: pulse 2s ease 0s infinite normal forwards;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.call_icon:hover {
+    background-color: var(--text-primary);
+}
+
+.call_icon img {
+    width: 24px;
+}
+
+.call_text {
+    color: var(--text-secondary);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.call_number {
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.whyus_textsection {
+    position: absolute;
+    bottom: 120px;
+    right: 50px;
+    z-index: 1;
+    padding: 20px 30px;
+    max-width: 242px;
+    background: var(--button-primary);
+    padding: 33px 44px;
+    border-radius: 20px;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    animation: upDown 1S infinite alternate;
+}
+
+@keyframes upDown {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-15px);
+    }
+}
+
+/* -----------------------------------------our presence section---------------------------------------------- */
+
+#ourpresence {
+    padding: 100px 0;
+}
+
+.ourpresence_section {
+    position: relative;
+}
+
+.ourpresence_container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.road_parent {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./../images/cng/road.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+
+.ourpresence_leftsection {
+    width: 47%;
+}
+
+.ourpresence_head h3 {
+    font-size: 42px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.ourpresence_head h4 {
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--text-primary);
+}
+
+.ourpresence_head p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 1.5;
+    color: var(--text-secondary);
+}
+
+.ourpresence_rightsection {
+    width: 50%;
+    z-index: 1;
+}
+
+.ourpresence_btnsection {
+    margin-top: 20px;
+}
+
+.ourpresence_btn {
+    background: linear-gradient(90deg, rgb(27, 212, 14) 0%, rgb(0, 87, 20) 100%);
+    color: var(--white);
+    padding: 15px 20px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* --------------------------------cngfitting section---------------------------------------- */
+
+#cngfitting_structure {
+    padding: 50px 0;
+}
+
+.cngfitting_structure_section {
+    max-width: 1200px;
+}
+
+.cngfitting_structure_head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cngfitting_left {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cngfitting_text p {
+    color: var(--text-primary);
+    font-size: 14px;
+    letter-spacing: 1.4px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.cngfitting_text h3 {
+    margin-top: 10px;
+    color: var(--text-primary);
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.cngfitting_heroimg {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.cngfitting_heroimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.carousel_section {
+    position: relative;
+}
+
+.slide-container {
+    width: 600px;
+    height: 400px;
+}
+
+.slide-container .slides {
+    width: 100%;
+    height: calc(100% - 40px);
+    position: relative;
+    overflow: hidden;
+}
+
+.slide-container .slides img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: contain;
+}
+
+.slide-container .slides img:not(.active) {
+    top: 0;
+    left: -100%;
+}
+
+span.next,
+span.prev {
+    color: var(--white);
+    background-color: var(--button-primary);
+    position: absolute;
+    display: grid;
+    place-items: center;
+    top: 43%;
+    font-size: 24px;
+    transition: 0.5s;
+    border-radius: 50%;
+    user-select: none;
+    cursor: pointer;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+}
+
+span.next {
+    right: 0px;
+}
+
+span.prev {
+    left: 0px;
+}
+
+span.next:hover,
+span.prev:hover {
+    background-color: var(--text-primary);
+}
+
+.dotsContainer {
+    position: absolute;
+    bottom: 5px;
+    z-index: 3;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dotsContainer .dot {
+    width: 15px;
+    height: 15px;
+    margin: 0px 2px;
+    border: 3px solid var(--button-primary);
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+}
+
+.dotsContainer .active {
+    background-color: var(--text-primary);
+}
+
+@keyframes next1 {
+    from {
+        left: 0%
+    }
+
+    to {
+        left: -100%;
+    }
+}
+
+@keyframes next2 {
+    from {
+        left: 100%
+    }
+
+    to {
+        left: 0%;
+    }
+}
+
+@keyframes prev1 {
+    from {
+        left: 0%
+    }
+
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes prev2 {
+    from {
+        left: -100%
+    }
+
+    to {
+        left: 0%;
+    }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.modal-content {
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+}
+
+.modal-content,
+#caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #000000;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #ff0000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cngfitting_checkbox {
+    display: flex;
+    gap: 50px;
+}
+
+.cngfitting_checkbox p {
+    color: var(--text-secondary);
+    text-transform: none;
+    font-size: 14px;
+    letter-spacing: normal;
+    font-weight: 400;
+}
+
+.cngfitting_checkbox ul {
+    list-style-type: none;
+}
+
+.cngfitting_checkbox li {
+    margin-top: 10px;
+    display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+    font-size: 18px;
+    line-height: 40px;
+    padding-left: 25px;
+    position: relative;
+    z-index: 1;
+    color: var(--text-primary);
+    text-wrap: nowrap;
+}
+
+.cngfitting_checkbox ul li::after {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    content: "✔";
+    font-weight: 300;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    background: var(--text-primary);
+    text-align: center;
+    font-size: 10px;
+    border-radius: 30px;
+    transform: translateY(-50%);
+    color: var(--white) !important;
+}
+
+/* ----------------------------------------cngnews section----------------------------------------------- */
+
+#cngnews {
+    margin: 50px 0;
+    padding: 50px 0;
+    background-color: var(--section_bg)
+}
+
+.cngnews_section {
+    max-width: 1200px;
+}
+
+.cngnews_head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cngnews_head_text {
+    width: 50%;
+}
+
+.cngnews_head_text p {
+    color: var(--text-primary);
+    font-size: 14px;
+    letter-spacing: 1.4px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.cngnews_head_text h3 {
+    margin-top: 10px;
+    color: var(--text-primary);
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.cngnews_btnsection {
+    width: 50%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.cngnews_cardsection {
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.cngnews_cardsection_left {
+    width: 45%;
+}
+
+.cngnews_card_hero_content {
+    padding: 20px;
+}
+
+.cngnews_card_hero {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: var(--white);
+    overflow: hidden;
+}
+
+.cngnews_cardsection_right {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.cngnews_date_provider {
+    display: flex;
+    gap: 50px;
+}
+
+.cngnews_date {
+    font-size: 14px;
+    text-wrap: nowrap;
+    display: flex;
+    align-items: center;
+    color: var(--text-secondary);
+    gap: 0px;
+}
+
+.cngnews_provider {
+    font-size: 14px;
+    text-wrap: nowrap;
+    display: flex;
+    align-items: center;
+    color: var(--text-secondary);
+    gap: 5px;
+}
+
+.cngnews_provider img {
+    width: 14px !important;
+    height: 14px !important;
+}
+
+.cngnews_head {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 22px;
+    color: var(--text-primary);
+}
+
+.cngnews_desc {
+    font-weight: 300;
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+.read_morebtn {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--text-primary);
+}
+
+.readmore_section {
+    margin-top: 20px;
+}
+
+.cngnews_card_child {
+    width: 100%;
+    height: 48%;
+    overflow: hidden;
+    display: flex;
+    flex-shrink: 0;
+    background-color: var(--white);
+    border-radius: 20px;
+}
+
+.cngnews_card_child_img {
+    width: 38%;
+}
+
+.cngnews_card_child img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cngnews_card_child_content {
+    padding: 20px;
+}
+
+/* -------------------------------------our partners---------------------------------------------- */
+
+#ourpartners {
+    padding: 50px 0;
+}
+
+.ourpartners_section {
+    max-width: 1200px;
+}
+
+.ourpartners_head {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.partner_shape1 {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    animation: zooming 1.3S infinite alternate;
+    z-index: -1;
+}
+
+.ourpartners_design_section {
+    width: 50%;
+}
+
+.ourpartners_head_text {
+    width: 50%;
+}
+
+.ourpartners_head_text p {
+    color: var(--text-primary);
+    font-size: 14px;
+    letter-spacing: 1.4px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.ourpartners_head_text h3 {
+    margin-top: 10px;
+    color: var(--text-primary);
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+.why_partner {
+    margin-top: 30px;
+    font-size: 16px;
+    color: var(--text-secondary);
+}
+
+.partners_logos {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.tab-titles {
+    justify-content: center;
+    display: flex;
+    margin: 30px 0 20px;
+    gap: 120px;
+}
+
+.tab-links {
+    color: var(--text-primary);
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: var(--button-primary);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.partners_logos img {
+    width: 120px;
+    object-fit: contain;
+    filter: grayscale(100%) sepia(100%) hue-rotate(85deg) saturate(100%) brightness(70%);
+    transition: 0.5s;
+}
+
+.partners_logos img:hover {
+    filter: none;
+}
+
+.tab-contents .partners_logos img {
+    animation: slideLeft 1s ease forwards;
+}
+
+.tab-contents div span {
+    color: var(--primary_color);
+    font-size: 14px;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 0;
+}
+
+.tab-contents {
+    display: none;
+    padding-top: 30px;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+/* ----------------------------------customer testi----------------------------------------- */
+
+#customertestimonials {
+    margin: 50px 0;
+    padding: 50px 0;
+    background-color: var(--section_bg);
+}
+
+.customertestimonial_section {
+    max-width: 1200px;
+    position: relative;
+}
+
+.testi_section {
+    display: flex;
+    height: 65vh;
+    position: relative;
+    z-index: 1;
+}
+
+.cxtestimonial_left_section {
+    width: 60%;
+    overflow: scroll;
+}
+
+.cxtestimonial_right_section {
+    width: 36%;
+    overflow: hidden;
+}
+
+.review_detail_section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    height: 100%;
+}
+
+.cxtesti_img img {
+    width: 50px;
+    height: 50px;
+}
+
+.review_text {
+    padding: 3px 10px;
+    border-radius: 60px;
+    width: 70px;
+    color: var(--white);
+    background-color: var(--text-primary);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.review_title {
+    color: var(--text-primary);
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.review_desc {
+    font-size: 16px;
+    font-weight: 300;
+    color: #8e8e8e;
+}
+
+.view_all_btn button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: var(--button-primary);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+}
+
+.view_all_btn button:hover {
+    background-color: var(--text-primary);
+}
+
+.cxtesti_card_container {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
+}
+
+.cxtesti_section1,
+.cxtesti_section2 {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cxtesti_card {
+    background-color: var(--white);
+    width: 100%;
+    border-radius: 15px;
+    padding: 20px;
+    border: .1px solid #f6f6f6;
+}
+
+.cxtesti_img_text {
+    display: flex;
+    gap: 10px;
+}
+
+.cxtesti_text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3;
+    justify-content: center;
+}
+
+.cxtesti_name {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.cxrole {
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--text-secondary);
+}
+
+.cxtesti_des {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-primary);
+}
+
+.cxtesti_date_section {
+    margin-top: 10px;
+    font-size: 11px;
+    font-weight: 300;
+    color: #b7b7b7;
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+}
+
+.star_rating {
+    direction: rtl;
+    display: inline-flex;
+    font-size: 1.5em;
+}
+
+.star_rating input[type="radio"] {
+    display: none;
+}
+
+.star_rating label {
+    color: #ddd;
+    cursor: pointer;
+    letter-spacing: 25px;
+    font-size: 1.2em;
+}
+
+.star_rating label:hover,
+.star_rating label:hover~label {
+    color: #ffc700;
+}
+
+.star_rating input[type="radio"]:checked~label {
+    color: #ffc700;
+}
+
+.star_rating label:hover~input[type="radio"]:checked~label {
+    color: #ddd;
+}
+
+.cx_testi_shape1 {
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    left: 55%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #82cd208c;
+    animation: four-dir 10s linear infinite;
+}
+
+@keyframes four-dir {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    40% {
+        transform: translate(-50px, -50px);
+    }
+
+    70% {
+        transform: translate(50px, -50px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+/* ---------------------------------------cutomer reviews form----------------------------------------------------- */
+
+.btn_open_popup {
+    transition: background-color 0.3s ease;
+}
+
+.overlay_container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 15;
+}
+
+.popup_box {
+    background: var(--section_bg);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    width: 320px;
+    text-align: center;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.popup_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popup_box h2 {
+    color: var(--dark_section_bg);
+    font-size: 16px;
+    font-weight: 600;
+    margin: auto 0;
+}
+
+.form_container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form_input {
+    background-color: #fcfffa;
+    outline: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    font-weight: 300;
+}
+
+.btn_submit {
+    background-color: #008000;
+    color: var(--white);
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn_close_popup {
+    font-size: 18px;
+    color: #e74c3c;
+    background: none;
+}
+
+.btn_submit:hover {
+    background-color: #4caf50;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.overlay_container.show {
+    display: flex;
+    opacity: 1;
+}
+
+.form_group {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.error_message {
+    font-size: 12px;
+    color: #e74c3c;
+    padding: 2px;
+}
+
+/* ---------------------------------------------------FAQ------------------------------------------------- */
+
+#faqquestions {
+    padding: 50px 0 100px 0;
+    position: relative;
+}
+
+.faq_section {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq_left_section {
+    width: 50%;
+}
+
+.faq_right_section {
+    width: 38%;
+}
+
+.faq_right_section img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.faq_head p {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1.4px;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.faq_head h3 {
+    font-size: 34px;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.faqs_container {
+    padding-top: 50px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.faq {
+    padding: 15px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+    border: 1px solid #e4e4e4;
+    background-color: var(--section_bg);
+    border-radius: 15px;
+}
+
+.faq_ques {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq_title {
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 90%;
+    color: var(--text-primary);
+}
+
+.faq_text {
+    display: none;
+    margin: 20px 0 0;
+    font-size: 14px;
+    color: var(--text-secondary);
+    font-weight: 400;
+}
+
+.faq_title,
+.faq_text {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.faq.active .faq_text {
+    display: block;
+}
+
+.faq-toggle {
+    border: none;
+    background-color: var(--white);
+    color: var(--black);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 0;
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+}
+
+.faq-toggle:focus {
+    outline: none;
+}
+
+.faq-toggle .down_icon {
+    display: none;
+}
+
+.faq.active .faq-toggle .down_icon {
+    display: block;
+}
+
+.faq.active .faq-toggle .right_icon {
+    display: none;
+}
+
+.faq_shape1 {
+    z-index: -1;
+    right: 40px;
+    bottom: 100px;
+    position: absolute;
+    animation: upDown 1.3S infinite alternate;
+}
+
+.faq_shape2 {
+    position: absolute;
+    bottom: -50%;
+    left: -10%;
+    animation: upDown 1S infinite alternate;
+    z-index: -1;
+}
+
+/* -----------------------------------------------media queries-------------------------------------------------------------------------- */
+
+
+@media only screen and (max-width: 600px) {
+
+    /* ---------------------homescreen--------------------------- */
+
+    #cnghome {
+        height: 100%;
+    }
+
+    .homescreen_container {
+        flex-direction: column;
+        justify-content: center;
+        padding: 50px 20px;
+    }
+
+    .homescreen_text {
+        width: 100%;
+        gap: 0;
+    }
+
+    .booking_section {
+        width: 100%;
+    }
+
+    .homescreen_text h2 {
+        font-size: 40px;
+        line-height: 1;
+    }
+
+    .homescreen_text h6 {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .homescreen_text p {
+        font-size: 18px;
+    }
+
+    /* ---------------------whatcng---------------------------    */
+
+    .whatcng_section {
+        padding: 0 15px;
+        flex-direction: column-reverse;
+    }
+
+    .whatcng_right {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .whatcng_right h3 {
+        font-size: 34px;
+    }
+
+    .whatcng_left {
+        width: 100%;
+    }
+
+    .dummy_img {
+        margin: 0;
+    }
+
+    /* ---------------------benefits---------------------------*/
+
+    .benefits_section {
+        padding: 50px 15px;
+    }
+
+    .benefits_head {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .benefits_head_left h3 {
+        font-size: 28px;
+    }
+
+    .benefits_card_section {
+        flex-wrap: wrap;
+    }
+
+    .benefits_card {
+        width: 100%;
+    }
+
+    /* ---------------------ourprocess---------------------------    */
+
+    .ourprocess_section {
+        padding: 0 10px;
+    }
+
+    .ourprocess_head h3 {
+        font-size: 28px;
+    }
+
+    .ourprocess_card_section {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .process_card {
+        width: 100%;
+    }
+
+
+    /* ---------------------whyus---------------------------    */
+
+    #whyus {
+        margin: 0;
+        padding: 50px 0;
+    }
+
+    .whyus_section {
+        padding: 0 10px;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .whyus_left {
+        width: 100%;
+    }
+
+    .whyus_right {
+        width: 100%;
+    }
+
+    .whyus_right h3 {
+        font-size: 24px;
+    }
+
+    .whyus_checkbox {
+        flex-direction: column;
+    }
+
+    .whyus_checkbox li {
+        padding-left: 25px;
+        font-size: 16px;
+    }
+
+    .whyus_checkbox ul li::after {
+        width: 18px;
+        height: 18px;
+        line-height: 18px;
+    }
+
+    .whyus_left_border {
+        display: none;
+    }
+
+    .whyus_textsection {
+        bottom: 20px;
+        right: 0;
+    }
+
+    .why_partner {
+        display: none;
+    }
+
+    /* ----------------------our presence section--------------------------    */
+
+    #ourpresence {
+        padding: 50px 0;
+    }
+
+    .ourpresence_section {
+        padding: 0 10px;
+    }
+
+    .ourpresence_head {
+        text-align: center;
+    }
+
+    .ourpresence_head h3 {
+        font-size: 26px;
+    }
+
+    .ourpresence_head h4 {
+        font-size: 18px;
+    }
+
+    .ourpresence_head p {
+        font-size: 14px;
+    }
+
+    .ourpresence_container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .ourpresence_leftsection {
+        width: 100%;
+    }
+
+    .ourpresence_rightsection {
+        width: 100%;
+        text-align: center;
+    }
+
+    .ourpresence_rightsection img {
+        overflow: hidden;
+        width: 350px;
+    }
+
+    .road_parent {
+        overflow: hidden;
+    }
+
+    .road_parent img {
+        overflow: hidden;
+    }
+
+    /* ---------------------cngfitting---------------------------    */
+
+    .cngfitting_structure_section {
+        padding: 0 10px;
+    }
+
+    .cngfitting_structure_head {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .cngfitting_left {
+        width: 100%;
+        text-align: center;
+    }
+
+    .cngfitting_text h3 {
+        font-size: 26px;
+        line-height: 1.3;
+    }
+
+    .cngfitting_heroimg {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .slide-container {
+        width: 330px;
+        height: 235px;
+        margin: 0 auto;
+    }
+
+    span.next,
+    span.prev {
+        top: 33%;
+        font-size: 16px;
+    }
+
+    .dotsContainer .dot {
+        width: 10px;
+        height: 10px;
+    }
+
+    span.next {
+        right: -20px;
+    }
+
+    span.prev {
+        left: -20px;
+    }
+
+    .cngfitting_checkbox,
+    .cngfitting_btnsection {
+        display: none;
+    }
+
+    /* ---------------------news section---------------------------    */
+
+    .cngnews_section {
+        padding: 0 15px;
+        flex-direction: column;
+    }
+
+    .cngnews_head {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cngnews_head_text {
+        width: 100%;
+    }
+
+    .cngnews_head_text h3 {
+        font-size: 26px;
+    }
+
+    .cngnews_btnsection {
+        justify-content: start;
+    }
+
+    .cngnews_cardsection {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .cngnews_cardsection_left {
+        width: 100%;
+    }
+
+    .cngnews_cardsection_right {
+        width: 100%;
+    }
+
+    .cngnews_card_child_img {
+        width: 30%;
+    }
+
+    .cngnews_card_child_content {
+        width: 70%;
+    }
+
+    .cngnews_date_provider {
+        gap: 20px;
+    }
+
+    .cngnews_head {
+        font-size: 16px;
+    }
+
+    .cngnews_desc,
+    .cngnews_provider,
+    .cngnews_date {
+        font-size: 12px;
+    }
+
+    /* ---------------------partners section---------------------------    */
+
+    .ourpartners_section {
+        padding: 0 15px;
+    }
+
+    .ourpartners_head {
+        flex-direction: column;
+    }
+
+    .ourpartners_head_text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .ourpartners_head_text h3 {
+        font-size: 26px;
+    }
+
+    .ourpartners_design_section {
+        width: 100%;
+    }
+
+    .tab-contents {
+        padding-top: 20px;
+    }
+
+    .tab-titles {
+        gap: 40px;
+    }
+
+    .tab-links {
+        font-size: 16px;
+    }
+
+    .ourpartners_design_section {
+        padding: 0 10px;
+    }
+
+    .partners_logos img {
+        width: 100px;
+    }
+
+    .partners_logos {
+        width: 100%;
+        gap: 10px;
+    }
+
+    /* ---------------------customer testimonials section---------------------------    */
+
+    .customertestimonial_section {
+        padding: 0px 10px;
+    }
+
+    .testi_section {
+        height: 100%;
+        gap: 30px;
+        flex-direction: column-reverse;
+    }
+
+    .cxtestimonial_left_section {
+        width: 100%;
+    }
+
+    .cxtestimonial_right_section {
+        width: 100%;
+    }
+
+    .cxtesti_card_container {
+        padding-right: 0px;
+    }
+
+    .cxtesti_card {
+        padding: 10px;
+    }
+
+    .cxtesti_img img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .cxrole {
+        font-size: 10px;
+    }
+
+    .cxtesti_name {
+        font-size: 12px;
+    }
+
+    .cxtesti_des {
+        font-size: 10px;
+    }
+
+    .cxtesti_date_section {
+        font-size: 8px;
+    }
+
+    .review_title {
+        font-size: 24px;
+        line-height: 1.2;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .review_text,
+    .review_title,
+    .view_all_btn {
+        margin: 0 auto;
+    }
+
+    .review_desc {
+        font-size: 14px;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .cx_testi_shape1 {
+        top: 35%;
+        left: 30%;
+    }
+
+    /* ----------------faq-------------------- */
+
+    .faq_section {
+        padding: 0 20px;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .faq_head h3 {
+        font-size: 26px;
+    }
+
+    .faq_left_section {
+        width: 100%;
+    }
+
+    .faq_shape3 {
+        z-index: -1;
+    }
+
+    .faq_right_section {
+        display: none;
+    }
+
+}
+
+
+@media screen and (min-width:601px) and (max-width:768px) {
+
+    /* ---------------------homescreen---------------------------*/
+
+    #cnghome {
+        height: 100%;
+    }
+
+    .homescreen_container {
+        flex-direction: column;
+        justify-content: center;
+        padding: 50px 20px;
+    }
+
+    .homescreen_text {
+        width: 100%;
+    }
+
+    .booking_section {
+        width: 100%;    
+    }
+
+    .homescreen_text h2 {
+        font-size: 36px;
+    }
+
+    .homescreen_text h6 {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    /* ---------------------whatcng---------------------------    */
+
+    .whatcng_section {
+        padding: 0 15px;
+        flex-direction: column-reverse;
+    }
+
+    .whatcng_right {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .whatcng_right h3 {
+        font-size: 34px;
+    }
+
+    .whatcng_left {
+        width: 100%;
+        align-items: center;
+    }
+
+    .dummy_img {
+        margin: 0;
+    }
+
+    /* ---------------------benefits---------------------------*/
+
+    .benefits_section {
+        padding: 50px 15px;
+    }
+
+    .benefits_head {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .benefits_head_left h3 {
+        font-size: 28px;
+    }
+
+    .benefits_card_section {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .benefits_card {
+        width: 48%;
+    }
+
+    /* ---------------------ourprocess---------------------------    */
+
+    .ourprocess_section {
+        padding: 0 10px;
+    }
+
+    .ourprocess_head h3 {
+        font-size: 28px;
+    }
+
+    .ourprocess_card_section {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .process_card {
+        width: 80%;
+    }
+
+    /* ---------------------whyus---------------------------    */
+
+    #whyus {
+        margin: 0;
+        padding: 50px 0;
+    }
+
+    .whyus_section {
+        padding: 0 15px;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .whyus_left {
+        width: 80%;
+    }
+
+    .whyus_right {
+        width: 100%;
+    }
+
+    .whyus_right h3 {
+        font-size: 24px;
+    }
+
+    .whyus_checkbox {
+        flex-direction: column;
+    }
+
+    .whyus_left_border {
+        display: none;
+    }
+
+    .whyus_textsection {
+        bottom: 20px;
+        right: 0;
+    }
+
+    .why_partner {
+        display: none;
+    }
+
+    /* ----------------------our presence section--------------------------    */
+
+    #ourpresence {
+        padding: 50px 0;
+    }
+
+    .ourpresence_section {
+        padding: 0 10px;
+    }
+
+    .ourpresence_head {
+        text-align: center;
+    }
+
+    .ourpresence_head h3 {
+        font-size: 26px;
+    }
+
+    .ourpresence_head h4 {
+        font-size: 18px;
+    }
+
+    .ourpresence_head p {
+        font-size: 14px;
+    }
+
+    .ourpresence_container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .ourpresence_leftsection {
+        width: 100%;
+    }
+
+    .ourpresence_rightsection {
+        width: 100%;
+        text-align: center;
+    }
+
+    .ourpresence_rightsection img {
+        overflow: hidden;
+        width: 550px;
+    }
+
+    /* ---------------------cngfitting---------------------------    */
+
+    .cngfitting_structure_section {
+        padding: 0 10px;
+    }
+
+    .cngfitting_structure_head {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .cngfitting_left {
+        width: 100%;
+        text-align: center;
+    }
+
+    .cngfitting_text h3 {
+        font-size: 26px;
+        line-height: 1.3;
+    }
+
+    .cngfitting_heroimg {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .slide-container {
+        width: 500px;
+        height: 325px;
+        margin: 0 auto;
+    }
+
+    span.next,
+    span.prev {
+        top: 35%;
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .dotsContainer .dot {
+        width: 10px;
+        height: 10px;
+    }
+
+    .cngfitting_checkbox,
+    .cngfitting_btnsection {
+        display: none;
+    }
+
+    /* ---------------------news section---------------------------    */
+
+    .cngnews_section {
+        padding: 0 15px;
+        flex-direction: column;
+    }
+
+    .cngnews_head {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cngnews_head_text {
+        width: 100%;
+    }
+
+    .cngnews_head_text h3 {
+        font-size: 26px;
+    }
+
+    .cngnews_btnsection {
+        justify-content: start;
+    }
+
+    .cngnews_cardsection {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .cngnews_cardsection_left {
+        width: 100%;
+    }
+
+    .cngnews_cardsection_right {
+        width: 100%;
+    }
+
+    .cngnews_card_child_img {
+        width: 30%;
+    }
+
+    .cngnews_card_child_content {
+        width: 70%;
+    }
+
+    .cngnews_date_provider {
+        gap: 20px;
+    }
+
+    .cngnews_head {
+        font-size: 16px;
+    }
+
+    .cngnews_desc,
+    .cngnews_provider,
+    .cngnews_date {
+        font-size: 12px;
+    }
+
+    /* ---------------------partners section---------------------------    */
+
+    .ourpartners_section {
+        padding: 0 15px;
+    }
+
+    .ourpartners_head {
+        flex-direction: column;
+    }
+
+    .ourpartners_head_text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .ourpartners_head_text h3 {
+        font-size: 26px;
+    }
+
+    .ourpartners_design_section {
+        width: 100%;
+    }
+
+    .tab-contents {
+        padding-top: 20px;
+    }
+
+    .tab-titles {
+        gap: 40px;
+    }
+
+    .tab-links {
+        font-size: 16px;
+    }
+
+    .ourpartners_design_section {
+        padding: 0 10px;
+    }
+
+    .partners_logos img {
+        width: 100px;
+    }
+
+    .partners_logos {
+        width: 100%;
+        gap: 30px;
+    }
+
+    /* ---------------------customer testimonials section---------------------------    */
+
+    .customertestimonial_section {
+        padding: 0px 10px;
+    }
+
+    .testi_section {
+        height: 100%;
+        gap: 30px;
+        flex-direction: column-reverse;
+    }
+
+    .cxtestimonial_left_section {
+        width: 100%;
+    }
+
+    .cxtestimonial_right_section {
+        width: 100%;
+    }
+
+    .cxtesti_card_container {
+        padding-right: 0px;
+    }
+
+    .cxtesti_card {
+        padding: 10px;
+    }
+
+    .cxtesti_img img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .cxrole {
+        font-size: 10px;
+    }
+
+    .cxtesti_name {
+        font-size: 12px;
+    }
+
+    .cxtesti_des {
+        font-size: 10px;
+    }
+
+    .cxtesti_date_section {
+        font-size: 8px;
+    }
+
+    .review_title {
+        font-size: 24px;
+        line-height: 1.2;
+        font-weight: 600;
+    }
+
+    .review_desc {
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .cx_testi_shape1 {
+        top: 30%;
+        left: 30%;
+    }
+
+    /* ----------------faq-------------------- */
+
+    .faq_section {
+        padding: 0 20px;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .faq_head h3 {
+        font-size: 26px;
+    }
+
+    .faq_left_section {
+        width: 100%;
+    }
+
+    .faq_shape3 {
+        z-index: -1;
+    }
+
+    .faq_right_section {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width:769px) and (max-width:992px) {
+
+    /* ---------------------homescreen---------------------------*/
+
+    #cnghome {
+        height: 100%;
+    }
+
+    .homescreen_container {
+        flex-direction: column;
+        justify-content: center;
+        padding: 50px 20px;
+    }
+
+    .homescreen_text {
+        width: 100%;
+    }
+
+    .booking_section {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* ---------------------what cng section---------------------------    */
+
+    .whatcng_section {
+        padding: 0 15px;
+        gap: 20px;
+    }
+
+    .whatcng_right h3 {
+        font-size: 34px;
+    }
+
+    .dummy_img {
+        margin: 0;
+    }
+
+
+    /* ---------------------benefits---------------------------*/
+
+    .benefits_section {
+        padding: 50px 15px;
+    }
+
+    .benefits_head_left h3 {
+        font-size: 34px;
+    }
+
+    /* ---------------------ourprocess---------------------------    */
+
+    .ourprocess_section {
+        padding: 0 10px;
+    }
+
+    .ourprocess_head h3 {
+        font-size: 34px;
+    }
+
+    .ourprocess_card_section {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .process_card {
+        width: 48%;
+        gap: 0;
+    }
+
+    /* ---------------------whyus---------------------------    */
+
+    #whyus {
+        margin: 50px 0;
+        padding: 50px 0;
+    }
+
+    .whyus_section {
+        padding: 0 15px;
+        gap: 50px;
+    }
+
+    .whyus_left {
+        width: 50%;
+    }
+
+    .whyus_right {
+        width: 50%;
+    }
+
+    .whyus_right h3 {
+        font-size: 24px;
+    }
+
+    .whyus_checkbox {
+        flex-direction: column;
+    }
+
+    .whyus_left_border {
+        display: none;
+    }
+
+    .whyus_textsection {
+        bottom: 20px;
+        right: 0;
+    }
+
+    /* ----------------------our presence section--------------------------    */
+
+    #ourpresence {
+        padding: 50px 0;
+    }
+
+    .ourpresence_section {
+        padding: 0 10px;
+    }
+
+    .ourpresence_head {
+        text-align: center;
+    }
+
+    .ourpresence_head h3 {
+        font-size: 40px;
+    }
+
+    .ourpresence_head h4 {
+        font-size: 16px;
+    }
+
+    .ourpresence_head p {
+        font-size: 16px;
+    }
+
+    .ourpresence_container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .ourpresence_leftsection {
+        width: 100%;
+    }
+
+    .ourpresence_rightsection {
+        width: 100%;
+        text-align: center;
+    }
+
+    .ourpresence_rightsection img {
+        overflow: hidden;
+        width: 550px;
+    }
+
+    /* ---------------------cngfitting---------------------------    */
+
+    .cngfitting_structure_section {
+        padding: 0 10px;
+    }
+
+    .cngfitting_structure_head {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .cngfitting_left {
+        width: 100%;
+        text-align: center;
+    }
+
+    .cngfitting_text h3 {
+        font-size: 26px;
+        line-height: 1.3;
+    }
+
+    .cngfitting_heroimg {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .slide-container {
+        width: 700px;
+        height: 420px;
+        margin: 0 auto;
+    }
+
+    .cngfitting_checkbox,
+    .cngfitting_btnsection {
+        display: none;
+    }
+
+    /* ---------------------news section---------------------------    */
+
+    .cngnews_section {
+        padding: 0 15px;
+    }
+
+
+    .cngnews_head_text h3 {
+        font-size: 26px;
+    }
+
+    .cngnews_head {
+        font-size: 16px;
+    }
+
+    .cngnews_desc,
+    .cngnews_provider,
+    .cngnews_date {
+        font-size: 12px;
+    }
+
+    .heronews_desc {
+        font-size: 14px;
+    }
+
+    .readmore_section {
+        margin-top: 10px;
+    }
+
+    /* ---------------------partners section---------------------------    */
+
+    .ourpartners_section {
+        padding: 0 15px;
+    }
+
+    .ourpartners_head_text h3 {
+        font-size: 26px;
+    }
+
+    .partners_logos {
+        width: 90%;
+        gap: 10px;
+    }
+
+    .partners_logos img {
+        width: 100px;
+    }
+
+    .tab-titles {
+        gap: 40px;
+    }
+
+    /* -----------------customer testimonials section-------------------    */
+
+    .customertestimonial_section {
+        padding: 0px 50px;
+    }
+
+    .testi_section {
+        height: 100%;
+        gap: 30px;
+        flex-direction: column-reverse;
+    }
+
+    .cxtestimonial_left_section {
+        width: 100%;
+    }
+
+    .cxtestimonial_right_section {
+        width: 100%;
+    }
+
+    .cxtesti_card_container {
+        padding-right: 0px;
+    }
+
+    .cxtesti_card {
+        padding: 10px;
+    }
+
+    .review_text,
+    .review_title,
+    .view_all_btn {
+        margin: 0 auto;
+    }
+
+    .review_desc {
+        text-align: center;
+    }
+
+    .cx_testi_shape1 {
+        top: 35%;
+        left: 40%;
+    }
+
+    /* ----------------faq-------------------- */
+
+    .faq_section {
+        padding: 0 20px;
+        gap: 20px;
+    }
+
+}
+
+@media screen and (min-width:993px) and (max-width:1200px) {
+
+    /* ---------------------homescreen---------------------------    */
+
+    .homescreen_container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    /* ---------------------what cng section---------------------------    */
+
+    .whatcng_section {
+        padding: 0 15px;
+        gap: 20px;
+    }
+
+
+    /* ---------------------benefits---------------------------*/
+
+    .benefits_section {
+        padding: 50px 15px;
+    }
+
+
+    /* ---------------------whyus---------------------------    */
+
+    .whyus_section {
+        padding: 0 15px;
+    }
+
+    .whyus_left_border {
+        width: 450px;
+        margin-left: 0;
+        margin-top: -20px;
+    }
+
+    /* ---------------------cngfitting---------------------------    */
+
+    .cngfitting_structure_section {
+        padding: 0 10px;
+    }
+
+    .cngfitting_structure_head {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .cngfitting_left {
+        width: 100%;
+        text-align: center;
+    }
+
+    .cngfitting_heroimg {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .slide-container {
+        width: 700px;
+        height: 420px;
+        margin: 0 auto;
+    }
+
+    .cngfitting_checkbox,
+    .cngfitting_btnsection {
+        display: none;
+    }
+
+    /* ----------------------our presence section--------------------------    */
+
+    #ourpresence {
+        padding: 50px 0;
+    }
+
+    .ourpresence_section {
+        padding: 0 10px;
+    }
+
+    .ourpresence_head {
+        text-align: center;
+    }
+
+    .ourpresence_head h3 {
+        font-size: 40px;
+    }
+
+    .ourpresence_head h4 {
+        font-size: 16px;
+    }
+
+    .ourpresence_head p {
+        font-size: 16px;
+    }
+
+    .ourpresence_container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .ourpresence_leftsection {
+        width: 100%;
+    }
+
+    .ourpresence_rightsection {
+        width: 100%;
+        text-align: center;
+    }
+
+    .ourpresence_rightsection img {
+        overflow: hidden;
+        width: 550px;
+    }
+
+    /* ---------------------partners section---------------------------    */
+
+    .ourpartners_section {
+        padding: 0 15px;
+    }
+
+    .partners_logos {
+        width: 90%;
+        gap: 20px;
+    }
+
+    .tab-titles {
+        gap: 40px;
+    }
+
+    /* -----------------customer testimonials section-------------------    */
+
+    .customertestimonial_section {
+        padding: 0px 50px;
+    }
+
+    .testi_section {
+        height: 100%;
+        gap: 30px;
+        flex-direction: column-reverse;
+    }
+
+    .cxtestimonial_left_section {
+        width: 100%;
+    }
+
+    .cxtestimonial_right_section {
+        width: 100%;
+    }
+
+    .cxtesti_card_container {
+        padding-right: 0px;
+    }
+
+    .cxtesti_card {
+        padding: 10px;
+    }
+
+    .review_text,
+    .review_title,
+    .view_all_btn {
+        margin: 0 auto;
+    }
+
+    .review_desc {
+        text-align: center;
+    }
+
+    .cx_testi_shape1 {
+        top: 30%;
+        left: 40%;
+    }
+
+    /* ----------------faq-------------------- */
+
+    .faq_section {
+        padding: 0 20px;
+        gap: 20px;
+    }
+}
+
+
+
+@media screen and (min-width:993px) and (max-width:1400px) {
+
+    .whatcng_section {
+        padding: 50px 10px;
+    }
+
+    .whatcng_head h3 {
+        font-size: 36px;
+    }
+
+    .whatcng_head p {
+        font-size: 18px;
+    }
+
+    .ourprocess_section {
+        padding: 0 20px;
+    }
+
+    .cngnews_section {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    #cnghome{
+        height: 100%;
+        padding: 200px 0;
+    }
+    .homescreen_text h1 {
+        font-size: 100px;
+    }
+
+    .homescreen_text h6 {
+        font-size: 20px;
+    }
+}
+
+@media (orientation: portrait) {
+    #cnghome {
+      padding: 50px 0;
+      height: 100% !important;
+    }
+    .homescreen_container {
+        padding: 0px 20px;
+    }
+  }
+
+
+
+
+
+
+
+
+/* footer */
+
+
+#footer {
+    z-index: 0;
+    background-size: cover;
+    background-image: url(./../images/footer/footer-ground2.webp);
+    margin-top:50px;
+  }
+
+  #footer a{
+    color:White;
+    text-decoration: none;
+    cursor:pointer;
+  }
+  
+  #footer::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom left, white 48%, transparent 50%);
+    height: 100px;
+    z-index: -1;
+  }
+  
+  #footerTop_Card {
+    color: aliceblue;
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./../images/footer/footerbg2.svg);
+    background-position: top 70% right 100%;
+    position: relative;
+    top: -20px;
+  }
+  
+  #footerTop_Card p {
+    line-height: 1.5;
+    color: aliceblue;
+    font-size: 14px;
+  }
+  
+  #footerTop_Card h2 {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+  
+  #footerTop_Card button {
+    background-color: #ffcc33;
+    font-size: 16px;
+    border-radius: 30px;
+  }
+  
+  
+  
+  #social_links {
+    gap: 8px;
+  }
+  
+  
+  #quickLinks>div {
+    width: fit-content;
+  }
+  
+  .social_icons {
+    background-color: #3d423c;
+    border-radius: 50%;
+    transition: .3s;
+    padding: 3px;
+    width:30px;
+    height:30px;
+  }
+  
+  .social_icon1:hover {
+    background-color: #1778f2;
+    transform: scale(1.15)
+  }
+  
+  .social_icon2:hover {
+    background-color: #0072b1;
+    transform: scale(1.15)
+  }
+  
+  .social_icon3:hover {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+    transform: scale(1.15)
+  }
+  
+  .social_icon4:hover {
+    background-color: #26cc64;
+    transform: scale(1.15)
+  }
+  
+  .social_icon5:hover {
+    background-color: #ed0000;
+    transform: scale(1.15)
+  }
+  
+  #footerBottom h2 {
+    font-size: 14px;
+  }
+  
+  .footerText1 {
+    font-size: 14px;
+  }
+
+  #reachUs img{
+    width:20px;
+    height:20px;
+  }
+
+
+
+  
+  
+  @media only screen and (min-width:991px) {
+  
+    #quickLinks {
+      justify-content: end;
+    }
+  
+    #reachUs {
+      justify-content: center;
+    }
+  
+  }
+  
+  
+  @import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);.mt-10,.my-10{margin-top:10px}.pointer,button{cursor:pointer}.col-12,.w-100{width:100%}@font-face{font-family:Poppins,Arial,Helvetica,sans-serif;src:url('./../fonts/poppins/Poppins-Thin.woff') format('woff2');font-weight:100;font-display:swap}@font-face{font-family:Poppins,Arial,Helvetica,sans-serif;src:url('./../fonts/poppins/Poppins-ExtraLight.woff') format('woff2');font-weight:200;font-display:swap}@font-face{font-family:Poppins,Arial,Helvetica,sans-serif;src:url('./../fonts/poppins/Poppins-Light.woff') format('woff2');font-weight:300;font-display:swap}@font-face{font-family:Poppins,Arial,Helvetica,sans-serif;src:url('./../fonts/poppins/Poppins-Regular.woff') format('woff2');font-weight:400;font-display:swap}@font-face{font-family:Poppins,Arial,Helvetica,sans-serif;src:url('./../fonts/poppins/Poppins-Medium.woff') format('woff2');font-weight:500;font-display:swap}@font-face{font-family:Poppins,Arial,Helvetica,sans-serif;src:url('./../fonts/poppins/Poppins-SemiBold.woff') format('woff2');font-weight:600;font-display:swap}@font-face{font-family:Poppins,Arial,Helvetica,sans-serif;src:url('./../fonts/poppins/Poppins-Bold.woff') format('woff2');font-weight:700;font-display:swap}@font-face{font-family:Poppins,Arial,Helvetica,sans-serif;src:url('./../fonts/poppins/Poppins-ExtraBold.woff') format('woff2');font-weight:800;font-display:swap}@font-face{font-family:Poppins,Arial,Helvetica,sans-serif;src:url('./../fonts/poppins/Poppins-Black.woff') format('woff2');font-weight:900;font-display:swap}body{max-width:100vw;font-family:Poppins,sans-serif!important}html{overflow-x:hidden;width:100vw}:root{--max-width:1250px;--ra-yellow:#ffcc33;--grey-black:#343a40}*{box-sizing:border-box;padding:0;margin:0}::-webkit-scrollbar{display:none}button{border:0}.bg-white{background-color:#fff}.text-white{color:#fff}.br20{border-radius:20px}.me-10{margin-right:10px!important}.p-10{padding:10px}.p-20{padding:20px}.p-30{padding:30px}.p-40{padding:40px}.ps-10{padding-left:10px!important}.ps-15{padding-left:15px!important}.ps-20{padding-left:20px!important}.pe-5{padding-right:5px!important}.pe-20{padding-right:20px!important}.ms-5{margin-left:5px}.mx-30{margin-left:30px;margin-right:30px}.ms-auto,.mx-auto{margin-left:auto}.my-10{margin-bottom:10px}.mt-20{margin-top:20px}.mt-40{margin-top:40px}.mb-10{margin-bottom:10px!important}.mb-20{margin-bottom:20px!important}.mb-30{margin-bottom:30px!important}.py-5{padding-top:5px;padding-bottom:5px}.py-10{padding-top:10px;padding-bottom:10px}.py-15{padding-top:15px;padding-bottom:15px}.py-20{padding-top:20px;padding-bottom:20px}.py-30{padding-top:30px;padding-bottom:30px}.py-40{padding-top:40px;padding-bottom:40px}.py-50{padding-top:50px;padding-bottom:50px}.px-5{padding-left:5px;padding-right:5px}.px-10{padding-left:10px;padding-right:10px}.px-15{padding-left:15px;padding-right:15px}.px-20{padding-left:20px;padding-right:20px}.px-30{padding-left:30px;padding-right:30px}.px-40{padding-left:40px;padding-right:40px}.px-50{padding-left:50px;padding-right:50px}.pb-5{padding-bottom:5px!important}.pb-10{padding-bottom:10px!important}.pb-20{padding-bottom:20px!important}.pb-30{padding-bottom:30px!important}.pb-40{padding-bottom:40px!important}.pb-50{padding-bottom:50px!important}.pt-0{padding-top:0!important}.pt-5{padding-top:5px!important}.pt-10{padding-top:10px!important}.pt-20{padding-top:20px!important}.pt-30{padding-top:30px!important}.pt-40{padding-top:40px!important}.pt-50{padding-top:50px!important}.flex{display:flex}.flex-col,.flex-column{flex-direction:column}.block{display:block}.none{display:none}.flex-wrap{flex-wrap:wrap}.text-end{text-align:end}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.h-100{height:100%}.items-center{align-items:center}.justify-center{justify-content:center}.justify-end{justify-content:end}.justify-between{justify-content:space-between}.flow-hide{overflow:hidden}.crop-width{max-width:var(--max-width);margin:auto}.mx-auto{margin-right:auto}.weight100,.weight200{font-weight:100}.weight300{font-weight:300}.weight400{font-weight:400}.weight500{font-weight:500}.weight600{font-weight:600}.weight700{font-weight:700}.weight800{font-weight:800}.weight900{font-weight:900}.col-12{flex-shrink:0}.col-9{width:75%;flex-shrink:0}.col-10{width:83.33333333%;flex-shrink:0}.col-5,.col-6{flex-shrink:0}.col-5{width:41.66666%}.col-6{width:50%}.col-7,.col-8{flex-shrink:0}.col-7{width:58.7777777%}.col-8{width:66.6666666%}.col-3,.col-4{flex-shrink:0}.col-3{width:25%}.col-4{width:33.3333333%}.col-2{width:16.6666666%;flex-shrink:0}.flowY-Scroll{overflow-y:auto}.text-yellow{color:var(--ra-yellow)}.w-fit{width:fit-content}.text-center{text-align:center}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{-webkit-appearance:none;appearance:none;margin:0}input::-webkit-inner-spin-button,input::-webkit-outer-spin-button{-webkit-appearance:none;appearance:none;margin:0}.slider-panel{position:fixed;top:0;transform:translateX(-100%);width:100%;max-width:600px;height:100vh;color:#fff;transition:.3s;z-index:1000;overflow:hidden;-webkit-box-shadow:-5px 0 7px 0 #b3b3b3;-moz-box-shadow:-5px 0 7px 0 #b3b3b3;box-shadow:-5px 0 7px 0 #b3b3b3}.slider-panel.close,.slider-panel.open{transform:translateX(0)}@media only screen and (min-width:572px){.p-sm-10{padding:10px}.col-sm-4{width:33.3333333%;flex-shrink:0}.col-sm-6{width:50%;flex-shrink:0}}@media only screen and (min-width:767px){.ms-md-30{margin-left:30px!important}.ps-md-30{padding-left:30px!important}.justify-md-between{justify-content:space-between}.px-md-10{padding-left:10px;padding-right:10px}.px-md-20{padding-left:20px;padding-right:20px}.px-md-30{padding-left:30px;padding-right:30px}.px-md-40{padding-left:40px;padding-right:40px}.px-md-50{padding-left:50px;padding-right:50px}.py-md-10{padding-top:10px;padding-bottom:10px}.py-md-20{padding-top:20px;padding-bottom:20px}.py-md-30{padding-top:30px;padding-bottom:30px}.py-md-40{padding-top:40px;padding-bottom:40px}.py-md-50{padding-top:50px;padding-bottom:50px}.col-md-12{width:100%;flex-shrink:0}.col-md-9{width:75%;flex-shrink:0}.col-md-7{width:58.3333333%;flex-shrink:0}.col-md-8{width:66.6666666%;flex-shrink:0}.col-md-5{width:41.6666666%;flex-shrink:0}.col-md-6{width:50%;flex-shrink:0}.col-md-3{width:25%;flex-shrink:0}.col-md-4{width:33.3333333%;flex-shrink:0}.col-md-2{width:16.6666666%;flex-shrink:0}}@media only screen and (min-width:991px){.mx-30{margin-left:40px;margin-right:40px}.lg-inline{display:inline}.col-lg-10{width:83.33333333%;flex-shrink:0}.col-20{width:20%;flex-shrink:0}.pe-lg-10{padding-right:10px}.pe-lg-20{padding-right:20px}.ps-lg-10{padding-left:10px!important}.ps-lg-30{padding-left:30px!important}.ps-lg-50{padding-left:50px!important}.pb-lg-0{padding-bottom:0!important}.pb-lg-30{padding-bottom:30px!important}.pb-lg-50{padding-bottom:50px!important}.p-lg-40{padding:40px}.p-lg-50{padding:50px}.ms-lg-20{margin-left:20px}.mb-lg-30{margin-bottom:30px}.pt-lg-0{padding-top:0!important}.pt-lg-20{padding-top:20px!important}.pt-lg-50{padding-top:50px!important}.px-lg-10{padding-left:10px;padding-right:10px}.px-lg-20{padding-left:20px;padding-right:20px}.px-lg-30{padding-left:30px;padding-right:30px}.px-lg-40{padding-left:40px;padding-right:40px}.px-lg-50{padding-left:50px;padding-right:50px}.py-lg-0{padding-top:0;padding-bottom:0}.py-lg-10{padding-top:10px;padding-bottom:10px}.py-lg-20{padding-top:20px;padding-bottom:20px}.py-lg-30{padding-top:30px;padding-bottom:30px}.py-lg-40{padding-top:40px;padding-bottom:40px}.py-lg-50{padding-top:50px;padding-bottom:50px}.col-lg-12{width:100%;flex-shrink:0}.col-lg-9{width:75%;flex-shrink:0}.col-lg-7{width:58.3333333%;flex-shrink:0}.col-lg-5{width:41.666666%;flex-shrink:0}.col-lg-6{width:50%;flex-shrink:0}.col-lg-8{width:66.6666666%;flex-shrink:0}.col-lg-3{width:25%;flex-shrink:0}.col-lg-4{width:33.3333333%;flex-shrink:0}.col-lg-2{width:16.6666666%;flex-shrink:0}.lg-block{display:block}.lg-flex{display:flex}.lg-none{display:none}}@media only screen and (min-width:1200px){.pt-xl-40{padding-top:40px}.col-xl-4{width:33.3333333%;flex-shrink:0}.col-xl-8{width:66.6666666%;flex-shrink:0}}
+
+.loader1 {
+  border: 8px solid #f3f3f3; /* Light grey */
+  border-top: 8px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+} </style>
+    <title>CNG Retro Fitment Services Near Me | CNG Conversion Kit Installation Centres</title>
+    <meta name="description"
+        content="Looking for CNG Retro Fitment service centres near you? Our professional trained technicians provide you a reliable installations for converting vehicles to run on Compressed Natural Gas (CNG). Contact us today for top-notch service and quality conversions.">
+    <meta name="keywords"
+        content="CNG conversion services, CNG installation, CNG kit installation, Compressed Natural Gas conversion, Vehicle CNG conversion, Professional CNG installations, Reliable CNG fitment services, CNG services near me">
+</head>
+
+<body>
+ 
+    <title>CNG </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index">CNG Company</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/Page">Page</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Product">Product</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/Pricing" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Pricing
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/About">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Contect">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div data-include="./components/navigationBar.html"></div>
+
+    <main class="w-100">
+
+        <div id="cnghome">
+            <div class="homescreen_container mx-auto">
+                <div class="homescreen_text">
+                    <p>CNG RetroFitment</p>
+                    <h2>Powering <br><span style="color: #0AAD15;">Future.</span></h2>
+                    <h6>Switch to CNG and enjoy cleaner energy, reduced emissions, lower fuel costs, and longer engine
+                        life while contributing to a sustainable environment for future generations.</h6>
+                    <div style="margin-top: 20px;"><button class="home_bookbtn" id="checkeligibility_btn"
+                            onclick="toggleSlider('cngBooking')">Book Conversion</button></div>
+                </div>
+                <div class="booking_section">
+                    <img src="/static/banner-CNG1.png" alt="homescreen image">
+                    <!-- <div class="ring-third"></div> -->
+                    <!-- <div class="ring-fourth"></div> -->
+                </div>
+            </div>
+        </div>
+
+        <div id="benefits">
+            <div class="benefits_section mx-auto">
+                <div class="benefits_head">
+                    <div class="benefits_head_left">
+                        <p class="fbtt">Unlock benefits with
+                            <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_3945_56)">
+                                    <path d="M4.9248 10.3748L6.49525 9.68052L5.62485 9.07031L4.9248 10.3748Z"
+                                        fill="#83CD20"></path>
+                                    <path d="M4.9248 10.3743L4.99976 8L13.9078 0L5.66407 9.1113L4.9248 10.3743Z"
+                                        fill="#83CD20"></path>
+                                    <path d="M5 8L13.908 0L0 6.22704L5 8Z" fill="#83CD20"></path>
+                                    <path d="M5.66406 9.1113L9.95686 12L13.9078 0L5.66406 9.1113Z" fill="#034833">
+                                    </path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_3945_56">
+                                        <rect width="13.908" height="12" fill="white"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </p>
+                        <h3>CNGFirst conversion!</h3>
+                    </div>
+                </div>
+                <div class="benefits_card_section">
+                    <div class="benefits_card">
+                        <img src="./static/banner-CNG2.png" alt="1 year warranty">
+                        <h4>Worry Free Warranty</h4>
+                        <p>1-year warranty from the date of installation, ensuring peace of mind and dependable service
+                            for your vehicle's performance.</p>
+                        <div style="margin-top: 10px;"><a href="tel:7022012201" class="know_more_btn">Know more</a>
+                        </div>
+                    </div>
+                    <div class="benefits_card">
+                        <img src="./assets/images/cng/pan-india.svg" alt="free rsa">
+                        <h4>Pan India 24/7 RSA</h4>
+                        <p>1 Year Pan India 24/7 Roadside Assistance, offering support and help anywhere across India
+                            for emergency situations or breakdowns.</p>
+                        <div style="margin-top: 10px;"><a href="tel:7022012201" class="know_more_btn">Know more</a>
+                        </div>
+                    </div>
+                    <!-- <div class="benefits_card">
+                        <img src="./assets/images/cng/worth-free-fuel.svg" alt="10000 benefits">
+                        <h4>Rs 5000 worth Free Fuel</h4>
+                        <p>Free fuel coupons for the first 100 Customers</p>
+                    </div> -->
+                    <div class="benefits_card">
+                        <img src="./assets/images/cng/upto-90-financing.svg" alt="finance">
+                        <h4>Upto 90% Financing</h4>
+                        <p>Easy financing options with up to 90% support, making it easier for you to convert your
+                            vehicle to CNG today.</p>
+                        <div style="margin-top: 10px;"><a href="tel:7022012201" class="know_more_btn">Know more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="whatiscng">
+            <div class="whatcng_section mx-auto">
+                <div class="whatcng_left">
+                    <div class="whatcng_left_imgup">
+                        <div class="image_wrapper1"><img src="/static/banner-CNG5.png" alt="car image"></div>
+                        <div class="image_wrapper2"><img src="/static/banner-CNG6.png" alt="auto image"></div>
+                    </div>
+                    <div class="whatcng_left_imgdown">
+                        <div class="dummy_img">100+<br>
+                            <p>Vehicles Converted to CNG and Counting</p>
+                        </div>
+                        <div class="image_wrapper3"><img src="/static/banner-CNG8.png" alt="commercial image">
+                        </div>
+                    </div>
+                    <img src="./assets/images/cng/dotted-img.svg" alt="dot icon" class="whatcng_shape1">
+                </div>
+                <div class="whatcng_right">
+                    <p>About <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_3945_56)">
+                                <path d="M4.9248 10.3748L6.49525 9.68052L5.62485 9.07031L4.9248 10.3748Z"
+                                    fill="#83CD20"></path>
+                                <path d="M4.9248 10.3743L4.99976 8L13.9078 0L5.66407 9.1113L4.9248 10.3743Z"
+                                    fill="#83CD20"></path>
+                                <path d="M5 8L13.908 0L0 6.22704L5 8Z" fill="#83CD20"></path>
+                                <path d="M5.66406 9.1113L9.95686 12L13.9078 0L5.66406 9.1113Z" fill="#034833"></path>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_3945_56">
+                                    <rect width="13.908" height="12" fill="white"></rect>
+                                </clipPath>
+                            </defs>
+                        </svg></p>
+                    <h3>CNG RetroFitment Service</h3>
+                    <h6>CNG Retro-fitment is the process of converting your existing petrol or diesel
+                        vehicle to operate on Compressed Natural Gas (CNG) fuel. You can convert your vehicles with
+                        government-approved
+                        CNG
+                        kits at ReadyAssist retro-fitment centers.</h6>
+                    <div class="whatcng_checkbox ">
+                        <ul>
+                            <li>Three Wheeler</li>
+                            <li>Car</li>
+                        </ul>
+                        <ul>
+                            <li>Commercial Vehicle</li>
+                            <li>Taxi</li>
+                        </ul>
+                    </div>
+                    <div style="margin-top: 10px;"><button class="bookbtn" onclick="toggleSlider('cngBooking')">Book Now
+                            →</button></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="ourprocess">
+            <div class="ourprocess_section mx-auto">
+                <div class="ourprocess_head">
+                    <p>Our Process
+                        <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_3945_56)">
+                                <path d="M4.9248 10.3748L6.49525 9.68052L5.62485 9.07031L4.9248 10.3748Z"
+                                    fill="#83CD20"></path>
+                                <path d="M4.9248 10.3743L4.99976 8L13.9078 0L5.66407 9.1113L4.9248 10.3743Z"
+                                    fill="#83CD20"></path>
+                                <path d="M5 8L13.908 0L0 6.22704L5 8Z" fill="#83CD20"></path>
+                                <path d="M5.66406 9.1113L9.95686 12L13.9078 0L5.66406 9.1113Z" fill="#034833"></path>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_3945_56">
+                                    <rect width="13.908" height="12" fill="white"></rect>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </p>
+                    <h3>Effortless CNG Conversion <br>for You</h3>
+                </div>
+                <div class="ourprocess_card_section">
+                    <div class="process_card">
+                        <div class="process_no">01</div>
+                        <div class="process_heading">Check Eligibility</div>
+                        <div class="process_detail">Provide your vehicle details to instantly check if your vehicle is
+                            eligible for CNG
+                            fitment.</div>
+                    </div>
+                    <div class="process_card">
+                        <div class="process_no">02</div>
+                        <div class="process_heading">Upload Documents</div>
+                        <div class="process_detail">Upload the necessary documents for a quick verification process.
+                        </div>
+                    </div>
+                    <div class="process_card">
+                        <div class="process_no">03</div>
+                        <div class="process_heading">Get Approval</div>
+                        <div class="process_detail">Receive approval for your CNG fitment within 7 days after document
+                            verification.</div>
+                    </div>
+                    <div class="process_card">
+                        <div class="process_no">04</div>
+                        <div class="process_heading">CNG Kit Installation</div>
+                        <div class="process_detail">Get your CNG kit installed by our CNG-Retro Fitment Centers within 1
+                            week of
+                            approval.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="whyus">
+            <div class="whyus_section mx-auto">
+                <div class="whyus_left">
+                    <div class="whyus_left_border"></div>
+                    <div class="whyus_textsection">
+                        <div class="whyus_year">10</div>
+                        <p>Years of Experience</p>
+                    </div>
+                    <div class="whyus_left_img">
+                        <img src="/static/banner-CNG9.png" alt="cng mechanic">
+                    </div>
+                </div>
+                <div class="whyus_right">
+                    <p>Why Choose Us
+                        <svg width="52" height="10" viewBox="0 0 52 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_3795_96)">
+                                <path
+                                    d="M47.2095 2.14437C46.4096 2.36766 45.5874 2.50135 44.758 2.54299L38.0745 3.26714C36.5625 3.43986 35.0713 3.76256 33.6232 4.23048C32.834 4.49614 32.0748 4.84349 31.3577 5.2669C30.5815 5.78994 29.7739 6.26475 28.9394 6.68864C28.4366 6.92402 27.8868 7.04215 27.3317 7.03411C26.7204 6.99856 26.1425 6.7438 25.704 6.3166C24.8602 5.44628 24.6277 4.38993 24.0763 3.71228C23.8482 3.37951 23.505 3.14288 23.1129 3.04791C22.6926 2.95474 22.2543 2.98472 21.8506 3.13427C20.9442 3.46398 20.1839 4.10423 19.7047 4.94135C19.1267 5.79839 18.675 6.775 18.0172 7.69183C17.3771 8.67698 16.4285 9.42226 15.3199 9.81116C14.738 9.97733 14.1213 9.97733 13.5394 9.81116C12.9881 9.64765 12.4799 9.36403 12.0512 8.9807C11.2848 8.27735 10.6875 7.40973 10.3039 6.44282C9.91861 5.55257 9.63957 4.68889 9.25423 3.93151C8.81236 2.89622 8.01001 2.05634 6.99598 1.56765C5.98195 1.07897 4.82509 0.974642 3.74 1.27404C3.16364 1.41933 2.62491 1.6859 2.15977 2.05594C1.69463 2.42599 1.3138 2.89102 1.04267 3.41996C0.609026 4.23627 0.40251 5.15404 0.444721 6.07742C0.461366 6.66905 0.587529 7.25247 0.816785 7.79813C0.969589 8.18346 1.07589 8.37613 1.04267 8.40271C1.00945 8.42928 0.849998 8.26318 0.624113 7.89778C0.297997 7.3528 0.0960956 6.74258 0.0328167 6.11063C-0.094422 5.09968 0.0716196 4.07346 0.511162 3.1542C0.798973 2.52884 1.21785 1.97266 1.73939 1.52332C2.26094 1.07399 2.87299 0.742013 3.53404 0.549886C4.3414 0.314234 5.19125 0.262331 6.02128 0.397987C6.85131 0.533642 7.64045 0.85342 8.33077 1.33384C9.08192 1.89515 9.6841 2.63192 10.0847 3.47975C10.5165 4.31021 10.8221 5.18716 11.2008 6.01762C11.535 6.84506 12.053 7.58567 12.7156 8.18347C13.0179 8.47409 13.3907 8.68086 13.7973 8.78339C14.204 8.88592 14.6303 8.88064 15.0342 8.7681C15.9058 8.44143 16.6489 7.84273 17.1536 7.06068C17.7316 6.2568 18.1833 5.28018 18.8145 4.33678C19.1355 3.84764 19.5172 3.40117 19.9505 3.00804C20.4071 2.61118 20.9377 2.30862 21.5118 2.11779C22.1043 1.91517 22.7412 1.88068 23.3521 2.01814C23.9719 2.17131 24.5177 2.53834 24.8934 3.05455C25.5977 3.99795 25.8368 5.04765 26.4082 5.5725C26.6675 5.83263 27.0118 5.99065 27.3782 6.01762C27.7818 6.02071 28.1811 5.9345 28.5475 5.76517C29.3497 5.36762 30.1284 4.92396 30.8794 4.43644C31.657 3.99071 32.4814 3.632 33.3375 3.36681C34.8527 2.91365 36.4116 2.62192 37.9881 2.49649C40.8449 2.25731 43.1369 2.18423 44.7314 2.1045C45.5564 2.02614 46.3875 2.03952 47.2095 2.14437Z"
+                                    fill="#034833"></path>
+                                <path
+                                    d="M45.4762 6.2697C45.4231 6.13018 46.1406 5.7382 47.2235 5.08712C47.7683 4.76158 48.4127 4.36296 49.1036 3.89126C49.4491 3.65873 49.768 3.39963 50.1666 3.13388C50.3373 3.0178 50.4954 2.88421 50.6383 2.73527C50.7579 2.61795 50.8527 2.47789 50.9173 2.32336C50.9506 2.19713 50.9173 2.20377 50.9173 2.15726C50.821 2.06916 50.7009 2.01139 50.5719 1.99117L49.283 1.64571C48.4592 1.41982 47.7218 1.20058 47.1039 0.981341C45.8682 0.582721 45.1108 0.263819 45.1573 0.124302C45.2038 -0.0152149 46.001 0.0379361 47.2833 0.250534C47.9476 0.356832 48.6784 0.502993 49.5155 0.675728L50.8443 0.968051C51.184 1.02987 51.4955 1.19726 51.7345 1.4464C51.8826 1.61431 51.9774 1.82242 52.0069 2.04432C52.0341 2.24825 52.0113 2.45574 51.9405 2.6489C51.8291 2.94985 51.6521 3.2222 51.4223 3.44614C51.235 3.63879 51.0254 3.80831 50.7978 3.95105C50.4124 4.23009 50.0205 4.47591 49.6484 4.70179C48.9845 5.09883 48.2916 5.44528 47.5756 5.7382C46.3399 6.25641 45.5294 6.40257 45.4762 6.2697Z"
+                                    fill="#034833"></path>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_3795_96">
+                                    <rect width="52" height="9.86585" fill="white" transform="translate(0 0.0664062)">
+                                    </rect>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </p>
+                    <h3>Choose CNGFirst for seamless CNG fitment!</h3>
+                    <div class="whyus_checkbox">
+                        <ul>
+                            <li>Certified CNG Kits</li>
+                            <p>High-quality, government-approved CNG kits for safe, efficient fuel conversions.</p>
+                            <li>Expert Installation</li>
+                            <p>Performed by trained professionals to ensure a seamless and reliable installation.</p>
+                        </ul>
+                        <ul>
+                            <li>Safety Assurance</li>
+                            <p>Adherence to all safety and emission standards for worry-free driving.</p>
+                            <li>Customer-Centric Service</li>
+                            <p>Our top priority is your satisfaction with attentive and responsive service.</p>
+                        </ul>
+                    </div>
+                    <div class="whyus_button_section">
+                        <a class="call_section" href="tel:7022012201">
+                            <div class="call_icon">
+                                <img src="./assets/images/common/call_us.svg" alt="call icon">
+                            </div>
+                            <div>
+                                <div class="call_text">Need help?</div>
+                                <div class="call_number">7022 012 201</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="ourpresence">
+            <div class="ourpresence_section mx-auto">
+                <div class="ourpresence_container">
+                    <div class="ourpresence_leftsection">
+                        <div class="ourpresence_head">
+                            <h3>Our Presence</h3>
+                            <h4>Moving towards an eco-friendly nation</h4>
+                            <p>We're on a nationwide mission to clean our air and empower sustainable driving! Our CNG
+                                conversion operations now span <span
+                                    style="font-weight: 500;color: var(--text-primary);">4 states</span> and over
+                                <span style="font-weight: 500;color: var(--text-primary);">7 cities</span>, offering
+                                eco-friendly solutions for a
+                                wide range of vehicles: from <span
+                                    style="font-weight: 500;color: var(--text-primary);">three-wheelers and everyday
+                                    cars to powerful commercial vehicles.</span>
+                            </p>
+                            <div class="ourpresence_btnsection" onclick="location.href = './cng-station.html'">
+                                <button class="ourpresence_btn">Find CNG Stations &#x003E;</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ourpresence_rightsection">
+                        <img src="./assets/images/cng/map.svg" alt="indian map" alt="indian map" loading="lazy">
+                    </div>
+
+                </div>
+                <div class="road_parent">
+
+                </div>
+            </div>
+        </div>
+
+        <div id="cngfitting_structure">
+            <div class="cngfitting_structure_section mx-auto">
+                <div class="cngfitting_structure_head">
+                    <div class="cngfitting_left">
+                        <div class="cngfitting_text">
+                            <p>CNG Setup Guide
+                                <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_3945_56)">
+                                        <path d="M4.9248 10.3748L6.49525 9.68052L5.62485 9.07031L4.9248 10.3748Z"
+                                            fill="#83CD20"></path>
+                                        <path d="M4.9248 10.3743L4.99976 8L13.9078 0L5.66407 9.1113L4.9248 10.3743Z"
+                                            fill="#83CD20"></path>
+                                        <path d="M5 8L13.908 0L0 6.22704L5 8Z" fill="#83CD20"></path>
+                                        <path d="M5.66406 9.1113L9.95686 12L13.9078 0L5.66406 9.1113Z" fill="#034833">
+                                        </path>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_3945_56">
+                                            <rect width="13.908" height="12" fill="white"></rect>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </p>
+                            <h3>CNG Kit Components Placement</h3>
+                        </div>
+                        <div class="cngfitting_checkbox">
+                            <ul>
+                                <li>Cylinder Placement</li>
+                                <li>Valve Connection</li>
+                            </ul>
+                            <ul>
+                                <li>Gauge Setup</li>
+                                <li>System Test</li>
+                            </ul>
+                        </div>
+                        <div class="cngfitting_btnsection">
+                            <button class="bookbtn" onclick="toggleSlider('cngBooking')">Book Now →</button>
+                        </div>
+                    </div>
+                    <div class="cngfitting_heroimg">
+                        <div class="carousel_section">
+                            <span class="next">→</span>
+                            <div class="slide-container">
+                                <div class="slides">
+                                    <img src="/static/banner-CNG12.png-threewheeler-fitting.webp" class="active"
+                                        alt="cng three wheeler fitting" onclick="openModal(this)" loading="lazy">
+                                    <img src="./assets/images/cng/CNG-fourwheeler-fitting2.webp"
+                                        alt="cng four wheeler fitting" onclick="openModal(this)" loading="lazy">
+                                    <img src="./assets/images/cng/CNG-commercial-fitting.webp"
+                                        alt="cng commercial vehicle fitting" onclick="openModal(this)" loading="lazy">
+                                </div>
+                                <div class="dotsContainer">
+                                    <div class="dot active" attr='0' onclick="switchImage(this)"></div>
+                                    <div class="dot" attr='1' onclick="switchImage(this)"></div>
+                                    <div class="dot" attr='2' onclick="switchImage(this)"></div>
+                                </div>
+                            </div>
+                            <span class="prev">←</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="imageModal" class="modal">
+            <span class="close" onclick="closeModal()">✕</span>
+            <div style="display: flex;flex-direction: column;
+                    align-items: center; justify-content: center; height: 100%; padding:0 20px;">
+                <img class="modal-content" id="modalImage">
+            </div>
+        </div>
+
+        <div id="cngnews">
+            <div class="cngnews_section mx-auto">
+                <div class="cngnews_head">
+                    <div class="cngnews_head_text">
+                        <p>Recent blogs
+                            <svg width="52" height="10" viewBox="0 0 52 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_3795_96)">
+                                    <path
+                                        d="M47.2095 2.14437C46.4096 2.36766 45.5874 2.50135 44.758 2.54299L38.0745 3.26714C36.5625 3.43986 35.0713 3.76256 33.6232 4.23048C32.834 4.49614 32.0748 4.84349 31.3577 5.2669C30.5815 5.78994 29.7739 6.26475 28.9394 6.68864C28.4366 6.92402 27.8868 7.04215 27.3317 7.03411C26.7204 6.99856 26.1425 6.7438 25.704 6.3166C24.8602 5.44628 24.6277 4.38993 24.0763 3.71228C23.8482 3.37951 23.505 3.14288 23.1129 3.04791C22.6926 2.95474 22.2543 2.98472 21.8506 3.13427C20.9442 3.46398 20.1839 4.10423 19.7047 4.94135C19.1267 5.79839 18.675 6.775 18.0172 7.69183C17.3771 8.67698 16.4285 9.42226 15.3199 9.81116C14.738 9.97733 14.1213 9.97733 13.5394 9.81116C12.9881 9.64765 12.4799 9.36403 12.0512 8.9807C11.2848 8.27735 10.6875 7.40973 10.3039 6.44282C9.91861 5.55257 9.63957 4.68889 9.25423 3.93151C8.81236 2.89622 8.01001 2.05634 6.99598 1.56765C5.98195 1.07897 4.82509 0.974642 3.74 1.27404C3.16364 1.41933 2.62491 1.6859 2.15977 2.05594C1.69463 2.42599 1.3138 2.89102 1.04267 3.41996C0.609026 4.23627 0.40251 5.15404 0.444721 6.07742C0.461366 6.66905 0.587529 7.25247 0.816785 7.79813C0.969589 8.18346 1.07589 8.37613 1.04267 8.40271C1.00945 8.42928 0.849998 8.26318 0.624113 7.89778C0.297997 7.3528 0.0960956 6.74258 0.0328167 6.11063C-0.094422 5.09968 0.0716196 4.07346 0.511162 3.1542C0.798973 2.52884 1.21785 1.97266 1.73939 1.52332C2.26094 1.07399 2.87299 0.742013 3.53404 0.549886C4.3414 0.314234 5.19125 0.262331 6.02128 0.397987C6.85131 0.533642 7.64045 0.85342 8.33077 1.33384C9.08192 1.89515 9.6841 2.63192 10.0847 3.47975C10.5165 4.31021 10.8221 5.18716 11.2008 6.01762C11.535 6.84506 12.053 7.58567 12.7156 8.18347C13.0179 8.47409 13.3907 8.68086 13.7973 8.78339C14.204 8.88592 14.6303 8.88064 15.0342 8.7681C15.9058 8.44143 16.6489 7.84273 17.1536 7.06068C17.7316 6.2568 18.1833 5.28018 18.8145 4.33678C19.1355 3.84764 19.5172 3.40117 19.9505 3.00804C20.4071 2.61118 20.9377 2.30862 21.5118 2.11779C22.1043 1.91517 22.7412 1.88068 23.3521 2.01814C23.9719 2.17131 24.5177 2.53834 24.8934 3.05455C25.5977 3.99795 25.8368 5.04765 26.4082 5.5725C26.6675 5.83263 27.0118 5.99065 27.3782 6.01762C27.7818 6.02071 28.1811 5.9345 28.5475 5.76517C29.3497 5.36762 30.1284 4.92396 30.8794 4.43644C31.657 3.99071 32.4814 3.632 33.3375 3.36681C34.8527 2.91365 36.4116 2.62192 37.9881 2.49649C40.8449 2.25731 43.1369 2.18423 44.7314 2.1045C45.5564 2.02614 46.3875 2.03952 47.2095 2.14437Z"
+                                        fill="#034833"></path>
+                                    <path
+                                        d="M45.4762 6.2697C45.4231 6.13018 46.1406 5.7382 47.2235 5.08712C47.7683 4.76158 48.4127 4.36296 49.1036 3.89126C49.4491 3.65873 49.768 3.39963 50.1666 3.13388C50.3373 3.0178 50.4954 2.88421 50.6383 2.73527C50.7579 2.61795 50.8527 2.47789 50.9173 2.32336C50.9506 2.19713 50.9173 2.20377 50.9173 2.15726C50.821 2.06916 50.7009 2.01139 50.5719 1.99117L49.283 1.64571C48.4592 1.41982 47.7218 1.20058 47.1039 0.981341C45.8682 0.582721 45.1108 0.263819 45.1573 0.124302C45.2038 -0.0152149 46.001 0.0379361 47.2833 0.250534C47.9476 0.356832 48.6784 0.502993 49.5155 0.675728L50.8443 0.968051C51.184 1.02987 51.4955 1.19726 51.7345 1.4464C51.8826 1.61431 51.9774 1.82242 52.0069 2.04432C52.0341 2.24825 52.0113 2.45574 51.9405 2.6489C51.8291 2.94985 51.6521 3.2222 51.4223 3.44614C51.235 3.63879 51.0254 3.80831 50.7978 3.95105C50.4124 4.23009 50.0205 4.47591 49.6484 4.70179C48.9845 5.09883 48.2916 5.44528 47.5756 5.7382C46.3399 6.25641 45.5294 6.40257 45.4762 6.2697Z"
+                                        fill="#034833"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_3795_96">
+                                        <rect width="52" height="9.86585" fill="white"
+                                            transform="translate(0 0.0664062)"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </p>
+                        <h3>Latest News and Featured Articles</h3>
+                    </div>
+                    <div class="cngnews_btnsection">
+                        <a class="bookbtn" href="./readyassist-news.html">Know More→</a>
+                    </div>
+                </div>
+                <div class="cngnews_cardsection">
+                    <div class="cngnews_cardsection_left">
+                        <div class="cngnews_card_hero">
+                            <img src="./assets/images/cng/cng_news1.avif" alt="news1">
+                            <div class="cngnews_card_hero_content">
+                                <div class="cngnews_date_provider">
+                                    <div class="cngnews_date"><img src="./assets/images/cng/date.svg" alt="date icon"
+                                            style="width: 24px;">9 July 2024</div>
+                                    <div class="cngnews_provider">
+                                        <img src="./assets/images/cng/news.svg" alt="news icon">
+                                        INDIA TODAY
+                                    </div>
+                                </div>
+                                <div class="cngnews_head">Bajaj Freedom 125, world's first CNG bike</div>
+                                <div class="cngnews_desc">Bajaj Auto recently launched the world's first CNG
+                                    motorcycle, the Bajaj Freedom 125. The company claims that this motorcycle
+                                    has almost 50% less operating cost than a similar petrol-only model</div>
+                                <div class="readmore_section"><a class="read_morebtn"
+                                        href="https://www.indiatoday.in/auto/bikes/story/bajaj-freedom-125-worlds-first-cng-bike-all-variants-explained-2564436-2024-07-09"
+                                        rel="nofollow" target="_blank">ReadMore <span style="color: var(--button-primary);">→</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cngnews_cardsection_right">
+                        <div class="cngnews_card_child">
+                            <div class="cngnews_card_child_img">
+                                <img src="./assets/images/cng/news3.webp" alt="news3">
+                            </div>
+                            <div class="cngnews_card_child_content">
+                                <div class="cngnews_date_provider">
+                                    <div class="cngnews_date"><img src="./assets/images/cng/date.svg" alt="date icon"
+                                            style="width: 24px;">11 July
+                                        2024</div>
+                                    <div class="cngnews_provider">
+                                        <img src="./assets/images/cng/news.svg" alt="news icon">
+                                        Financial Express
+                                    </div>
+                                </div>
+                                <div class="cngnews_head">TVS to launch its first CNG two-wheeler with Jupiter 125 CNG
+                                </div>
+                                <div class="cngnews_desc">After Bajaj now TVS will also launch its powerful scooter
+                                    Jupiter in the
+                                    CNG
+                                    variant, know the
+                                    features</div>
+                                <div class="readmore_section"><a class="read_morebtn"
+                                        href="https://www.financialexpress.com/auto/bike-news/after-bajaj-tvs-to-launch-its-first-cng-two-wheeler-with-jupiter-125-cng/3550478/"
+                                        rel="nofollow" target="_blank">ReadMore <span style="color: var(--button-primary);">→</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cngnews_card_child">
+                            <div class="cngnews_card_child_img">
+                                <img src="./assets/images/cng/cng_news2.webp" alt="news2">
+                            </div>
+                            <div class="cngnews_card_child_content">
+                                <div class="cngnews_date_provider">
+                                    <div class="cngnews_date"><img src="./assets/images/cng/date.svg" alt="date icon"
+                                            style="width: 24px;">7 July
+                                        2024</div>
+                                    <div class="cngnews_provider">
+                                        <img src="./assets/images/cng/news.svg" alt="news icon">
+                                        ET Auto
+                                    </div>
+                                </div>
+                                <div class="cngnews_head">CNG Vehicle registrations in Mumbai rise 37% in a year</div>
+                                <div class="cngnews_desc">There has been a 37% rise in annual registrations of
+                                    Compressed Natural Gas (CNG) vehicles in Mumbai</div>
+                                <div class="readmore_section"><a class="read_morebtn"
+                                        href="https://auto.economictimes.indiatimes.com/news/passenger-vehicle/cng-vehicle-registrations-in-mumbai-rise-37-in-a-year-surpass-pre-covid-levels/111555190?utm_source=top_news&utm_medium=tagListing"
+                                        rel="nofollow" target="_blank">ReadMore <span style="color: var(--button-primary);">→</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="ourpartners">
+            <div class="ourpartners_section mx-auto">
+                <div class="ourpartners_head">
+                    <div class="ourpartners_head_text">
+                        <p>Our Partners <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_3945_56)">
+                                    <path d="M4.9248 10.3748L6.49525 9.68052L5.62485 9.07031L4.9248 10.3748Z"
+                                        fill="#83CD20"></path>
+                                    <path d="M4.9248 10.3743L4.99976 8L13.9078 0L5.66407 9.1113L4.9248 10.3743Z"
+                                        fill="#83CD20"></path>
+                                    <path d="M5 8L13.908 0L0 6.22704L5 8Z" fill="#83CD20"></path>
+                                    <path d="M5.66406 9.1113L9.95686 12L13.9078 0L5.66406 9.1113Z" fill="#034833">
+                                    </path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_3945_56">
+                                        <rect width="13.908" height="12" fill="white"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg></p>
+                        <h3>Meet Our Trusted Partners</h3>
+
+                        <div class="why_partner">
+                            Explore the exceptional brands that support our vision. Our partners are industry leaders,
+                            sharing our dedication to quality and innovation. Together, we deliver outstanding products
+                            and services, ensuring high standards. We're proud to collaborate with partners who inspire
+                            excellence every day.
+                        </div>
+
+                    </div>
+                    <div class="ourpartners_design_section">
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('cngparters')">STRATEGIC</p>
+                            <p class="tab-links" onclick="opentab('insurancepartners')">CNG KIT</p>
+                            <p class="tab-links" onclick="opentab('clients')">FINANCE</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="cngparters">
+                            <div class="partners_logos">
+                                <img src="./assets/images/cng/Ag-and--p.webp" alt="Ag & p logo">
+                                <img src="./assets/images/cng/think-GAS.webp" alt="think gas logo">
+                            </div>
+                        </div>
+                        <div class="tab-contents" id="insurancepartners">
+                            <div class="partners_logos">
+                                <img src="./assets/images/cng/sagas.webp" alt="sagas logo">
+                                <img src="./assets/images/cng/lovato_logo.webp" alt="lovato logo">
+                                <img src="./assets/images/cng/mijo_logo.webp" alt="mijo logo">
+                            </div>
+                        </div>
+                        <div class="tab-contents" id="clients">
+                            <div class="partners_logos">
+                                <img src="./assets/images/cng/entranzfinance.webp" alt="entranzfinance logo">
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./assets/images/cng/partner_shape1.svg" alt="shape icon" class="partner_shape1">
+                </div>
+            </div>
+        </div>
+
+        <div id="customertestimonials">
+            <div class="customertestimonial_section mx-auto">
+                <div class="testi_section">
+                    <div class="cxtestimonial_left_section">
+                        <div class="cxtesti_card_container">
+                            <div class="cxtesti_section1">
+                                <div class="cxtesti_card">
+                                    <div class="cxtesti_img_text">
+                                        <div class="cxtesti_img">
+                                            <img src="./assets/images/cng/user1.webp" alt="user avatar">
+                                        </div>
+                                        <div class="cxtesti_text">
+                                            <p class="cxtesti_name">Michael T</p>
+                                            <p class="cxrole">Customer</p>
+                                        </div>
+                                    </div>
+                                    <div class="cxtesti_des">
+                                        <p>CNGFirst by ReadyAssist transformed my driving experience. I’m saving on fuel
+                                            and reducing emissions!</p>
+                                    </div>
+                                    <div class="cxtesti_date_section">
+                                        <p class="cxtesti_date">June 29, 2024</p>
+                                    </div>
+                                </div>
+                                <div class="cxtesti_card">
+                                    <div class="cxtesti_img_text">
+                                        <div class="cxtesti_img">
+                                            <img src="./assets/images/cng/user2.webp" alt="user avatar">
+                                        </div>
+                                        <div class="cxtesti_text">
+                                            <p class="cxtesti_name">John D</p>
+                                            <p class="cxrole">Customer</p>
+                                        </div>
+                                    </div>
+                                    <div class="cxtesti_des">
+                                        <p>The installation of CNGFirst was quick and hassle-free. Excellent service
+                                            overall!</p>
+                                    </div>
+                                    <div class="cxtesti_date_section">
+                                        <p class="cxtesti_date">June 25, 2024</p>
+                                    </div>
+                                </div>
+                                <div class="cxtesti_card">
+                                    <div class="cxtesti_img_text">
+                                        <div class="cxtesti_img">
+                                            <img src="./assets/images/cng/fuser1.webp" alt="user avatar">
+                                        </div>
+                                        <div class="cxtesti_text">
+                                            <p class="cxtesti_name">Sarah L</p>
+                                            <p class="cxrole">Customer</p>
+                                        </div>
+                                    </div>
+                                    <div class="cxtesti_des">
+                                        <p>I've noticed a big boost in mileage since switching to CNGFirst. Highly
+                                            recommend it!</p>
+                                    </div>
+                                    <div class="cxtesti_date_section">
+                                        <p class="cxtesti_date">June 24, 2024</p>
+                                    </div>
+                                </div>
+                                <div class="cxtesti_card">
+                                    <div class="cxtesti_img_text">
+                                        <div class="cxtesti_img">
+                                            <img src="./assets/images/cng/user3.webp" alt="user avatar">
+                                        </div>
+                                        <div class="cxtesti_text">
+                                            <p class="cxtesti_name">David S</p>
+                                            <p class="cxrole">Customer</p>
+                                        </div>
+                                    </div>
+                                    <div class="cxtesti_des">
+                                        <p>The ReadyAssist team was professional and answered all my questions about
+                                            CNGFirst.</p>
+                                    </div>
+                                    <div class="cxtesti_date_section">
+                                        <p class="cxtesti_date">June 20, 2024</p>
+                                    </div>
+                                </div>
+                                <div class="cxtesti_card">
+                                    <div class="cxtesti_img_text">
+                                        <div class="cxtesti_img">
+                                            <img src="./assets/images/cng/fuser3.webp" alt="user avatar">
+                                        </div>
+                                        <div class="cxtesti_text">
+                                            <p class="cxtesti_name">Pooja S</p>
+                                            <p class="cxrole">Customer</p>
+                                        </div>
+                                    </div>
+                                    <div class="cxtesti_des">
+                                        <p>CNGFirst exceeded my expectations with their retrofitment service. The
+                                            installation was done on time, and the quality of work was excellent.</p>
+                                    </div>
+                                    <div class="cxtesti_date_section">
+                                        <p class="cxtesti_date">June 05, 2024</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cxtesti_section2">
+                                <div class="cxtesti_card">
+                                    <div class="cxtesti_img_text">
+                                        <div class="cxtesti_img">
+                                            <img src="./assets/images/cng/fuser3.webp" alt="user avatar">
+                                        </div>
+                                        <div class="cxtesti_text">
+                                            <p class="cxtesti_name">Sophia J</p>
+                                            <p class="cxrole">Customer</p>
+                                        </div>
+                                    </div>
+                                    <div class="cxtesti_des">
+                                        <p>I love the performance of CNGFirst. It’s a cleaner and smarter option for
+                                            driving!</p>
+                                    </div>
+                                    <div class="cxtesti_date_section">
+                                        <p class="cxtesti_date">June 18, 2024</p>
+                                    </div>
+                                </div>
+                                <div class="cxtesti_card">
+                                    <div class="cxtesti_img_text">
+                                        <div class="cxtesti_img">
+                                            <img src="./assets/images/cng/user4.webp" alt="user avatar">
+                                        </div>
+                                        <div class="cxtesti_text">
+                                            <p class="cxtesti_name">Chris W</p>
+                                            <p class="cxrole">Customer</p>
+                                        </div>
+                                    </div>
+                                    <div class="cxtesti_des">
+                                        <p>Noticeable improvement in engine performance. CNGFirst is a smart choice!</p>
+                                    </div>
+                                    <div class="cxtesti_date_section">
+                                        <p class="cxtesti_date">June 13, 2024</p>
+                                    </div>
+                                </div>
+                                <div class="cxtesti_card">
+                                    <div class="cxtesti_img_text">
+                                        <div class="cxtesti_img">
+                                            <img src="./assets/images/cng/fuser2.webp" alt="user avatar">
+                                        </div>
+                                        <div class="cxtesti_text">
+                                            <p class="cxtesti_name">Akshaya P</p>
+                                            <p class="cxrole">Customer</p>
+                                        </div>
+                                    </div>
+                                    <div class="cxtesti_des">
+                                        <p>Switching to CNGFirst was one of the best decisions I’ve made. Smooth and
+                                            efficient! </p>
+                                    </div>
+                                    <div class="cxtesti_date_section">
+                                        <p class="cxtesti_date">June 15, 2024</p>
+                                    </div>
+                                </div>
+                                <div class="cxtesti_card">
+                                    <div class="cxtesti_img_text">
+                                        <div class="cxtesti_img">
+                                            <img src="./assets/images/cng/user5.webp" alt="user avatar">
+                                        </div>
+                                        <div class="cxtesti_text">
+                                            <p class="cxtesti_name">Ashik M</p>
+                                            <p class="cxrole">Customer</p>
+                                        </div>
+                                    </div>
+                                    <div class="cxtesti_des">
+                                        <p>The CNG retrofitment has significantly reduced my fuel costs. Highly
+                                            recommend!</p>
+                                    </div>
+                                    <div class="cxtesti_date_section">
+                                        <p class="cxtesti_date">June 06, 2024</p>
+                                    </div>
+                                </div>
+                                <div class="cxtesti_card">
+                                    <div class="cxtesti_img_text">
+                                        <div class="cxtesti_img">
+                                            <img src="./assets/images/cng/user4.webp" alt="user avatar">
+                                        </div>
+                                        <div class="cxtesti_text">
+                                            <p class="cxtesti_name">Ravi Mehta</p>
+                                            <p class="cxrole">Customer</p>
+                                        </div>
+                                    </div>
+                                    <div class="cxtesti_des">
+                                        <p>I recently got my car converted to CNG with CNGFirst, and I couldn't be
+                                            happier! The process was seamless, and the team was very professional.</p>
+                                    </div>
+                                    <div class="cxtesti_date_section">
+                                        <p class="cxtesti_date">June 03, 2024</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cxtestimonial_right_section">
+                        <div class="review_detail_section">
+                            <div class="review_text">Review</div>
+                            <div class="review_title">We love our customers and they love us too.</div>
+                            <div class="review_desc">We deeply appreciate our valued customers. Your trust and loyalty
+                                inspire us to deliver exceptional products and services. Thank you for being an
+                                essential part of our journey.
+                                We look forward to serving you with dedication and passion.</div>
+                            <div class="view_all_btn">
+                                <button class="btn_open_popup" onclick="togglePopup()">Write a review →</button>
+                            </div>
+                            <div id="popupOverlay" class="overlay_container">
+                                <div class="popup_box">
+                                    <div class="popup_header">
+                                        <h2>We appreciate your feedback</h2>
+                                        <button class="btn_close_popup" onclick="togglePopup()">&#10005;</button>
+                                    </div>
+                                    <div class="form_container" id="reviewForm">
+                                        <div class="form_group">
+                                            <input class="form_input" type="text" placeholder="Name" id="name"
+                                                name="name" autocomplete="name" required onblur="validateName()"
+                                                onfocus="clearError('nameError')">
+                                            <span id="nameError" class="error_message"></span>
+                                        </div>
+                                        <div class="form_group">
+                                            <input class="form_input" type="number" placeholder="Mobile Number"
+                                                id="mobileno" name="mobileno" autocomplete="mobileno" maxlength="10"
+                                                required onblur="validateNumber()" onfocus="clearError('mobileError')">
+                                            <span id="mobileError" class="error_message"></span>
+                                        </div>
+                                        <div class="form_group" style="margin-left: 2px;">
+                                            <label for="rating"
+                                                style="color: #404040;font-size: 16px;font-weight: 300;">Rate
+                                                us:</label>
+                                            <div class="star_rating">
+                                                <input type="radio" name="star" id="star5" value="5">
+                                                <label for="star5">&#9733;</label>
+                                                <input type="radio" name="star" id="star4" value="4">
+                                                <label for="star4">&#9733;</label>
+                                                <input type="radio" name="star" id="star3" value="3">
+                                                <label for="star3">&#9733;</label>
+                                                <input type="radio" name="star" id="star2" value="2">
+                                                <label for="star2">&#9733;</label>
+                                                <input type="radio" name="star" id="star1" value="1">
+                                                <label for="star1">&#9733;</label>
+                                            </div>
+                                            <span id="starError" class="error_message"></span>
+                                        </div>
+                                        <div class="form_group">
+                                            <textarea rows="4" cols="50" style="resize: none;" class="form_input"
+                                                type="text-area" placeholder="Your review" id="review" name="review"
+                                                required onblur="validateReview()"
+                                                onfocus="clearError('reviewError')"></textarea>
+                                            <span id="reviewError" class="error_message"></span>
+                                        </div>
+                                        <button class="btn_submit" onclick="validateForm()">Submit</button>
+                                        <p id="formMessage" style="color: green;"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cx_testi_shape1"></div>
+            </div>
+        </div>
+
+        <div id="faqquestions">
+            <div class="faq_section mx-auto">
+                <div class="faq_right_section">
+                    <img src="./assets/images/Dashcam/FQ.png" alt="faq image" loading="lazy">
+                </div>
+                <div class="faq_left_section">
+                    <div class="faq_head">
+                        <p>Have Any Question
+                            <svg width="14" height="12" viewBox="0 0 14 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_3945_56)">
+                                    <path d="M4.9248 10.3748L6.49525 9.68052L5.62485 9.07031L4.9248 10.3748Z"
+                                        fill="#83CD20"></path>
+                                    <path d="M4.9248 10.3743L4.99976 8L13.9078 0L5.66407 9.1113L4.9248 10.3743Z"
+                                        fill="#83CD20"></path>
+                                    <path d="M5 8L13.908 0L0 6.22704L5 8Z" fill="#83CD20"></path>
+                                    <path d="M5.66406 9.1113L9.95686 12L13.9078 0L5.66406 9.1113Z" fill="#034833">
+                                    </path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_3945_56">
+                                        <rect width="13.908" height="12" fill="white"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </p>
+                        <h3>Frequently Asked Question</h3>
+                    </div>
+                    <div class="faqs_container">
+                        <div class="faq">
+                            <div class="faq_ques">
+                                <h6 class="faq_title">
+                                    How long does the CNG kit installation process take?
+                                </h6>
+                                <button class="faq-toggle">
+                                    <div class="right_icon" style="width: 14px;" alt="right icon">+</div>
+                                    <div class="down_icon" style="width: 20px;" alt="down icon">-</div>
+                                </button>
+                            </div>
+                            <p class="faq_text">
+                                The installation process typically takes between 4 to 6 hours, but it can vary based
+                                on the complexity of the vehicle.
+                            </p>
+                        </div>
+                        <div class="faq">
+                            <div class="faq_ques">
+                                <h6 class="faq_title">
+                                    Will installing a CNG kit void my vehicle’s warranty?
+                                </h6>
+                                <button class="faq-toggle">
+                                    <div class="right_icon" style="width: 14px;" alt="right icon">+</div>
+                                    <div class="down_icon" style="width: 20px;" alt="down icon">-</div>
+                                </button>
+                            </div>
+                            <p class="faq_text">
+                                This depends on the vehicle manufacturer’s policy. It’s important to check with your
+                                vehicle’s manufacturer or dealer.
+                            </p>
+                        </div>
+                        <div class="faq">
+                            <div class="faq_ques">
+                                <h6 class="faq_title">
+                                    Is CNG safe to use?
+                                </h6>
+                                <button class="faq-toggle">
+                                    <div class="right_icon" style="width: 14px;" alt="right icon">+</div>
+                                    <div class="down_icon" style="width: 20px;" alt="down icon">-</div>
+                                </button>
+                            </div>
+                            <p class="faq_text">
+                                Yes, CNG is considered safe when the installation is done by certified professionals
+                                and regular maintenance is performed. CNG has a high ignition temperature and is
+                                non-toxic.
+                            </p>
+                        </div>
+                        <div class="faq">
+                            <div class="faq_ques">
+                                <h6 class="faq_title">
+                                    Where can I refuel my vehicle with CNG?
+                                </h6>
+                                <button class="faq-toggle">
+                                    <div class="right_icon" style="width: 14px;" alt="right icon">+</div>
+                                    <div class="down_icon" style="width: 20px;" alt="down icon">-</div>
+                                </button>
+                            </div>
+                            <p class="faq_text">
+                                CNG refueling stations are available in many urban areas. You can find the nearest
+                                CNG station using mobile apps or online maps.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <img src="./assets/images/cng/faq_shape1.svg" alt="dot icon" class="faq_shape1">
+                <img src="./assets/images/cng/faq-shape2.svg" alt="shape" loading="lazy" class="faq_shape2">
+            </div>
+        </div>
+
+        <div data-include="./components/downloadApp.html"></div>
+
+    </main>
+
+    <div data-include="./components/footer.html"></div>
+
+    <script src="./assets/js/menu.js"></script>
+    <script src="./assets/js/componentLoader.js"></script>
+    <script type="module" src="./assets/js/common.js"></script>
+    <script type="module" src="./assets/js/cng.js"></script>
+</body>
+
+</html>
